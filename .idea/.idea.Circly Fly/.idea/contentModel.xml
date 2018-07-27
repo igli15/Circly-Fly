@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="JumpScript.cs" t="Include" />
         <e p="RotateScript.cs" t="Include" />
+        <e p="SpawnObstacles.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\JumpScript.cs" />
     <Compile Include="Assets\RotateScript.cs" />
+    <Compile Include="Assets\SpawnObstacles.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/igli/Desktop/Circly Fly/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
