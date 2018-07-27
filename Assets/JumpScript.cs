@@ -10,6 +10,10 @@ public class JumpScript : MonoBehaviour
 	[Range(0,0.5f)]
 	private float jumpDistance = 0.2f;
 
+	[SerializeField]
+	[Range(0, 5)] 
+	private float jumpForce = 0.5f;
+
 	private float initalJointDistance;
 
 	private Rigidbody2D rb;
@@ -29,7 +33,7 @@ public class JumpScript : MonoBehaviour
 	{
 		if (Input.GetMouseButton(0))
 		{
-			rb.AddForce(transform.up * jumpDistance);
+			rb.AddForce(transform.up * jumpForce);
 			joint.distance = initalJointDistance + jumpDistance;
 		}
 

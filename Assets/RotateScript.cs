@@ -22,7 +22,7 @@ public class RotateScript : MonoBehaviour
 	void Update () 
 	{
 		//transform.Rotate(0,0,-rotationSpeed);
-		transform.RotateAround(target.transform.position,new Vector3(0,0,1),rotationSpeed);
+		transform.RotateAround(target.transform.position,new Vector3(0,0,1),-rotationSpeed);
 		
 	}
 }

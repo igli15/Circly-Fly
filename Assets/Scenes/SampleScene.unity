@@ -123,9 +123,10 @@ GameObject:
   - component: {fileID: 314894137}
   - component: {fileID: 314894138}
   - component: {fileID: 314894140}
+  - component: {fileID: 314894143}
+  - component: {fileID: 314894142}
   - component: {fileID: 314894139}
   - component: {fileID: 314894141}
-  - component: {fileID: 314894142}
   m_Layer: 0
   m_Name: square
   m_TagString: Untagged
@@ -140,8 +141,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 314894136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.1100001, z: -0.044077434}
-  m_LocalScale: {x: 0.19868, y: 0.19868, z: 0.19868}
+  m_LocalPosition: {x: 0, y: 3.49, z: -0.044077434}
+  m_LocalScale: {x: 0.1708648, y: 0.1708648, z: 0.1708648}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -203,7 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb46a7140c1984bf9982677750bd81c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpDistance: 0.2
+  jumpDistance: 0.17
+  jumpForce: 0.5
 --- !u!50 &314894140
 Rigidbody2D:
   serializedVersion: 4
@@ -223,7 +225,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &314894141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,9 +255,34 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 0
-  m_Distance: 2.16
+  m_Distance: 3.49
   m_DampingRatio: 0
   m_Frequency: 1
+--- !u!61 &314894143
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314894136}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 2.5}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +370,7 @@ GameObject:
   - component: {fileID: 947134675}
   - component: {fileID: 947134674}
   - component: {fileID: 947134672}
+  - component: {fileID: 947134673}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -370,6 +398,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &947134673
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947134671}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
 --- !u!212 &947134674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -423,8 +466,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 947134671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.05, z: -0.04407743}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8545, y: 1.8545, z: 1.8545}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
