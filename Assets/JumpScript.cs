@@ -11,8 +11,8 @@ public class JumpScript : MonoBehaviour
 	private float jumpDistance = 0.2f;
 
 	[SerializeField]
-	[Range(0, 5)] 
-	private float jumpForce = 0.5f;
+	[Range(0, 10)] 
+	private float jumpForce = 3f;
 
 	private float initalJointDistance;
 
