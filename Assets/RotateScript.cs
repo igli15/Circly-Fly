@@ -6,7 +6,11 @@ public class RotateScript : MonoBehaviour
 {
 
 	[SerializeField] 
-	private float rotationSpeed;
+	[Range(0,10)]
+	private float rotationSpeed = 2;
+
+	[SerializeField] 
+	private GameObject target;
 	
 	// Use this for initialization
 	void Start () 
@@ -17,6 +21,8 @@ public class RotateScript : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		transform.Rotate(0,0,-rotationSpeed);
+		//transform.Rotate(0,0,-rotationSpeed);
+		transform.RotateAround(target.transform.position,new Vector3(0,0,1),-rotationSpeed);
+		
 	}
 }
