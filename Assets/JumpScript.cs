@@ -7,7 +7,7 @@ public class JumpScript : MonoBehaviour
 {
 	
 	[SerializeField] 
-	[Range(0,0.5f)]
+	[Range(0,1f)]
 	private float jumpDistance = 0.2f;
 
 	[SerializeField]

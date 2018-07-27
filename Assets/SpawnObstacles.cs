@@ -8,7 +8,7 @@ public class SpawnObstacles : MonoBehaviour
 	[SerializeField] 
 	private GameObject obstacle;
 
-	private float amountOfObstacles = 2;
+	private float amountOfObstacles = 10;
 	
 	// Use this for initialization
 	void Start ()
@@ -24,14 +24,10 @@ public class SpawnObstacles : MonoBehaviour
 
 	private void SpawnObstacle()
 	{
-		Vector2 _center = transform.position;
-		
-		for (int i = 0; i < 5; i++)
+
+		for (int i = 0; i < amountOfObstacles; i++)
 		{
-			Vector2 _pos = Random.insideUnitCircle.normalized * transform.localScale.x;
-			Quaternion _rot = Quaternion.FromToRotation(Vector3.up,_center - _pos);
-			
-			Instantiate(obstacle, _pos, _rot);
+			Instantiate(obstacle, transform.position, Quaternion.identity);
 		}
 	}
 }
