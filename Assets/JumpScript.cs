@@ -7,8 +7,10 @@ public class JumpScript : MonoBehaviour
 {
 	
 	[SerializeField] 
-	[Range(0,10)]
-	private float jumpSpeed = 0.2f;
+	[Range(0,0.5f)]
+	private float jumpDistance = 0.2f;
+
+	private float initalJointDistance;
 
 	private Rigidbody2D rb;
 	private SpringJoint2D joint;
@@ -18,6 +20,8 @@ public class JumpScript : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		joint = GetComponent<SpringJoint2D>();
+
+		initalJointDistance = joint.distance;
 	}
 	
 	// Update is called once per frame
@@ -25,13 +29,13 @@ public class JumpScript : MonoBehaviour
 	{
 		if (Input.GetMouseButton(0))
 		{
-			rb.AddForce(transform.up * jumpSpeed);
-			joint.distance = 2.4f;
+			rb.AddForce(transform.up * jumpDistance);
+			joint.distance = initalJointDistance + jumpDistance;
 		}
 
 		if (Input.GetMouseButtonUp(0))
 		{
-			joint.distance = 2.16f;
+			joint.distance = initalJointDistance;
 		}
 	}
 }
