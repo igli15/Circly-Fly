@@ -44,6 +44,7 @@ public class JumpScript : MonoBehaviour
 		if (Input.GetMouseButtonDown(0))
 		{
 			jump = true;
+			Invoke("SetJumpToFalse",0.2f);
 		}
 
 		if (Input.GetMouseButtonUp(0))
@@ -52,6 +53,11 @@ public class JumpScript : MonoBehaviour
 		}
 	}
 
+	private void SetJumpToFalse()
+	{
+		jump = false;
+	}
+	
 	// Update is called once per frame
 	private void FixedUpdate()
 	{
