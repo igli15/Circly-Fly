@@ -4,8 +4,13 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="JumpScript.cs" t="Include" />
-        <e p="RotateScript.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="FindRightPosition.cs" t="Include" />
+          <e p="JumpScript.cs" t="Include" />
+          <e p="ObstacleMovement.cs" t="Include" />
+          <e p="RotateScript.cs" t="Include" />
+          <e p="SpawnObstacles.cs" t="Include" />
+        </e>
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
