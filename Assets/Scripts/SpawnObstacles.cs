@@ -5,6 +5,9 @@ using UnityEngine;
 public class SpawnObstacles : MonoBehaviour
 {
 
+
+	public static List<GameObject> obstacles;
+
 	[SerializeField] 
 	private GameObject obstacle;
 
@@ -13,6 +16,7 @@ public class SpawnObstacles : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		obstacles = new List<GameObject>();
 		SpawnObstacle();
 	}
 	
@@ -28,7 +32,6 @@ public class SpawnObstacles : MonoBehaviour
 		for (int i = 0; i < amountOfObstacles; i++)
 		{
 			GameObject _obstacle = Instantiate(obstacle, transform.position, Quaternion.identity);
-			//_obstacle.transform.SetParent(transform);
 		}
 	}
 }

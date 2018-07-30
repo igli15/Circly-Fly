@@ -11,25 +11,33 @@ public class FindRightPosition : MonoBehaviour
 
 	private CircleCollider2D spawnerCollider;
 
+	[SerializeField]
+	[Range(0.1f,1.5f)]
+	private float distanceBetweenObstacles = 1f;
+
+	[SerializeField] [Range(0.1f, 4)] 
+	private float distanceFromStartLine = 2.5f;
+
+	
+
 	private void Start()
 	{
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
 		spawnerCollider = spawner.GetComponent<CircleCollider2D>();
 		
+		SpawnObstacles.obstacles.Add(gameObject);
+		
+		
+		
 		do
 		{
-			Vector2 _center = spawner.transform.position;
+			FindNewPosition();
 
-			Vector2 _pos = Random.insideUnitCircle.normalized * (spawnerCollider.radius * 2);
-			
-			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
+		} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
 
-			transform.position = _pos;
-			transform.rotation = _rot;
-
-		} while (Vector2.Distance(transform.position, finishLine.transform.position) <= 2.4f);
-
+	
+		//IsNear();
 
 	}
 
@@ -39,5 +47,30 @@ public class FindRightPosition : MonoBehaviour
 
 	}
 
+	private bool IsNear()
+	{
+		foreach (GameObject obj in SpawnObstacles.obstacles)
+		{
+			
+			if (obj.transform != transform && Vector2.Distance(transform.position, obj.transform.position) <= distanceBetweenObstacles)
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	private void FindNewPosition()
+	{
+		Vector2 _center = spawner.transform.position;
+
+		Vector2 _pos = Random.insideUnitCircle.normalized * (spawnerCollider.radius * 2);
+			
+		Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
+
+		transform.position = _pos;
+		transform.rotation = _rot;
+	}
 
 }
