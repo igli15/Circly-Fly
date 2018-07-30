@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
 public class ObstacleMovement : MonoBehaviour
@@ -10,11 +11,17 @@ public class ObstacleMovement : MonoBehaviour
 	private bool thrustUp;
 
 	private Rigidbody2D rb;
+
+	private float thrustTime;
+
+	private GameObject spawner;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		
+		spawner = GameObject.FindGameObjectWithTag("spawner");
 
 		thrustUp = true;
 	}
@@ -43,6 +50,7 @@ public class ObstacleMovement : MonoBehaviour
 	private void ThrustDown()
 	{
 		rb.velocity = -transform.up * speed;
+	
 		
 		Invoke("SetThrustToTrue",4);
 	}
@@ -50,9 +58,13 @@ public class ObstacleMovement : MonoBehaviour
 	private void SetThrustToTrue()
 	{
 		thrustUp = true;
+		speed = Random.Range(0.5f, 1f);
+		thrustTime = Random.Range(2, 5);
 	}
 	private void SetThrustToFalse()
 	{
 		thrustUp = false;
+		speed = Random.Range(0.5f, 1f);
+		thrustTime = Random.Range(2, 5);
 	}
 }

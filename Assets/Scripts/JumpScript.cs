@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.Experimental.UIElements;
 
 public class JumpScript : MonoBehaviour
@@ -18,6 +19,11 @@ public class JumpScript : MonoBehaviour
 
 	private Rigidbody2D rb;
 	private SpringJoint2D joint;
+
+	private GameObject spawner;
+
+	private bool jump = false;
+
 	
 	// Use this for initialization
 	void Start ()
@@ -26,19 +32,41 @@ public class JumpScript : MonoBehaviour
 		joint = GetComponent<SpringJoint2D>();
 
 		initalJointDistance = joint.distance;
+		
+		spawner = GameObject.FindGameObjectWithTag("spawner");
+
+		rb.freezeRotation = true;
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+
+	private void Update()
 	{
-		if (Input.GetMouseButton(0))
+		if (Input.GetMouseButtonDown(0))
 		{
-			rb.AddForce(transform.up * jumpForce);
-			joint.distance = initalJointDistance + jumpDistance;
+			jump = true;
 		}
 
 		if (Input.GetMouseButtonUp(0))
 		{
+			jump = false;
+		}
+	}
+
+	// Update is called once per frame
+	private void FixedUpdate()
+	{
+		if (jump)
+		{
+			
+			rb.AddForce(transform.up * jumpForce);
+
+			
+			joint.distance = initalJointDistance + jumpDistance;
+		}
+
+		if (!jump)
+		{
+			rb.velocity = Vector2.zero;
 			joint.distance = initalJointDistance;
 		}
 	}

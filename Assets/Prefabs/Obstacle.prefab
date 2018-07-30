@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50959675209994120}
   - component: {fileID: 61805155464052274}
   - component: {fileID: 114327517459459264}
-  - component: {fileID: 114896366053028734}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: obstacle
@@ -73,7 +72,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -100,18 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b168d06fdf71d4a2e912d11ebf5092b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114896366053028734
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235341570770814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c2b801d682f48fbac16caf9e2018a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
 --- !u!212 &212422522674167858
 SpriteRenderer:
   m_ObjectHideFlags: 1

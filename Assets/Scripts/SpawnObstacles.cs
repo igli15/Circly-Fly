@@ -27,7 +27,8 @@ public class SpawnObstacles : MonoBehaviour
 
 		for (int i = 0; i < amountOfObstacles; i++)
 		{
-			Instantiate(obstacle, transform.position, Quaternion.identity);
+			GameObject _obstacle = Instantiate(obstacle, transform.position, Quaternion.identity);
+			//_obstacle.transform.SetParent(transform);
 		}
 	}
 }

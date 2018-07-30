@@ -9,17 +9,20 @@ public class FindRightPosition : MonoBehaviour
 	
 	private GameObject spawner;
 
+	private CircleCollider2D spawnerCollider;
+
 	private void Start()
 	{
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
+		spawnerCollider = spawner.GetComponent<CircleCollider2D>();
 		
 		do
 		{
 			Vector2 _center = spawner.transform.position;
 
-			Vector2 _pos = (Random.insideUnitCircle.normalized + (Vector2) spawner.transform.position) *
-			               spawner.transform.localScale.x;
+			Vector2 _pos = Random.insideUnitCircle.normalized * spawnerCollider.radius;
+			
 			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
 
 			transform.position = _pos;

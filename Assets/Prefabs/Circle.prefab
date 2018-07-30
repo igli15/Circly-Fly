@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4890223939824920}
   - component: {fileID: 212273575250266100}
   - component: {fileID: 50888543494548534}
-  - component: {fileID: 58836796902033288}
   - component: {fileID: 114981387623118350}
   m_Layer: 0
   m_Name: Circle
@@ -63,21 +62,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58836796902033288
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954629663721918}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.5
 --- !u!114 &114981387623118350
 MonoBehaviour:
   m_ObjectHideFlags: 1
