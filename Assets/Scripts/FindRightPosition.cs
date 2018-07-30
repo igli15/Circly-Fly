@@ -21,7 +21,7 @@ public class FindRightPosition : MonoBehaviour
 		{
 			Vector2 _center = spawner.transform.position;
 
-			Vector2 _pos = Random.insideUnitCircle.normalized * spawnerCollider.radius;
+			Vector2 _pos = Random.insideUnitCircle.normalized * (spawnerCollider.radius * 2);
 			
 			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
 
