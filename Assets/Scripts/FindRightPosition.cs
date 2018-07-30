@@ -17,28 +17,21 @@ public class FindRightPosition : MonoBehaviour
 
 	[SerializeField] [Range(0.1f, 4)] 
 	private float distanceFromStartLine = 2.5f;
-
 	
-
 	private void Start()
-	{
+	{	
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
 		spawnerCollider = spawner.GetComponent<CircleCollider2D>();
 		
 		SpawnObstacles.obstacles.Add(gameObject);
+
+
+		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
+		
+		SpawnCorrectly();
 		
 		
-		
-		do
-		{
-			FindNewPosition();
-
-		} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
-
-	
-		//IsNear();
-
 	}
 
 	// Update is called once per frame
@@ -71,6 +64,16 @@ public class FindRightPosition : MonoBehaviour
 
 		transform.position = _pos;
 		transform.rotation = _rot;
+	}
+
+	public void SpawnCorrectly(FinishLineReached sender = null)
+	{
+		do
+		{
+			FindNewPosition();
+
+		} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
+
 	}
 
 }

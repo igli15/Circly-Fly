@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="FindRightPosition.cs" t="Include" />
+          <e p="FinishLineReached.cs" t="Include" />
           <e p="JumpScript.cs" t="Include" />
           <e p="ObstacleMovement.cs" t="Include" />
           <e p="RotateScript.cs" t="Include" />
