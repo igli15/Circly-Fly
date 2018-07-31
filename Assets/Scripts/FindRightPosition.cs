@@ -60,8 +60,10 @@ public class FindRightPosition : MonoBehaviour
 		{
 			Vector2 _center = spawner.transform.position;
 
-            Vector2 _pos = Random.insideUnitCircle.normalized * (spawner.GetComponent<SpriteRenderer>().sprite.bounds.size.x/2 +spawner.transform.localScale.x/2);
+            Vector2 _pos = Random.insideUnitCircle.normalized * (spawner.GetComponent<SpriteRenderer>().sprite.bounds.extents.magnitude);
 
+			_pos += new Vector2(spawner.transform.position.x,spawner.transform.position.y); //If the circle moves it moves with the circle
+			
 			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
 
             transform.position = new Vector3(_pos.x,_pos.y,0);

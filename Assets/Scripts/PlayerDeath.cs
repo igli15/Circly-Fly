@@ -7,7 +7,12 @@ public class PlayerDeath : MonoBehaviour
 {
 
     [SerializeField]
+    [Range(5,20)]
     private float fallingSpeed = 10;
+
+	[SerializeField] 
+	[Range(0,1)]
+	private float torqueForce = 0.6f;
 
 	private Rigidbody2D rb;
 	private JumpScript jumpScript;
@@ -43,10 +48,15 @@ public class PlayerDeath : MonoBehaviour
     private void OnDeath(PlayerCollisions sender)
 	{
 
-        spring.breakForce = 0;
-        spring.autoConfigureDistance = true;
-        shouldAddForce = true;
+		if (spring != null)
+		{
+			spring.breakForce = 0;
+			spring.autoConfigureDistance = true;
+		}
+
+		shouldAddForce = true;
 		rb.freezeRotation = false;
+		rb.AddTorque(torqueForce,ForceMode2D.Impulse);
 		jumpScript.canJump = false;
 		if (rotateScript != null)
 		{
