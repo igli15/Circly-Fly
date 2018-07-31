@@ -60,11 +60,11 @@ public class FindRightPosition : MonoBehaviour
 		{
 			Vector2 _center = spawner.transform.position;
 
-			Vector2 _pos = Random.insideUnitCircle.normalized * (spawner.GetComponent<SpriteRenderer>().sprite.bounds.size.x/2);
+            Vector2 _pos = Random.insideUnitCircle.normalized * (spawner.GetComponent<SpriteRenderer>().sprite.bounds.size.x/2 +spawner.transform.localScale.x/2);
 
 			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
 
-			transform.position = _pos;
+            transform.position = new Vector3(_pos.x,_pos.y,0);
 			transform.rotation = _rot;
 		}
 	}

@@ -42,15 +42,17 @@ public class PlayerDeath : MonoBehaviour
 
     private void OnDeath(PlayerCollisions sender)
 	{
+
+        spring.breakForce = 0;
+        spring.autoConfigureDistance = true;
+        shouldAddForce = true;
+
 		jumpScript.canJump = false;
 		if (rotateScript != null)
 		{
 			rotateScript.enabled = false;
 		}
 
-		spring.breakForce = 0;
-		spring.autoConfigureDistance =true;
-        shouldAddForce = true;
 		
 		Invoke("RestartScene",2);
 	}

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b168d06fdf71d4a2e912d11ebf5092b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceBetweenObstacles: 0.46
+  distanceBetweenObstacles: 0.69
   distanceFromStartLine: 1.43
 --- !u!212 &212422522674167858
 SpriteRenderer:
