@@ -6,7 +6,7 @@ public class RotateScript : MonoBehaviour
 {
 
 	[SerializeField] 
-	[Range(0,10)]
+	[Range(0,100)]
 	private float rotationSpeed = 2;
 
 	[SerializeField] 
@@ -26,7 +26,7 @@ public class RotateScript : MonoBehaviour
 	{
 
 		//transform.Rotate(0,0,-rotationSpeed);
-		transform.RotateAround(target.transform.position,new Vector3(0,0,1),-rotationSpeed);
+		transform.RotateAround(target.transform.position,new Vector3(0,0,1),-rotationSpeed * Time.deltaTime);
 
 		
 	}

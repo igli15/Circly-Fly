@@ -48,7 +48,7 @@ public class JumpScript : MonoBehaviour
 		if (Input.GetMouseButtonDown(0) && canJump == true)
 		{
 			jump = true;
-			Invoke("SetJumpToFalse",0.2f);
+			Invoke("SetJumpToFalse",0.1f);
 		}
 
 		if (Input.GetMouseButtonUp(0))  
@@ -69,14 +69,15 @@ public class JumpScript : MonoBehaviour
 		{
 			
 			rb.AddForce(transform.up * jumpForce);
-
 			
+			if(joint != null)
 			joint.distance = initalJointDistance + jumpDistance;
 		}
 
 		if (!jump)
 		{
 			rb.velocity = Vector2.zero;
+			if(joint != null)
 			joint.distance = initalJointDistance;
 		}
 	}

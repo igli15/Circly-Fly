@@ -144,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 314894136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.67, z: -0.044077437}
+  m_LocalPosition: {x: 0, y: 1.79, z: -0.044077437}
   m_LocalScale: {x: 0.11718934, y: 0.11718934, z: 0.11718934}
   m_Children: []
   m_Father: {fileID: 0}
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb46a7140c1984bf9982677750bd81c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpDistance: 0.42
-  jumpForce: 2.8
+  jumpDistance: 0.7
+  jumpForce: 3
   canJump: 0
 --- !u!50 &314894140
 Rigidbody2D:
@@ -222,11 +222,11 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.18246739
-  m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_LinearDrag: 2
+  m_AngularDrag: 2
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 2
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a74efa10d2ee40028fded31e6b55d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0.6
+  rotationSpeed: 25
   target: {fileID: 947134671}
 --- !u!231 &314894142
 SpringJoint2D:
@@ -251,7 +251,7 @@ SpringJoint2D:
   m_GameObject: {fileID: 314894136}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 947134672}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -259,7 +259,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 0
-  m_Distance: 1.67
+  m_Distance: 1.79
   m_DampingRatio: 0.8
   m_Frequency: 1.5
 --- !u!61 &314894143
@@ -274,7 +274,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.015025914, y: 0.1652869}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -285,7 +285,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 2.5}
+  m_Size: {x: 1.9891146, y: 2.1694262}
   m_EdgeRadius: 0
 --- !u!114 &314894144
 MonoBehaviour:
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 314894136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4a9a35be22284a06bd116808f70aabe, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fd92be7e779749aa8f96056e72388b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &314894146
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 314894136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d6d4f6782c7e4aa7815210011dd387d, type: 3}
+  m_Script: {fileID: 11500000, guid: ecc16cb2292014f79be3c31a9f63e0a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &519420028
@@ -446,7 +446,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
