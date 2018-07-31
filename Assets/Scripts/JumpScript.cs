@@ -24,6 +24,8 @@ public class JumpScript : MonoBehaviour
 
 	private bool jump = false;
 
+	public bool canJump;
+
 	
 	// Use this for initialization
 	void Start ()
@@ -36,18 +38,20 @@ public class JumpScript : MonoBehaviour
 		spawner = GameObject.FindGameObjectWithTag("spawner");
 
 		rb.freezeRotation = true;
+		
+		canJump = true;
 	}
 
 
 	private void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && canJump == true)
 		{
 			jump = true;
 			Invoke("SetJumpToFalse",0.2f);
 		}
 
-		if (Input.GetMouseButtonUp(0))
+		if (Input.GetMouseButtonUp(0))  
 		{
 			jump = false;
 		}

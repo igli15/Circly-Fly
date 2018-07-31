@@ -56,23 +56,29 @@ public class FindRightPosition : MonoBehaviour
 
 	private void FindNewPosition()
 	{
-		Vector2 _center = spawner.transform.position;
+		if (spawner != null)
+		{
+			Vector2 _center = spawner.transform.position;
 
-		Vector2 _pos = Random.insideUnitCircle.normalized * (spawnerCollider.radius * 2);
-			
-		Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
+			Vector2 _pos = Random.insideUnitCircle.normalized * (spawner.GetComponent<SpriteRenderer>().sprite.bounds.size.x/2);
 
-		transform.position = _pos;
-		transform.rotation = _rot;
+			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
+
+			transform.position = _pos;
+			transform.rotation = _rot;
+		}
 	}
 
 	public void SpawnCorrectly(FinishLineReached sender = null)
 	{
-		do
+		if (this != null)
 		{
-			FindNewPosition();
+			do
+			{
+				FindNewPosition();
 
-		} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
+			} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
+		}
 
 	}
 
