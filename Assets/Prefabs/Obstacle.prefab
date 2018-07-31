@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235341570770814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.0568585, y: -3.9007988, z: -0.04407743}
-  m_LocalScale: {x: 0.026078241, y: 0.22948062, z: 0.1708648}
+  m_LocalPosition: {x: -3.4826074, y: -5.2325115, z: -0.04407743}
+  m_LocalScale: {x: 0.029612679, y: 0.18849677, z: 0.09073091}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,11 +50,11 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235341570770814}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 55
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -72,7 +72,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b168d06fdf71d4a2e912d11ebf5092b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceBetweenObstacles: 0.69
+  distanceFromStartLine: 1.43
 --- !u!212 &212422522674167858
 SpriteRenderer:
   m_ObjectHideFlags: 1

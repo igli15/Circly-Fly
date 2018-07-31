@@ -17,28 +17,21 @@ public class FindRightPosition : MonoBehaviour
 
 	[SerializeField] [Range(0.1f, 4)] 
 	private float distanceFromStartLine = 2.5f;
-
 	
-
 	private void Start()
-	{
+	{	
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
 		spawnerCollider = spawner.GetComponent<CircleCollider2D>();
 		
 		SpawnObstacles.obstacles.Add(gameObject);
+
+
+		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
+		
+		SpawnCorrectly();
 		
 		
-		
-		do
-		{
-			FindNewPosition();
-
-		} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
-
-	
-		//IsNear();
-
 	}
 
 	// Update is called once per frame
@@ -63,14 +56,32 @@ public class FindRightPosition : MonoBehaviour
 
 	private void FindNewPosition()
 	{
-		Vector2 _center = spawner.transform.position;
+		if (spawner != null)
+		{
+			Vector2 _center = spawner.transform.position;
 
-		Vector2 _pos = Random.insideUnitCircle.normalized * (spawnerCollider.radius * 2);
+            Vector2 _pos = Random.insideUnitCircle.normalized * (spawner.GetComponent<SpriteRenderer>().sprite.bounds.extents.magnitude);
+
+			_pos += new Vector2(spawner.transform.position.x,spawner.transform.position.y); //If the circle moves it moves with the circle
 			
-		Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
+			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
 
-		transform.position = _pos;
-		transform.rotation = _rot;
+            transform.position = new Vector3(_pos.x,_pos.y,0);
+			transform.rotation = _rot;
+		}
+	}
+
+	public void SpawnCorrectly(FinishLineReached sender = null)
+	{
+		if (this != null)
+		{
+			do
+			{
+				FindNewPosition();
+
+			} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
+		}
+
 	}
 
 }

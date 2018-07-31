@@ -8,7 +8,7 @@ public class JumpScript : MonoBehaviour
 {
 	
 	[SerializeField] 
-	[Range(0,1f)]
+	[Range(0,2f)]
 	private float jumpDistance = 0.2f;
 
 	[SerializeField]
@@ -24,6 +24,8 @@ public class JumpScript : MonoBehaviour
 
 	private bool jump = false;
 
+	public bool canJump;
+
 	
 	// Use this for initialization
 	void Start ()
@@ -36,22 +38,35 @@ public class JumpScript : MonoBehaviour
 		spawner = GameObject.FindGameObjectWithTag("spawner");
 
 		rb.freezeRotation = true;
+		
+		canJump = true;
 	}
 
 
 	private void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			jump = true;
-			Invoke("SetJumpToFalse",0.2f);
-		}
+        if (Input.GetMouseButtonDown(0) && canJump == true)
+        {
+            jump = true;
+            canJump = false;
+            Invoke("SetJumpToFalse", 0.1f);
+        }
 
-		if (Input.GetMouseButtonUp(0))
-		{
-			jump = false;
+        if (joint != null && Vector2.Distance(spawner.transform.position,transform.position) <= initalJointDistance + 0.35f)
+        {
+            canJump = true;
+        }
+
+		if (Input.GetMouseButtonUp(0))  
+        {
+;			jump = false;
 		}
 	}
+
+    private void SetCanJumpTrue()
+    {
+        canJump = true;
+    }
 
 	private void SetJumpToFalse()
 	{
@@ -65,14 +80,15 @@ public class JumpScript : MonoBehaviour
 		{
 			
 			rb.AddForce(transform.up * jumpForce);
-
 			
+			if(joint != null)
 			joint.distance = initalJointDistance + jumpDistance;
 		}
 
 		if (!jump)
 		{
 			rb.velocity = Vector2.zero;
+			if(joint != null)
 			joint.distance = initalJointDistance;
 		}
 	}
