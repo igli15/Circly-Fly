@@ -46,7 +46,7 @@ public class PlayerDeath : MonoBehaviour
         spring.breakForce = 0;
         spring.autoConfigureDistance = true;
         shouldAddForce = true;
-
+		rb.freezeRotation = false;
 		jumpScript.canJump = false;
 		if (rotateScript != null)
 		{

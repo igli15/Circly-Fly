@@ -8,7 +8,7 @@ public class PlayerCollisions : MonoBehaviour
 {
 	public static Action<PlayerCollisions> OnObstacleHit;
 
-	private void OnTriggerEnter2D(Collider2D other)
+	/*private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.transform.CompareTag("obstacle"))
 		{
@@ -17,7 +17,9 @@ public class PlayerCollisions : MonoBehaviour
 				OnObstacleHit(this);
 			}
 		}
-	}
+	}*/
+	
+	
 	private void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.transform.CompareTag("obstacle"))
