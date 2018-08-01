@@ -7,17 +7,18 @@ using UnityEngine.SceneManagement;
 public class PlayerCollisions : MonoBehaviour
 {
 	public static Action<PlayerCollisions> OnObstacleHit;
-
-	/*private void OnTriggerEnter2D(Collider2D other)
+	public static Action<PlayerCollisions> OnObstaclePass;
+	
+	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.transform.CompareTag("obstacle"))
 		{
-			if (null != OnObstacleHit)
+			if (null != OnObstaclePass)
 			{
-				OnObstacleHit(this);
+				OnObstaclePass(this);
 			}
 		}
-	}*/
+	}
 	
 	
 	private void OnCollisionEnter2D(Collision2D other)
