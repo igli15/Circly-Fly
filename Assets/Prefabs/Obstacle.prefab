@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceBetweenObstacles: 0.69
   distanceFromStartLine: 1.43
+  scaleTime: 0.4
 --- !u!212 &212422522674167858
 SpriteRenderer:
   m_ObjectHideFlags: 1
