@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScoreBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScoreBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FindRightPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FindRightPosition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,21 +81,20 @@
       <file leaf-file-name="SpawnObstacles.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+            <state relative-caret-position="129">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
-                <marker date="1533128269361" expanded="false" signature="6:78" ph="..." />
-                <marker date="1533128269361" expanded="true" signature="123:1938" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="355:508" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="563:569" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="622:954" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="716:751" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="856:951" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="1030:1936" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="1074:1271" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="1347:1483" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="1559:1696" ph="{...}" />
-                <marker date="1533128269361" expanded="true" signature="1737:1875" ph="{...}" />
+                <marker date="1533129007891" expanded="false" signature="6:78" ph="..." />
+                <marker date="1533129007891" expanded="true" signature="123:1514" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="355:508" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="562:840" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="656:691" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="742:837" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="916:1512" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="960:1048" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="1124:1212" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="1288:1377" ph="{...}" />
+                <marker date="1533129007891" expanded="true" signature="1418:1508" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -301,12 +291,12 @@
       <workItem from="1532993870190" duration="3457000" />
       <workItem from="1533024778600" duration="807000" />
       <workItem from="1533037994422" duration="2915000" />
-      <workItem from="1533108138769" duration="7418000" />
+      <workItem from="1533108138769" duration="8336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51446000" />
+    <option name="totallyTimeSpent" value="52364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,21 +679,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        <state relative-caret-position="129">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
-            <marker date="1533128269361" expanded="false" signature="6:78" ph="..." />
-            <marker date="1533128269361" expanded="true" signature="123:1938" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="355:508" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="563:569" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="622:954" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="716:751" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="856:951" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="1030:1936" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="1074:1271" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="1347:1483" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="1559:1696" ph="{...}" />
-            <marker date="1533128269361" expanded="true" signature="1737:1875" ph="{...}" />
+            <marker date="1533129007891" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533129007891" expanded="true" signature="123:1514" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="355:508" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="562:840" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="656:691" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="742:837" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="916:1512" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="960:1048" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="1124:1212" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="1288:1377" ph="{...}" />
+            <marker date="1533129007891" expanded="true" signature="1418:1508" ph="{...}" />
           </folding>
         </state>
       </provider>

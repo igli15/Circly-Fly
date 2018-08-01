@@ -18,18 +18,10 @@ public class SpawnObstacles : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
 		obstacles = new List<GameObject>();
-
 		FinishLineReached.OnFinishLineReached += SpawnRightAmountOfObstacles;
-		//SpawnRightAmountOfObstacles();
 	}
 	
-	// Update is called once per frame
-	void Update () 
-	{
-	}
-
 	private void SpawnObstacle(int pAmountOfObstacles)
 	{
 		pAmountOfObstacles = amountOfObstacles - obstacles.Count;
@@ -37,7 +29,6 @@ public class SpawnObstacles : MonoBehaviour
 		{
 			pAmountOfObstacles = 0;
 		}	
-		//Debug.Log("spawn amount " + spAmountOfObstacles);
 		
 		for (int i = 0; i < pAmountOfObstacles; i++)
 		{
@@ -52,29 +43,23 @@ public class SpawnObstacles : MonoBehaviour
 		if (levelData.GetLevelIndex() <= 2)
 		{
 			amountOfObstacles = Random.Range(4, 6);
-			//amountOfObstacles = amountOfObstacles - obstacles.Count;
 			SpawnObstacle(amountOfObstacles);
-			Debug.Log("level index is smaller then 5");
 		}
 		else if (levelData.GetLevelIndex() <= 4 && levelData.GetLevelIndex() > 2)
 		{
 			amountOfObstacles = Random.Range(6, 8);
 			SpawnObstacle(amountOfObstacles);
-			Debug.Log("level index is smaller then 10");
 		}
 		else if (levelData.GetLevelIndex() <= 6 && levelData.GetLevelIndex() > 4)
 		{
 			amountOfObstacles = Random.Range(8, 10);
 			SpawnObstacle(amountOfObstacles);
-			Debug.Log("level index is smaller then 15");
 		}
 		else if(levelData.GetLevelIndex() > 6)
 		{
 			amountOfObstacles = Random.Range(10, 14);
 			SpawnObstacle(amountOfObstacles);
-			Debug.Log("level index is smaller then 20");
 		}
-		
-		//Debug.Log("amount to spawn " + amountOfObstacles);
+
 	}
 }
