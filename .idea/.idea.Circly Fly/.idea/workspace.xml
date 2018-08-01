@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IncreaseRotationSpeed.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IncreaseRotationSpeed.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotateScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotateScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a74efa10d2ee40028fded31e6b55d52" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a74efa10d2ee40028fded31e6b55d52" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,33 +58,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IncreaseRotationSpeed.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/IncreaseRotationSpeed.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding>
-                <marker date="1533108610063" expanded="false" signature="6:78" ph="..." />
-                <marker date="1533108610063" expanded="true" signature="130:505" ph="{...}" />
-                <marker date="1533108610063" expanded="true" signature="274:388" ph="{...}" />
-                <marker date="1533108610063" expanded="true" signature="443:503" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RotateScript.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RotateScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="792">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding>
-                <marker date="1533108620618" expanded="true" signature="6:92" ph="..." />
-                <marker date="1533108620618" expanded="true" signature="135:834" ph="{...}" />
-                <marker date="1533108620618" expanded="true" signature="379:421" ph="{...}" />
-                <marker date="1533108620618" expanded="true" signature="475:632" ph="{...}" />
-                <marker date="1533108620618" expanded="true" signature="685:791" ph="{...}" />
-                <marker date="1533108620618" expanded="true" signature="823:832" ph="{...}" />
+                <marker date="1533109385274" expanded="true" signature="6:92" ph="..." />
+                <marker date="1533109385274" expanded="true" signature="135:817" ph="{...}" />
+                <marker date="1533109385274" expanded="true" signature="379:421" ph="{...}" />
+                <marker date="1533109385274" expanded="true" signature="475:632" ph="{...}" />
+                <marker date="1533109385274" expanded="true" signature="685:774" ph="{...}" />
+                <marker date="1533109385274" expanded="true" signature="806:815" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -201,7 +183,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FindRightPosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/IncreaseRotationSpeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinishLineReached.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" root0="FORCE_HIGHLIGHTING" />
@@ -318,12 +299,12 @@
       <workItem from="1532993870190" duration="3457000" />
       <workItem from="1533024778600" duration="807000" />
       <workItem from="1533037994422" duration="2915000" />
-      <workItem from="1533108138769" duration="537000" />
+      <workItem from="1533108138769" duration="703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44565000" />
+    <option name="totallyTimeSpent" value="44731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -717,26 +698,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <marker date="1533108610063" expanded="false" signature="6:78" ph="..." />
-            <marker date="1533108610063" expanded="true" signature="130:505" ph="{...}" />
-            <marker date="1533108610063" expanded="true" signature="274:388" ph="{...}" />
-            <marker date="1533108610063" expanded="true" signature="443:503" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RotateScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="792">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
-            <marker date="1533108620618" expanded="true" signature="6:92" ph="..." />
-            <marker date="1533108620618" expanded="true" signature="135:834" ph="{...}" />
-            <marker date="1533108620618" expanded="true" signature="379:421" ph="{...}" />
-            <marker date="1533108620618" expanded="true" signature="475:632" ph="{...}" />
-            <marker date="1533108620618" expanded="true" signature="685:791" ph="{...}" />
-            <marker date="1533108620618" expanded="true" signature="823:832" ph="{...}" />
+            <marker date="1533109385274" expanded="true" signature="6:92" ph="..." />
+            <marker date="1533109385274" expanded="true" signature="135:817" ph="{...}" />
+            <marker date="1533109385274" expanded="true" signature="379:421" ph="{...}" />
+            <marker date="1533109385274" expanded="true" signature="475:632" ph="{...}" />
+            <marker date="1533109385274" expanded="true" signature="685:774" ph="{...}" />
+            <marker date="1533109385274" expanded="true" signature="806:815" ph="{...}" />
           </folding>
         </state>
       </provider>

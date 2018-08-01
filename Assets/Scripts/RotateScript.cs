@@ -36,7 +36,7 @@ public class RotateScript : MonoBehaviour
 	public void IncreaseRotationSpeed(float increment)
 	{
 		if(OnIncreaseSpeed != null) OnIncreaseSpeed(this);
-		rotationSpeed += increment * Time.deltaTime;
+		rotationSpeed += increment;
 	}
 	
 
