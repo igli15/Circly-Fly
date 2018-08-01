@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RotateScript : MonoBehaviour
 {
-
+	private Action<RotateScript> OnIncreaseSpeed;
+	
 	[SerializeField] 
 	[Range(0,100)]
 	private float rotationSpeed = 2;
@@ -29,6 +31,12 @@ public class RotateScript : MonoBehaviour
 		transform.RotateAround(target.transform.position,new Vector3(0,0,1),-rotationSpeed * Time.deltaTime);
 
 		
+	}
+
+	public void IncreaseRotationSpeed(float increment)
+	{
+		if(OnIncreaseSpeed != null) OnIncreaseSpeed(this);
+		rotationSpeed += increment * Time.deltaTime;
 	}
 	
 

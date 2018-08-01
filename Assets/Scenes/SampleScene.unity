@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 314894144}
   - component: {fileID: 314894146}
   - component: {fileID: 314894145}
+  - component: {fileID: 314894143}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -262,6 +263,18 @@ SpringJoint2D:
   m_Distance: 2.23
   m_DampingRatio: 0
   m_Frequency: 1.7
+--- !u!114 &314894143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314894136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speedincrement: 100
 --- !u!114 &314894144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingSpeed: 30
+  torqueForce: 0.6
 --- !u!114 &314894146
 MonoBehaviour:
   m_ObjectHideFlags: 0
