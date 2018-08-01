@@ -46,6 +46,7 @@ public class FindRightPosition : MonoBehaviour
 		IncreaseScale();
 		
 		
+		
 	}
 
 	// Update is called once per frame
