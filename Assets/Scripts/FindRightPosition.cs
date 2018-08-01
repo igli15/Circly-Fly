@@ -1,35 +1,52 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
+using DG.Tweening.Core;
 using UnityEngine;
 
 public class FindRightPosition : MonoBehaviour
 {
-	
+
 	private GameObject finishLine;
 	
 	private GameObject spawner;
 
-	private CircleCollider2D spawnerCollider;
+	private Vector3 initLocalScale;
 
 	[SerializeField]
 	[Range(0.1f,1.5f)]
 	private float distanceBetweenObstacles = 1f;
 
-	[SerializeField] [Range(0.1f, 4)] 
+	[SerializeField] 
+	[Range(0.1f, 4)] 
 	private float distanceFromStartLine = 2.5f;
+
+	[SerializeField] 
+	[Range(0, 1f)] 
+	private float scaleTime = 0.2f;
+
+	
+	private LevelData leveldata;
 	
 	private void Start()
 	{	
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
-		spawnerCollider = spawner.GetComponent<CircleCollider2D>();
+		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();
+			
 		
+		
+	
 		SpawnObstacles.obstacles.Add(gameObject);
 
+		initLocalScale = transform.lossyScale;
 
 		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
+		FinishLineReached.OnFinishLineReached += IncreaseScale;
+		
 		
 		SpawnCorrectly();
+		IncreaseScale();
 		
 		
 	}
@@ -82,6 +99,15 @@ public class FindRightPosition : MonoBehaviour
 			} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
 		}
 
+	}
+
+	private void IncreaseScale(FinishLineReached sender = null)
+	{
+		if (this != null)
+		{
+			transform.localScale = Vector3.zero;
+			transform.DOScale(initLocalScale, scaleTime);
+		}
 	}
 
 }

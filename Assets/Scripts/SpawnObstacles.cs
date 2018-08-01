@@ -5,33 +5,61 @@ using UnityEngine;
 public class SpawnObstacles : MonoBehaviour
 {
 
-
 	public static List<GameObject> obstacles;
 
 	[SerializeField] 
 	private GameObject obstacle;
 
-	private float amountOfObstacles = 10;
+	[SerializeField] 
+	private LevelData levelData;
+
+	private int amountOfObstacles = 0;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		obstacles = new List<GameObject>();
-		SpawnObstacle();
+		FinishLineReached.OnFinishLineReached += SpawnRightAmountOfObstacles;
 	}
 	
-	// Update is called once per frame
-	void Update () 
+	private void SpawnObstacle(int pAmountOfObstacles)
 	{
+		pAmountOfObstacles = amountOfObstacles - obstacles.Count;
+		if (pAmountOfObstacles <= 0)
+		{
+			pAmountOfObstacles = 0;
+		}	
 		
+		for (int i = 0; i < pAmountOfObstacles; i++)
+		{
+			if(this != null)
+			Instantiate(obstacle, transform.position, Quaternion.identity);
+		}
 	}
 
-	private void SpawnObstacle()
+	private void SpawnRightAmountOfObstacles(FinishLineReached sender = null)
 	{
-
-		for (int i = 0; i < amountOfObstacles; i++)
+		
+		if (levelData.GetLevelIndex() <= 2)
 		{
-			GameObject _obstacle = Instantiate(obstacle, transform.position, Quaternion.identity);
+			amountOfObstacles = Random.Range(4, 6);
+			SpawnObstacle(amountOfObstacles);
 		}
+		else if (levelData.GetLevelIndex() <= 4 && levelData.GetLevelIndex() > 2)
+		{
+			amountOfObstacles = Random.Range(6, 8);
+			SpawnObstacle(amountOfObstacles);
+		}
+		else if (levelData.GetLevelIndex() <= 6 && levelData.GetLevelIndex() > 4)
+		{
+			amountOfObstacles = Random.Range(8, 10);
+			SpawnObstacle(amountOfObstacles);
+		}
+		else if(levelData.GetLevelIndex() > 6)
+		{
+			amountOfObstacles = Random.Range(10, 14);
+			SpawnObstacle(amountOfObstacles);
+		}
+
 	}
 }

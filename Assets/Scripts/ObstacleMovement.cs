@@ -12,16 +12,11 @@ public class ObstacleMovement : MonoBehaviour
 
 	private Rigidbody2D rb;
 
-	private float thrustTime;
-
-	private GameObject spawner;
-	
 	// Use this for initialization
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody2D>();
 		
-		spawner = GameObject.FindGameObjectWithTag("spawner");
 
 		thrustUp = true;
 	}
@@ -59,12 +54,12 @@ public class ObstacleMovement : MonoBehaviour
 	{
 		thrustUp = true;
 		speed = Random.Range(0.5f, 1f);
-		thrustTime = Random.Range(2, 5);
+		
 	}
 	private void SetThrustToFalse()
 	{
 		thrustUp = false;
 		speed = Random.Range(0.5f, 1f);
-		thrustTime = Random.Range(2, 5);
+		
 	}
 }
