@@ -23,8 +23,7 @@ public class ScoreBehaviour : MonoBehaviour
 
 	private void IncreaseScore(PlayerCollisions sender)
 	{
-		score += 1;
-		
+		score += scoreIncrement;
 		if(text != null)
 		text.text = text.text = score.ToString();
 	}
