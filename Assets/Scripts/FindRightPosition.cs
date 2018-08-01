@@ -35,11 +35,11 @@ public class FindRightPosition : MonoBehaviour
 		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();
 			
 		
-		
+		transform.localScale += new Vector3(Random.Range(0,0.05f),Random.Range(0,0.08f),Random.Range(0,0.05f));
 	
 		SpawnObstacles.obstacles.Add(gameObject);
 
-		initLocalScale = transform.lossyScale;
+		initLocalScale = transform.localScale;
 
 		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
 		FinishLineReached.OnFinishLineReached += IncreaseScale;
