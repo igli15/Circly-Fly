@@ -2,25 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GemScript : MonoBehaviour {
+public class GemScript : MonoBehaviour ,IPooleableObject
+{
 
 	public enum GemType
 	{
-		GREEN,
-		BLUE,
-		RAREBLUE
+		GreenGem,
+		BlueGem,
+		RareBlueGem
 	}
 
 	public GemType gemType;
-	
-	
-	// Use this for initialization
-	void Start () {
-		
+
+	private FindRightPosition findRightPosition;
+
+
+	private void Awake()
+	{
+		findRightPosition = GetComponent<FindRightPosition>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+	public void OnObjectSpawn()
+	{
+		SpawnObstacles.gems.Add(this);
+		findRightPosition.SpawnCorrectly();
+	}
+
+	
+	
 }
