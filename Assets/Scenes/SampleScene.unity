@@ -113,6 +113,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &191728637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 191728639}
+  - component: {fileID: 191728638}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &191728638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191728637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3dad684a435d484e8e4b8c1fa26f1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: GreenGem
+    prefab: {fileID: 1137677948381430, guid: 9c68bd2c61d214d37916229b1e9861c4, type: 2}
+    size: 5
+  - tag: BlueGem
+    prefab: {fileID: 1521751674767796, guid: 5c76b17374f70404083e7c2bc860a70e, type: 2}
+    size: 5
+  - tag: RareBlueGem
+    prefab: {fileID: 1638475647811294, guid: d5448836f955a495f9f336a187a0df93, type: 2}
+    size: 5
+--- !u!4 &191728639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191728637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.902867, y: -4.853529, z: 0.074219294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314894136
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,8 +657,9 @@ GameObject:
   - component: {fileID: 947134675}
   - component: {fileID: 947134674}
   - component: {fileID: 947134672}
-  - component: {fileID: 947134676}
   - component: {fileID: 947134673}
+  - component: {fileID: 947134676}
+  - component: {fileID: 947134677}
   m_Layer: 0
   m_Name: Circle
   m_TagString: spawner
@@ -723,6 +774,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 1235341570770814, guid: acb565ac66a1a4eb096fcf0526c0edfc, type: 2}
   levelData: {fileID: 560521941}
+--- !u!114 &947134677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947134671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19f8e761657e49f7b2d8098e7b5f5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gem: {fileID: 0}
 --- !u!1 &1144138710
 GameObject:
   m_ObjectHideFlags: 0

@@ -60,13 +60,16 @@
     <Compile Include="Assets\Scripts\FindRightPosition.cs" />
     <Compile Include="Assets\Scripts\FinishLineReached.cs" />
     <Compile Include="Assets\Scripts\IncreaseRotationSpeed.cs" />
+    <Compile Include="Assets\Scripts\IPooleableObject.cs" />
     <Compile Include="Assets\Scripts\JumpScript.cs" />
     <Compile Include="Assets\Scripts\LevelData.cs" />
+    <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\ObstacleMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\ScoreBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SpawnGems.cs" />
     <Compile Include="Assets\Scripts\SpawnObstacles.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
