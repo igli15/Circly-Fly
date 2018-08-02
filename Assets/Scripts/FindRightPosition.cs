@@ -28,27 +28,28 @@ public class FindRightPosition : MonoBehaviour
 	
 	private LevelData leveldata;
 
+	
 
 	private void Awake()
 	{
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
-		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();
+		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();		
+		
+		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
+		//SpawnCorrectly();
+		
+	}
 
+	private void Start()
+	{
 		if (transform.CompareTag("obstacle"))
 		{
 			SpawnObstacles.obstacles.Add(gameObject);
 		}
 		
-		if (findNewPosOnFinishLine)
-
-		{
-			FinishLineReached.OnFinishLineReached += SpawnCorrectly;
-			SpawnCorrectly();
-		}
+		SpawnCorrectly();
 	}
-
-	
 
 	private bool IsNear()
 	{
@@ -62,6 +63,7 @@ public class FindRightPosition : MonoBehaviour
 				}
 				return true;
 			}	
+			
 		}
 
 		return false;

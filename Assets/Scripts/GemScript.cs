@@ -16,23 +16,18 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 
 	private FindRightPosition findRightPosition;
 
-
-	private void Awake()
-	{
-		findRightPosition = GetComponent<FindRightPosition>();
-	}
-
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
 
 	public void OnObjectSpawn()
 	{
+		findRightPosition = GetComponent<FindRightPosition>();
 		SpawnObstacles.gems.Add(this);
 		findRightPosition.SpawnCorrectly();
 	}
 
-	
 	
 }

@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b168d06fdf71d4a2e912d11ebf5092b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceBetweenObstacles: 1
+  distanceBetweenObstacles: 0.4
   distanceFromStartLine: 2.5
   findNewPosOnFinishLine: 0
 --- !u!114 &114952272134931002
