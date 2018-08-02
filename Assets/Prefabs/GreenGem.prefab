@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4794346777044312}
   - component: {fileID: 212272528164850274}
+  - component: {fileID: 114212314251879104}
+  - component: {fileID: 114663634002848568}
   m_Layer: 0
   m_Name: GreenGem
   m_TagString: Untagged
@@ -40,6 +42,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114212314251879104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137677948381430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c9d91f0075a4450abd1d7b50c754dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 0
+--- !u!114 &114663634002848568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137677948381430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b168d06fdf71d4a2e912d11ebf5092b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceBetweenObstacles: 0.1
+  distanceFromStartLine: 2.5
+  scaleTime: 0.2
 --- !u!212 &212272528164850274
 SpriteRenderer:
   m_ObjectHideFlags: 1

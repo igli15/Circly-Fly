@@ -57,8 +57,10 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\IncreaseScaleOnSpawn.cs" />
     <Compile Include="Assets\Scripts\FindRightPosition.cs" />
     <Compile Include="Assets\Scripts\FinishLineReached.cs" />
+    <Compile Include="Assets\Scripts\GemScript.cs" />
     <Compile Include="Assets\Scripts\IncreaseRotationSpeed.cs" />
     <Compile Include="Assets\Scripts\IPooleableObject.cs" />
     <Compile Include="Assets\Scripts\JumpScript.cs" />

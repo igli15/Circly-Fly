@@ -16,9 +16,11 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="IncreaseScaleOnSpawn.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="FindRightPosition.cs" t="Include" />
           <e p="FinishLineReached.cs" t="Include" />
+          <e p="GemScript.cs" t="Include" />
           <e p="IncreaseRotationSpeed.cs" t="Include" />
           <e p="IPooleableObject.cs" t="Include" />
           <e p="JumpScript.cs" t="Include" />

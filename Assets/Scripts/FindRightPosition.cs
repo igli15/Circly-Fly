@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using DG.Tweening.Core;
 using UnityEngine;
 
 public class FindRightPosition : MonoBehaviour
@@ -33,29 +32,17 @@ public class FindRightPosition : MonoBehaviour
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
 		spawner = GameObject.FindGameObjectWithTag("spawner");
 		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();
-			
-		
-		transform.localScale += new Vector3(Random.Range(0,0.05f),Random.Range(0,0.08f),Random.Range(0,0.05f));
-	
+
+		if (transform.CompareTag("obstacle")) 
 		SpawnObstacles.obstacles.Add(gameObject);
 
-		initLocalScale = transform.localScale;
-
 		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
-		FinishLineReached.OnFinishLineReached += IncreaseScale;
-		
 		
 		SpawnCorrectly();
-		IncreaseScale();
-		
 		
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
 
-	}
 
 	private bool IsNear()
 	{
@@ -99,15 +86,6 @@ public class FindRightPosition : MonoBehaviour
 			} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
 		}
 
-	}
-
-	private void IncreaseScale(FinishLineReached sender = null)
-	{
-		if (this != null)
-		{
-			transform.localScale = Vector3.zero;
-			transform.DOScale(initLocalScale, scaleTime);
-		}
 	}
 
 }
