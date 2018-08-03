@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GemScript : MonoBehaviour ,IPooleableObject
 {
@@ -38,10 +40,18 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 
 	private void OnDisable()
 	{
-		if (SpawnObstacles.gems.Contains(this))
+		try
 		{
-			SpawnObstacles.gems.Remove(this);
+			if (SpawnObstacles.gems.Contains(this))
+			{
+				SpawnObstacles.gems.Remove(this);
+			}
 		}
+		catch (Exception e)
+		{
+			Debug.Log("collection was modified");
+		}
+	
 	}
 
 

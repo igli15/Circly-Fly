@@ -49,9 +49,9 @@ public class SpawnObstacles : MonoBehaviour
 
 		if (gems.Count > 0)
 		{
-			foreach (GemScript gem in gems)
+			for (int i = 0; i < gems.Count; i++)
 			{
-				ObjectPooler.instance.DestroyFromPool(gem.gemType.ToString(),gem.gameObject);
+				ObjectPooler.instance.DestroyFromPool(gems[i].gemType.ToString(),gems[i].gameObject);
 			}
 			
 			gems.Clear();
