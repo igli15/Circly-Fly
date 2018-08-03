@@ -50,7 +50,7 @@ public class SpawnObstacles : MonoBehaviour
 			}
 		}
 
-		if (gems.Count > 0)
+		/*if (gems.Count > 0)
 		{
 			for (int i = 0; i < gems.Count; i++)
 			{
@@ -58,7 +58,7 @@ public class SpawnObstacles : MonoBehaviour
 			}
 			
 			gems.Clear();
-		}
+		}*/
 
 		for (int i = 0; i < amountOfGemsToSpawn; i++)
 		{

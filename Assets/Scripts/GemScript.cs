@@ -25,12 +25,18 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 
 	private FindRightPosition findRightPosition;
 
+	
 	// Update is called once per frame
 	void Update () 
 	{
 		
 	}
-
+	
+	private void Start()
+	{
+		FinishLineReached.OnFinishLineReached += RemoveGem;
+		transform.position += transform.up * Random.Range(minGemHeight, maxGemHeight);
+	}
 	public void OnObjectSpawn()
 	{
 		findRightPosition = GetComponent<FindRightPosition>();
@@ -38,9 +44,17 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 		findRightPosition.SpawnCorrectly();
 	}
 
-
-	private void Start()
+	private void RemoveGem(FinishLineReached sender)
 	{
-		transform.position += transform.up * Random.Range(minGemHeight, maxGemHeight);
+		if (this != null)
+		{
+			if (SpawnObstacles.gems.Contains(this))
+			{
+				SpawnObstacles.gems.Remove(this);
+			}
+
+			ObjectPooler.instance.DestroyFromPool(gemType.ToString(), gameObject);
+		}
 	}
+
 }
