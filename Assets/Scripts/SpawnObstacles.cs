@@ -17,6 +17,9 @@ public class SpawnObstacles : MonoBehaviour
 	[SerializeField] 
 	private LootScript lootScript;
 
+	[SerializeField] 
+	private int amountOfGemsToSpawn = 2;
+
 
 	private int amountOfObstacles = 0;
 
@@ -56,9 +59,12 @@ public class SpawnObstacles : MonoBehaviour
 			
 			gems.Clear();
 		}
-		
-		if(lootScript != null)
-		lootScript.GenerateLootItem();
+
+		for (int i = 0; i < amountOfGemsToSpawn; i++)
+		{
+			if (lootScript != null)
+				lootScript.GenerateLootItem();
+		}
 	}
 	
 

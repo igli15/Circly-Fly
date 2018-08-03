@@ -38,22 +38,6 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 		findRightPosition.SpawnCorrectly();
 	}
 
-	private void OnDisable()
-	{
-		try
-		{
-			if (SpawnObstacles.gems.Contains(this))
-			{
-				SpawnObstacles.gems.Remove(this);
-			}
-		}
-		catch (Exception e)
-		{
-			Debug.Log("collection was modified");
-		}
-	
-	}
-
 
 	private void Start()
 	{
