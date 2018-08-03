@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\Scripts\CollectedGem.cs" />
     <Compile Include="Assets\Scripts\FindRightPosition.cs" />
     <Compile Include="Assets\Scripts\FinishLineReached.cs" />
     <Compile Include="Assets\Scripts\GemScript.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\ObstacleMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerCollisions.cs" />
+    <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\ScoreBehaviour.cs" />

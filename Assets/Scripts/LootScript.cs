@@ -42,8 +42,7 @@ public class LootScript : MonoBehaviour
 			for (int i = 0; i < lootItems.Count; i++)
 			{
 				_itemWeight += lootItems[i].rarity;
-			}
-
+			} 
 			int _randomValue = Random.Range(0, _itemWeight);
 
 			for (int j = 0; j < lootItems.Count; j++)

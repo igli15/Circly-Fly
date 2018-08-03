@@ -17,6 +17,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CollectedGem.cs" t="Include" />
           <e p="FindRightPosition.cs" t="Include" />
           <e p="FinishLineReached.cs" t="Include" />
           <e p="GemScript.cs" t="Include" />
@@ -29,6 +30,7 @@
           <e p="ObjectPooler.cs" t="Include" />
           <e p="ObstacleMovement.cs" t="Include" />
           <e p="PlayerCollisions.cs" t="Include" />
+          <e p="PlayerData.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
           <e p="RotateScript.cs" t="Include" />
           <e p="ScoreBehaviour.cs" t="Include" />

@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 212681466073729726}
   - component: {fileID: 50491263940162882}
   - component: {fileID: 61918190481744980}
-  - component: {fileID: 114448166025179662}
   - component: {fileID: 114770631127724994}
+  - component: {fileID: 114448166025179662}
+  - component: {fileID: 114674816845631898}
   m_Layer: 0
   m_Name: RareBlueGem
   m_TagString: gem
@@ -101,6 +102,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gemType: 2
+  maxGemHeight: 0.4
+  minGemHeight: 0.2
+--- !u!114 &114674816845631898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1638475647811294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55312435b5154bec880700285d44c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114770631127724994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +128,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceBetweenObstacles: 0.4
   distanceFromStartLine: 2.5
-  findNewPosOnFinishLine: 0
 --- !u!212 &212681466073729726
 SpriteRenderer:
   m_ObjectHideFlags: 1

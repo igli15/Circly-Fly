@@ -22,23 +22,12 @@ public class FindRightPosition : MonoBehaviour
 	[Range(0.1f, 4)] 
 	private float distanceFromStartLine = 2.5f;
 
-
-	[SerializeField] 
-	private bool findNewPosOnFinishLine = true;
-	
-	private LevelData leveldata;
-
-	
-
 	private void Awake()
 	{
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
-		spawner = GameObject.FindGameObjectWithTag("spawner");
-		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();		
+		spawner = GameObject.FindGameObjectWithTag("spawner");	
 		
 		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
-		//SpawnCorrectly();
-		
 	}
 
 	private void Start()
@@ -57,10 +46,6 @@ public class FindRightPosition : MonoBehaviour
 		{
 			if (!obj.gameObject.Equals(gameObject) && Vector2.Distance(transform.position, obj.transform.position) <= distanceBetweenObstacles)
 			{					
-				if (CompareTag("gem"))
-				{
-					Debug.Log(Vector2.Distance(transform.position, obj.transform.position));
-				}
 				return true;
 			}	
 			

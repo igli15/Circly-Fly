@@ -8,6 +8,7 @@ public class PlayerCollisions : MonoBehaviour
 {
 	public static Action<PlayerCollisions> OnObstacleHit;
 	public static Action<PlayerCollisions> OnObstaclePass;
+	public static Action<Collision2D> OnGemCollected;
 	
 	private void OnTriggerEnter2D(Collider2D other)
 	{
@@ -30,5 +31,14 @@ public class PlayerCollisions : MonoBehaviour
 				OnObstacleHit(this);
 			}
 		}
+		
+		if (other.transform.CompareTag("gem"))
+		{
+			if (null != OnGemCollected)
+			{
+				OnGemCollected(other);
+			}
+		}
+
 	}
 }

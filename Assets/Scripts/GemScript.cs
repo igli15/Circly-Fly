@@ -5,6 +5,7 @@ using UnityEngine;
 public class GemScript : MonoBehaviour ,IPooleableObject
 {
 
+	
 	public enum GemType
 	{
 		GreenGem,
@@ -13,6 +14,12 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 	}
 
 	public GemType gemType;
+
+	[SerializeField] 
+	private float maxGemHeight = 0.6f;
+
+	[SerializeField] 
+	private float minGemHeight = 0.2f;
 
 	private FindRightPosition findRightPosition;
 
@@ -29,5 +36,17 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 		findRightPosition.SpawnCorrectly();
 	}
 
-	
+	private void OnDisable()
+	{
+		if (SpawnObstacles.gems.Contains(this))
+		{
+			SpawnObstacles.gems.Remove(this);
+		}
+	}
+
+
+	private void Start()
+	{
+		transform.position += transform.up * Random.Range(minGemHeight, maxGemHeight);
+	}
 }

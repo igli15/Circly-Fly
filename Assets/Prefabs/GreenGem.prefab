@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50277313443732122}
   - component: {fileID: 114355607973478550}
   - component: {fileID: 114819497374359184}
+  - component: {fileID: 114261158560870494}
   m_Layer: 0
   m_Name: GreenGem
   m_TagString: gem
@@ -89,6 +90,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.3, y: 7.75}
   m_EdgeRadius: 0
+--- !u!114 &114261158560870494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1137677948381430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55312435b5154bec880700285d44c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114355607973478550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,7 +114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceBetweenObstacles: 0.4
   distanceFromStartLine: 2.5
-  findNewPosOnFinishLine: 0
 --- !u!114 &114819497374359184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,6 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gemType: 0
+  maxGemHeight: 0.4
+  minGemHeight: 0.2
 --- !u!212 &212272528164850274
 SpriteRenderer:
   m_ObjectHideFlags: 1

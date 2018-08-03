@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 212889179951330106}
   - component: {fileID: 50836821075059300}
   - component: {fileID: 61122053009877328}
-  - component: {fileID: 114952272134931002}
   - component: {fileID: 114528399348298416}
+  - component: {fileID: 114952272134931002}
+  - component: {fileID: 114908634077613958}
   m_Layer: 0
   m_Name: BlueGem
   m_TagString: gem
@@ -102,7 +103,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceBetweenObstacles: 0.4
   distanceFromStartLine: 2.5
-  findNewPosOnFinishLine: 0
+--- !u!114 &114908634077613958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521751674767796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55312435b5154bec880700285d44c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114952272134931002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,6 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gemType: 1
+  maxGemHeight: 0.4
+  minGemHeight: 0.2
 --- !u!212 &212889179951330106
 SpriteRenderer:
   m_ObjectHideFlags: 1
