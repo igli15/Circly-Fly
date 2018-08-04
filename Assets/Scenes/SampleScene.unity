@@ -141,13 +141,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - tag: GreenGem
+  - tag: tier3Gem
     prefab: {fileID: 1137677948381430, guid: 9c68bd2c61d214d37916229b1e9861c4, type: 2}
     size: 5
-  - tag: BlueGem
+  - tag: tier2Gem
     prefab: {fileID: 1521751674767796, guid: 5c76b17374f70404083e7c2bc860a70e, type: 2}
     size: 5
-  - tag: RareBlueGem
+  - tag: tier1Gem
     prefab: {fileID: 1638475647811294, guid: d5448836f955a495f9f336a187a0df93, type: 2}
     size: 5
 --- !u!4 &191728639
@@ -463,6 +463,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5846c088b07294216b8c0fc2c68f545e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highscore: 0
+  tier3GemCount: 0
+  tier2GemCount: 0
+  tier1GemCount: 0
+  tier1Gem: {fileID: 0}
+  tier2Gem: {fileID: 0}
+  tier3Gem: {fileID: 0}
 --- !u!4 &395693286
 Transform:
   m_ObjectHideFlags: 0
@@ -858,15 +865,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropLootChance: 100
   lootItems:
-  - name: GreenGem
+  - name: tier3Gem
     rarity: 70
     lootPrefab: {fileID: 1137677948381430, guid: 9c68bd2c61d214d37916229b1e9861c4,
       type: 2}
-  - name: BlueGem
+  - name: tier2Gem
     rarity: 30
     lootPrefab: {fileID: 1521751674767796, guid: 5c76b17374f70404083e7c2bc860a70e,
       type: 2}
-  - name: RareBlueGem
+  - name: tier1Gem
     rarity: 5
     lootPrefab: {fileID: 1638475647811294, guid: d5448836f955a495f9f336a187a0df93,
       type: 2}

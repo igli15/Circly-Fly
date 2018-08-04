@@ -10,9 +10,9 @@ public class GemScript : MonoBehaviour ,IPooleableObject
 	
 	public enum GemType
 	{
-		GreenGem,
-		BlueGem,
-		RareBlueGem
+		tier3Gem,
+		tier2Gem,
+		tier1Gem
 	}
 
 	public GemType gemType;
