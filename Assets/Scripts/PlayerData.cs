@@ -31,7 +31,7 @@ public class PlayerData : MonoBehaviour
 		}
 		catch (Exception e)
 		{
-			Debug.Log("no file yet");
+			Debug.Log(e);
 		}
 	
 	}
@@ -45,6 +45,8 @@ public class PlayerData : MonoBehaviour
 		PlayerCollisions.OnObstaclePass += sender => levelScore += 1;
 		
 		PlayerCollisions.OnGemCollected += CheckGem;
+		
+		Debug.Log("highscore is " + highscore);
 	}
 
 	private void CheckHighscore(PlayerCollisions sender)
@@ -67,13 +69,13 @@ public class PlayerData : MonoBehaviour
 
 		string data = JsonUtility.ToJson(this,true);
 		
-		File.WriteAllText(Application.dataPath + "/PlayerData.json",data);
-		Debug.Log(data);
+		File.WriteAllText(Application.persistentDataPath + "/PlayerData.json",Encryption.Encrypt(data));
+		//Debug.Log(data);
 	}
 
 	public void Load()
 	{
-		string loadedData = File.ReadAllText(Application.dataPath + "/PlayerData.json");
+		string loadedData = Encryption.Decrypt(File.ReadAllText(Application.persistentDataPath + "/PlayerData.json"));
 		JsonUtility.FromJsonOverwrite(loadedData,this);
 	}
 	
