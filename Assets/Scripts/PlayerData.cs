@@ -31,7 +31,7 @@ public class PlayerData : MonoBehaviour
 		}
 		catch (Exception e)
 		{
-			Debug.Log("no file yet");
+			Debug.Log(e);
 		}
 	
 	}
@@ -67,13 +67,13 @@ public class PlayerData : MonoBehaviour
 
 		string data = JsonUtility.ToJson(this,true);
 		
-		File.WriteAllText(Application.dataPath + "/PlayerData.json",data);
+		File.WriteAllText(Application.streamingAssetsPath + "/PlayerData.json",Encryption.Encrypt(data));
 		Debug.Log(data);
 	}
 
 	public void Load()
 	{
-		string loadedData = File.ReadAllText(Application.dataPath + "/PlayerData.json");
+		string loadedData = Encryption.Decrypt(File.ReadAllText(Application.streamingAssetsPath + "/PlayerData.json"));
 		JsonUtility.FromJsonOverwrite(loadedData,this);
 	}
 	
