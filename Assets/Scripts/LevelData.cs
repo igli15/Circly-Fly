@@ -6,12 +6,17 @@ public class LevelData : MonoBehaviour
 {
 
 	private int levelIndex = 0;
+
+	[SerializeField] 
+	private LootScript lootScript;
 	
 	
 	// Use this for initialization
 	void Start ()
 	{
 		FinishLineReached.OnFinishLineReached += IncreaseLevelIndex;
+		//lootScript.GenerateLootItem();
+		
 	}
 	
 	// Update is called once per frame
@@ -19,6 +24,7 @@ public class LevelData : MonoBehaviour
 	{
 		
 	}
+
 
 	public int GetLevelIndex()
 	{
@@ -30,4 +36,5 @@ public class LevelData : MonoBehaviour
 	{
 		levelIndex += 1;
 	}
+	
 }

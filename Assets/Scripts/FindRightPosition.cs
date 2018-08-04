@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using DG.Tweening.Core;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class FindRightPosition : MonoBehaviour
 {
@@ -21,51 +22,33 @@ public class FindRightPosition : MonoBehaviour
 	[Range(0.1f, 4)] 
 	private float distanceFromStartLine = 2.5f;
 
-	[SerializeField] 
-	[Range(0, 1f)] 
-	private float scaleTime = 0.2f;
-
-	
-	private LevelData leveldata;
-	
-	private void Start()
-	{	
+	private void Awake()
+	{
 		finishLine = GameObject.FindGameObjectWithTag("finishLine");
-		spawner = GameObject.FindGameObjectWithTag("spawner");
-		leveldata = GameObject.FindGameObjectWithTag("levelManager").GetComponent<LevelData>();
-			
+		spawner = GameObject.FindGameObjectWithTag("spawner");	
 		
-		transform.localScale += new Vector3(Random.Range(0,0.05f),Random.Range(0,0.08f),Random.Range(0,0.05f));
-	
-		SpawnObstacles.obstacles.Add(gameObject);
-
-		initLocalScale = transform.localScale;
-
 		FinishLineReached.OnFinishLineReached += SpawnCorrectly;
-		FinishLineReached.OnFinishLineReached += IncreaseScale;
-		
-		
-		SpawnCorrectly();
-		IncreaseScale();
-		
-		
 	}
 
-	// Update is called once per frame
-	void Update()
+	private void Start()
 	{
-
+		if (transform.CompareTag("obstacle"))
+		{
+			SpawnObstacles.obstacles.Add(gameObject);
+		}
+		
+		SpawnCorrectly();
 	}
 
 	private bool IsNear()
 	{
 		foreach (GameObject obj in SpawnObstacles.obstacles)
 		{
-			
-			if (obj.transform != transform && Vector2.Distance(transform.position, obj.transform.position) <= distanceBetweenObstacles)
-			{
+			if (!obj.gameObject.Equals(gameObject) && Vector2.Distance(transform.position, obj.transform.position) <= distanceBetweenObstacles)
+			{					
 				return true;
-			}
+			}	
+			
 		}
 
 		return false;
@@ -81,10 +64,14 @@ public class FindRightPosition : MonoBehaviour
 
 			_pos += new Vector2(spawner.transform.position.x,spawner.transform.position.y); //If the circle moves it moves with the circle
 			
-			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _center - _pos);
+			Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _pos - _center);
 
             transform.position = new Vector3(_pos.x,_pos.y,0);
 			transform.rotation = _rot;
+		}
+		else
+		{
+			throw new Exception("spawner is null");
 		}
 	}
 
@@ -98,16 +85,7 @@ public class FindRightPosition : MonoBehaviour
 
 			} while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine || IsNear());
 		}
-
-	}
-
-	private void IncreaseScale(FinishLineReached sender = null)
-	{
-		if (this != null)
-		{
-			transform.localScale = Vector3.zero;
-			transform.DOScale(initLocalScale, scaleTime);
-		}
+		
 	}
 
 }

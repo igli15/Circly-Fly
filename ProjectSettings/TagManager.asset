@@ -8,6 +8,8 @@ TagManager:
   - obstacle
   - finishLine
   - levelManager
+  - gem
+  - lootManager
   layers:
   - Default
   - TransparentFX
