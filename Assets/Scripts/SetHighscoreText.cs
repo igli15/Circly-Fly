@@ -7,7 +7,7 @@ public class SetHighscoreText : MonoBehaviour
 {
 	private Text text;
 
-	private void Start()
+	private void OnEnable()
 	{
 		text = GetComponent<Text>();
 

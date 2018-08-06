@@ -22,6 +22,11 @@
           <e p="Encryption.cs" t="Include" />
           <e p="FindRightPosition.cs" t="Include" />
           <e p="FinishLineReached.cs" t="Include" />
+          <e p="FSM" t="Include">
+            <e p="AbstractState.cs" t="Include" />
+            <e p="FSM.cs" t="Include" />
+            <e p="IAgent.cs" t="Include" />
+          </e>
           <e p="GemScript.cs" t="Include" />
           <e p="IncreaseRotationSpeed.cs" t="Include" />
           <e p="IncreaseScaleOnSpawn.cs" t="Include" />
@@ -39,6 +44,11 @@
           <e p="SetGemCountText.cs" t="Include" />
           <e p="SetHighscoreText.cs" t="Include" />
           <e p="SpawnObstacles.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
+          <e p="UIStates" t="Include">
+            <e p="LevelUIState.cs" t="Include" />
+            <e p="MenuUIState.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />

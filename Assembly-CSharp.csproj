@@ -62,6 +62,9 @@
     <Compile Include="Assets\Scripts\Encryption.cs" />
     <Compile Include="Assets\Scripts\FindRightPosition.cs" />
     <Compile Include="Assets\Scripts\FinishLineReached.cs" />
+    <Compile Include="Assets\Scripts\FSM\AbstractState.cs" />
+    <Compile Include="Assets\Scripts\FSM\Fsm.cs" />
+    <Compile Include="Assets\Scripts\FSM\IAgent.cs" />
     <Compile Include="Assets\Scripts\GemScript.cs" />
     <Compile Include="Assets\Scripts\IncreaseRotationSpeed.cs" />
     <Compile Include="Assets\Scripts\IncreaseScaleOnSpawn.cs" />
@@ -79,6 +82,9 @@
     <Compile Include="Assets\Scripts\SetGemCountText.cs" />
     <Compile Include="Assets\Scripts\SetHighscoreText.cs" />
     <Compile Include="Assets\Scripts\SpawnObstacles.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\UIStates\LevelUIState.cs" />
+    <Compile Include="Assets\Scripts\UIStates\MenuUIState.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

@@ -8,6 +8,10 @@ using UnityEngine.UI;
 [Serializable]
 public class PlayerData : MonoBehaviour
 {
+
+    [SerializeField] 
+    private UIManager uiManager;
+    
     [HideInInspector] public int highscore = 0;
 
     private int levelScore;
@@ -40,16 +44,15 @@ public class PlayerData : MonoBehaviour
 
         PlayerCollisions.OnGemCollected += CheckGem;
 
-        if (OnHighScoreChanged != null) OnHighScoreChanged(this);
+        
     }
 
     private void Update()
-    {
-        if (!callOnce)  //just to make sure the text object is not null on load....
-        {
+    {  
+            if (OnHighScoreChanged != null) OnHighScoreChanged(this);
             if (OnGemCountChanged != null) OnGemCountChanged(this);
             callOnce = true;
-        }
+        
     }
 
 

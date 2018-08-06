@@ -2,6 +2,7 @@
 
 public class JumpScript : MonoBehaviour
 {
+    [HideInInspector]
     public bool canJump;
 
     private float initalJointDistance;
