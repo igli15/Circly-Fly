@@ -10,6 +10,9 @@ public class BackgroundColorChanger : MonoBehaviour
 
     private readonly Dictionary<int, Color> colorDicitonary = new Dictionary<int, Color>();
 
+    [SerializeField] 
+    private float transitionTime = 2f;
+
     public List<BackgroundColor> colorList = new List<BackgroundColor>();
 
     private int currentRanomIndex;
@@ -32,7 +35,7 @@ public class BackgroundColorChanger : MonoBehaviour
 
         currentRanomIndex = _randomColorindex;
 
-        camera.DOColor(colorDicitonary[_randomColorindex], 1f);
+        camera.DOColor(colorDicitonary[_randomColorindex], transitionTime);
     }
 
     private void AssignIntToColors()
