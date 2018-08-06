@@ -45,7 +45,7 @@ public class PlayerData : MonoBehaviour
 
     private void Update()
     {
-        if (!callOnce)
+        if (!callOnce)  //just to make sure the text object is not null on load....
         {
             if (OnGemCountChanged != null) OnGemCountChanged(this);
             callOnce = true;
