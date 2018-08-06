@@ -1,22 +1,16 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class FinishLineReached : MonoBehaviour
 {
+    public static Action<FinishLineReached> OnFinishLineReached;
 
-	[SerializeField] 
-	private GameObject finishLine;
+    [SerializeField] private GameObject finishLine;
 
-	public static Action<FinishLineReached> OnFinishLineReached;
-
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.transform == finishLine.transform)
-		{
-			if (OnFinishLineReached != null) OnFinishLineReached(this);
-		}
-	}
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform == finishLine.transform)
+            if (OnFinishLineReached != null)
+                OnFinishLineReached(this);
+    }
 }

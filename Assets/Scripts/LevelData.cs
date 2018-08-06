@@ -1,40 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LevelData : MonoBehaviour
 {
+    private int levelIndex;
 
-	private int levelIndex = 0;
-
-	[SerializeField] 
-	private LootScript lootScript;
-	
-	
-	// Use this for initialization
-	void Start ()
-	{
-		FinishLineReached.OnFinishLineReached += IncreaseLevelIndex;
-		//lootScript.GenerateLootItem();
-		
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
-	}
+    [SerializeField] private LootScript lootScript;
 
 
-	public int GetLevelIndex()
-	{
-		return levelIndex;
-	}
+    // Use this for initialization
+    private void Start()
+    {
+        FinishLineReached.OnFinishLineReached += IncreaseLevelIndex;
+        //lootScript.GenerateLootItem();
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+    }
 
 
-	public void IncreaseLevelIndex(FinishLineReached sender)
-	{
-		levelIndex += 1;
-	}
-	
+    public int GetLevelIndex()
+    {
+        return levelIndex;
+    }
+
+
+    public void IncreaseLevelIndex(FinishLineReached sender)
+    {
+        levelIndex += 1;
+    }
 }

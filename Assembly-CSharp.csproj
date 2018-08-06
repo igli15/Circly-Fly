@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\ScoreBehaviour.cs" />
     <Compile Include="Assets\Scripts\SpawnObstacles.cs" />
+    <Compile Include="Assets\SetGemCountText.cs" />
+    <Compile Include="Assets\SetHighscoreText.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

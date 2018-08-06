@@ -1,79 +1,66 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    [SerializeField] [Range(5, 20)] private float fallingSpeed = 10;
 
-    [SerializeField]
-    [Range(5,20)]
-    private float fallingSpeed = 10;
+    private JumpScript jumpScript;
 
-	[SerializeField] 
-	[Range(0,1)]
-	private float torqueForce = 0.6f;
+    private Rigidbody2D rb;
+    private RotateScript rotateScript;
 
-	private Rigidbody2D rb;
-	private JumpScript jumpScript;
-	private RotateScript rotateScript;
+    private bool shouldAddForce;
 
-	private SpringJoint2D spring;
+    private GameObject spawner;
 
-	private GameObject spawner;
+    private SpringJoint2D spring;
 
-    private bool shouldAddForce = false;
-	
-	
-	void Start ()
-	{
-		jumpScript = GetComponent<JumpScript>();
-		rb = GetComponent<Rigidbody2D>();
-		rotateScript = GetComponent<RotateScript>();
-		spring = GetComponent<SpringJoint2D>();
+    [SerializeField] [Range(0, 1)] private float torqueForce = 0.6f;
 
-		spawner = GameObject.FindGameObjectWithTag("spawner");
-		PlayerCollisions.OnObstacleHit += OnDeath;
-	}
+
+    private void Start()
+    {
+        jumpScript = GetComponent<JumpScript>();
+        rb = GetComponent<Rigidbody2D>();
+        rotateScript = GetComponent<RotateScript>();
+        spring = GetComponent<SpringJoint2D>();
+
+        spawner = GameObject.FindGameObjectWithTag("spawner");
+        PlayerCollisions.OnObstacleHit += OnDeath;
+    }
 
     private void FixedUpdate()
     {
-        if(shouldAddForce)
-        {
-            rb.AddForce((spawner.transform.position - transform.position).normalized * fallingSpeed);
-        }
+        if (shouldAddForce) rb.AddForce((spawner.transform.position - transform.position).normalized * fallingSpeed);
     }
 
 
     private void OnDeath(PlayerCollisions sender)
-	{
+    {
+        if (spring != null)
+        {
+            spring.breakForce = 0;
+            spring.autoConfigureDistance = true;
+        }
 
-		if (spring != null)
-		{
-			spring.breakForce = 0;
-			spring.autoConfigureDistance = true;
-		}
+        shouldAddForce = true;
+        rb.freezeRotation = false;
+        rb.AddTorque(torqueForce, ForceMode2D.Impulse);
+        jumpScript.canJump = false;
+        if (rotateScript != null) rotateScript.enabled = false;
 
-		shouldAddForce = true;
-		rb.freezeRotation = false;
-		rb.AddTorque(torqueForce,ForceMode2D.Impulse);
-		jumpScript.canJump = false;
-		if (rotateScript != null)
-		{
-			rotateScript.enabled = false;
-		}
 
-		
-		Invoke("RestartScene",2);
-	}
+        Invoke("RestartScene", 2);
+    }
 
-	private void RestartScene()
-	{
-		SceneManager.LoadScene(0);
-	}
+    private void RestartScene()
+    {
+        SceneManager.LoadScene(0);
+    }
 
-	private void OnDestroy()
-	{
-		PlayerCollisions.OnObstacleHit -= OnDeath;
-	}
+    private void OnDestroy()
+    {
+        PlayerCollisions.OnObstacleHit -= OnDeath;
+    }
 }

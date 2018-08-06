@@ -1,25 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class IncreaseRotationSpeed : MonoBehaviour
 {
+    private RotateScript rotateScript;
 
-	private RotateScript rotateScript;
+    [SerializeField] private float Speedincrement = 10;
 
-	[SerializeField] 
-	private float Speedincrement = 10;
-	
-	// Use this for initialization
-	void Start ()
-	{
-		rotateScript = GetComponent<RotateScript>();
-		
-		FinishLineReached.OnFinishLineReached += IncreaseSpeed;
-	}
+    // Use this for initialization
+    private void Start()
+    {
+        rotateScript = GetComponent<RotateScript>();
 
-	private void IncreaseSpeed(FinishLineReached sender)
-	{
-		rotateScript.IncreaseRotationSpeed(Speedincrement);
-	}
+        FinishLineReached.OnFinishLineReached += IncreaseSpeed;
+    }
+
+    private void IncreaseSpeed(FinishLineReached sender)
+    {
+        rotateScript.IncreaseRotationSpeed(Speedincrement);
+    }
 }
