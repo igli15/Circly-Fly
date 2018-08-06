@@ -25,7 +25,7 @@ public class PlayerData : MonoBehaviour
 
     private void Awake()
     {
-      
+      if(File.Exists(Application.persistentDataPath + "/PlayerData.json"))
         Load();
         
     }
