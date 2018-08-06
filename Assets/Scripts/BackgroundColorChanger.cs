@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class BackgroundColorChanger : MonoBehaviour
 {
-    private Camera camera;
+    private Camera cam;
 
     private readonly Dictionary<int, Color> colorDicitonary = new Dictionary<int, Color>();
 
@@ -22,7 +22,7 @@ public class BackgroundColorChanger : MonoBehaviour
     {
         AssignIntToColors();
 
-        camera = GetComponent<Camera>();
+        cam = GetComponent<Camera>();
 
         FinishLineReached.OnFinishLineReached += ChangeColor;
     }
@@ -35,7 +35,7 @@ public class BackgroundColorChanger : MonoBehaviour
 
         currentRanomIndex = _randomColorindex;
 
-        camera.DOColor(colorDicitonary[_randomColorindex], transitionTime);
+        cam.DOColor(colorDicitonary[_randomColorindex], transitionTime);
     }
 
     private void AssignIntToColors()
