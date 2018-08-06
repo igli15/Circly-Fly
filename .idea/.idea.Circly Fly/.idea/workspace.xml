@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/AssetImportState" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AssetImportState" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/01/01e02995805eb483690380a911a657e2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/01/01e02995805eb483690380a911a657e2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/01/01e02995805eb483690380a911a657e2.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/01/01e02995805eb483690380a911a657e2.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3c/3cf132d4fa07f4f0cb2883499c5c7dd0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3c/3cf132d4fa07f4f0cb2883499c5c7dd0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3c/3cf132d4fa07f4f0cb2883499c5c7dd0.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3c/3cf132d4fa07f4f0cb2883499c5c7dd0.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/46/460636d894925441ba1debe037d2e343" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/46/460636d894925441ba1debe037d2e343" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/46/460636d894925441ba1debe037d2e343.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/46/460636d894925441ba1debe037d2e343.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4d/4dfd3f5da88944ec6ac5977d676c30c6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4d/4dfd3f5da88944ec6ac5977d676c30c6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4d/4dfd3f5da88944ec6ac5977d676c30c6.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4d/4dfd3f5da88944ec6ac5977d676c30c6.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5c/5c4f28f6254cd4e9fb5b1d7b51cb348c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5c/5c4f28f6254cd4e9fb5b1d7b51cb348c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/5c/5c4f28f6254cd4e9fb5b1d7b51cb348c.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5c/5c4f28f6254cd4e9fb5b1d7b51cb348c.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ac/ac78502257513490899e8a6585636acd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ac/ac78502257513490899e8a6585636acd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ac/ac78502257513490899e8a6585636acd.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ac/ac78502257513490899e8a6585636acd.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c4/c4c68c906ab1d428fbdcd9e1316e6600" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c4/c4c68c906ab1d428fbdcd9e1316e6600" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c4/c4c68c906ab1d428fbdcd9e1316e6600.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c4/c4c68c906ab1d428fbdcd9e1316e6600.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f8eca3a711f4842eba0c52ea9885ef7f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f8/f8eca3a711f4842eba0c52ea9885ef7f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f8eca3a711f4842eba0c52ea9885ef7f.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f8/f8eca3a711f4842eba0c52ea9885ef7f.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -329,12 +347,12 @@
       <workItem from="1533108138769" duration="9907000" />
       <workItem from="1533203685676" duration="18230000" />
       <workItem from="1533297601170" duration="263000" />
-      <workItem from="1533298570328" duration="15139000" />
+      <workItem from="1533298570328" duration="15394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87567000" />
+    <option name="totallyTimeSpent" value="87822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
