@@ -25,6 +25,8 @@ public class FindRightPosition : MonoBehaviour
     private void Start()
     {
         if (transform.CompareTag("obstacle")) SpawnObstacles.obstacles.Add(gameObject);
+        
+        transform.SetParent(spawner.transform);
 
         SpawnCorrectly();
     }

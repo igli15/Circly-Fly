@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class RotateScript : MonoBehaviour
 {
-    private Action<RotateScript> OnIncreaseSpeed;
 
-    [SerializeField] [Range(0, 100)] private float rotationSpeed = 2;
+    [SerializeField] [Range(-100, 100)] private float rotationSpeed = 2;
 
     [SerializeField] private GameObject target;
 
@@ -22,12 +21,7 @@ public class RotateScript : MonoBehaviour
 
     public void IncreaseRotationSpeed(float increment)
     {
-        if (OnIncreaseSpeed != null) OnIncreaseSpeed(this);
         rotationSpeed += increment;
     }
 
-
-    private void FixedUpdate()
-    {
-    }
 }
