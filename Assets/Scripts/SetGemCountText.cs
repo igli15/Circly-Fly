@@ -32,4 +32,9 @@ public class SetGemCountText : MonoBehaviour
 			if (gemTier == GemTier.Tier3) text.text = sender.tier3GemCount.ToString();
 		}
 	}
+
+	private void OnDestroy()
+	{
+		PlayerData.OnGemCountChanged -= SetGemCount;
+	}
 }

@@ -18,4 +18,9 @@ public class IncreaseRotationSpeed : MonoBehaviour
     {
         rotateScript.IncreaseRotationSpeed(Speedincrement);
     }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= IncreaseSpeed;
+    }
 }

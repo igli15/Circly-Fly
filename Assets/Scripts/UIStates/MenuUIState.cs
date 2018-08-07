@@ -1,18 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using UnityEditor;
 using UnityEngine;
 
 public class MenuUIState : AbstractState<UIManager>
 {
 	[SerializeField]
 	private GameObject menuCanvas;
-
-	[SerializeField] 
-	private RotateScript rotateScript;
-
-	[SerializeField]
-	private JumpScript jumpScript;
 
 	[SerializeField] 
 	private SpawnObstacles spawnObstacles;
@@ -23,11 +19,36 @@ public class MenuUIState : AbstractState<UIManager>
 	[SerializeField] 
 	private GameObject levelManagers;
 	
+	private RotateScript rotateScript;
+
+	private JumpScript jumpScript;
+
+	private GameObject player;
+
+	private void Awake()
+	{
+		
+	}
+
 	public override void Enter(IAgent pAgent)
 	{
+		
+		player = GameObject.FindGameObjectWithTag("Player");
+
+		if (player != null)
+		{
+			jumpScript = player.GetComponent<JumpScript>();
+			rotateScript = player.GetComponent<RotateScript>();
+		}
+
 		base.Enter(pAgent);
-		jumpScript.enabled = false;
-		rotateScript.enabled = false;
+
+		if (jumpScript != null)
+		{
+			jumpScript.enabled = false;
+			rotateScript.enabled = false;
+		}
+
 		menuCanvas.SetActive(true);
 		
 		menuCanvas.GetComponent<CanvasGroup>().DOFade(1,1.5f);
@@ -45,4 +66,5 @@ public class MenuUIState : AbstractState<UIManager>
 		menuCanvas.SetActive(false);
 		base.Exit(pAgent);
 	}
+	
 }

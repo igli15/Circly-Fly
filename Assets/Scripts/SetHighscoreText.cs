@@ -22,4 +22,9 @@ public class SetHighscoreText : MonoBehaviour
 			text.text = sender.highscore.ToString();
 		}
 	}
+
+	private void OnDestroy()
+	{
+		PlayerData.OnHighScoreChanged -= SetHighScore;
+	}
 }

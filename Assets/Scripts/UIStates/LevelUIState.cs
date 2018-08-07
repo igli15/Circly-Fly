@@ -14,11 +14,13 @@ public class LevelUIState : AbstractState<UIManager>
 	[SerializeField] 
 	private GameObject levelManagers;
 
-	[SerializeField] 
+	
 	private JumpScript jumpScript;
 
-	[SerializeField]
+	
 	private RotateScript rotateScript;
+
+	private GameObject player;
 
 	[SerializeField] 
 	private SpawnObstacles spawnObstacles;
@@ -29,7 +31,13 @@ public class LevelUIState : AbstractState<UIManager>
 
 	public override void Enter(IAgent pAgent)
 	{
+		player = GameObject.FindGameObjectWithTag("Player");
+
+		jumpScript = player.GetComponent<JumpScript>();
+		rotateScript = player.GetComponent<RotateScript>();
+		
 		base.Enter(pAgent);
+		
 		levelCanvas.SetActive(true);
 		
 		finishLine.SetActive(true);

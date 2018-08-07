@@ -23,4 +23,9 @@ public class ScoreBehaviour : MonoBehaviour
         if (text != null)
             text.text = text.text = score.ToString();
     }
+
+    private void OnDestroy()
+    {
+        PlayerCollisions.OnObstaclePass -= IncreaseScore;
+    }
 }

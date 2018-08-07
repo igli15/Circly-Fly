@@ -22,4 +22,9 @@ public class CollectedGem : MonoBehaviour
             if (SpawnObstacles.gems.Contains(gemScript)) SpawnObstacles.gems.Remove(gemScript);
         }
     }
+
+    private void OnDestroy()
+    {
+        PlayerCollisions.OnGemCollected -= Collect;
+    }
 }

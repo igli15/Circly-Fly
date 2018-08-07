@@ -73,4 +73,9 @@ public class FindRightPosition : MonoBehaviour
             } while (Vector2.Distance(transform.position, finishLine.transform.position) <= distanceFromStartLine ||
                      IsNear());
     }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= SpawnCorrectly;
+    }
 }

@@ -49,4 +49,9 @@ public class BackgroundColorChanger : MonoBehaviour
         public Color color;
         public int index;
     }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= ChangeColor;
+    }
 }

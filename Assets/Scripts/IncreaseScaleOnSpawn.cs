@@ -25,10 +25,13 @@ public class IncreaseScaleOnSpawn : MonoBehaviour
 
     private void IncreaseScale(FinishLineReached sender = null)
     {
-        if (this != null)
-        {
-            transform.localScale = Vector3.zero;
-            transform.DOScale(initLocalScale, scaleTime);
-        }
+       
+        transform.localScale = Vector3.zero;
+        transform.DOScale(initLocalScale, scaleTime);
+    }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= IncreaseScale;
     }
 }

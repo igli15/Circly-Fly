@@ -18,6 +18,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BackgroundColorChanger.cs" t="Include" />
+          <e p="CharacterManager.cs" t="Include" />
           <e p="CollectedGem.cs" t="Include" />
           <e p="Encryption.cs" t="Include" />
           <e p="FindRightPosition.cs" t="Include" />

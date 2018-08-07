@@ -31,4 +31,9 @@ public class LevelData : MonoBehaviour
     {
         levelIndex += 1;
     }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= IncreaseLevelIndex;
+    }
 }

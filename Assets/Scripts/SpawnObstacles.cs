@@ -75,4 +75,9 @@ public class SpawnObstacles : MonoBehaviour
             SpawnObstacle(amountOfObstacles);
         }
     }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= SpawnRightAmountOfObstacles;
+    }
 }

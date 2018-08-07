@@ -61,6 +61,7 @@ public class PlayerData : MonoBehaviour
         if (levelScore > highscore) highscore = levelScore;
         if (OnHighScoreChanged != null) OnHighScoreChanged(this);
     }
+  
 
     private void CheckGem(Collision2D collision)
     {
@@ -85,4 +86,14 @@ public class PlayerData : MonoBehaviour
         JsonUtility.FromJsonOverwrite(loadedData, this);
     }
 
+    private void OnDestroy()
+    {
+        PlayerCollisions.OnObstacleHit -= CheckHighscore;
+        PlayerCollisions.OnObstacleHit -= Save;
+
+        PlayerCollisions.OnObstaclePass -= sender => levelScore += 1;
+
+        PlayerCollisions.OnGemCollected -= CheckGem;
+
+    }
 }

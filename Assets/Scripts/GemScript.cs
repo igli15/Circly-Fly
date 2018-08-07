@@ -45,4 +45,9 @@ public class GemScript : MonoBehaviour, IPooleableObject
             ObjectPooler.instance.DestroyFromPool(gemType.ToString(), gameObject);
         }
     }
+
+    private void OnDestroy()
+    {
+        FinishLineReached.OnFinishLineReached -= RemoveGem;
+    }
 }

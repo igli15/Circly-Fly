@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour,IAgent
 	// Use this for initialization
 	void Start () 
 	{
+		if(fsm == null)
 		fsm = new Fsm<UIManager>(this);
 		
 		GoToMenuState();
@@ -28,5 +29,10 @@ public class UIManager : MonoBehaviour,IAgent
 	public void GoToShopState()
 	{
 		fsm.ChangeState<ShopUIState>();
+	}
+
+	private void OnDestroy()
+	{
+		fsm = null;
 	}
 }
