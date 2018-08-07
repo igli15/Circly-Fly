@@ -10,7 +10,7 @@ public class CharacterManager : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		ChangeCharacter(0);
+		ChangeCharacter(2);
 	}
 
 	public void ChangeCharacter(int index)
@@ -20,6 +20,6 @@ public class CharacterManager : MonoBehaviour
 			transform.GetChild(i).transform.gameObject.SetActive(false);
 		}
 		
-		transform.GetChild(0).gameObject.SetActive(true);
+		transform.GetChild(index).gameObject.SetActive(true);
 	}
 }

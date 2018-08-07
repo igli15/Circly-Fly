@@ -52,7 +52,7 @@ public class PlayerDeath : MonoBehaviour
         
         shouldAddForce = true;
         rb.freezeRotation = false;
-      //  rb.AddTorque(torqueForce, ForceMode2D.Impulse);
+         rb.AddTorque(torqueForce, ForceMode2D.Impulse);
 
         jumpScript.canJump = false;
         if (rotateScript != null) rotateScript.enabled = false;

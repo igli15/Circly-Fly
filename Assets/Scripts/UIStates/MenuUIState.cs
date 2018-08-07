@@ -32,22 +32,16 @@ public class MenuUIState : AbstractState<UIManager>
 
 	public override void Enter(IAgent pAgent)
 	{
-		
-		player = GameObject.FindGameObjectWithTag("Player");
-
-		if (player != null)
-		{
-			jumpScript = player.GetComponent<JumpScript>();
-			rotateScript = player.GetComponent<RotateScript>();
-		}
 
 		base.Enter(pAgent);
+		
+		player = GameObject.FindGameObjectWithTag("Player");
+	
+		jumpScript = player.GetComponent<JumpScript>();
+		rotateScript = player.GetComponent<RotateScript>();
 
-		if (jumpScript != null)
-		{
-			jumpScript.enabled = false;
-			rotateScript.enabled = false;
-		}
+		jumpScript.enabled = false;
+		rotateScript.enabled = false;
 
 		menuCanvas.SetActive(true);
 		
