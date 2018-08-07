@@ -40,10 +40,6 @@ public class LevelUIState : AbstractState<UIManager>
 		menuCanvas.SetActive(false);
 	}
 
-	public void Update()
-	{
-		Debug.Log("test");
-	}
 
 	public override void Exit(IAgent pAgent)
 	{

@@ -19,6 +19,7 @@ public class ShopUIState : AbstractState<UIManager>
 	public override void Exit(IAgent pAgent)
 	{
 		shopCanvas.SetActive(false);
+		shopCanvas.GetComponent<CanvasGroup>().DOFade(0, 0.5f);
 		base.Exit(pAgent);
 	}
 }
