@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIStates/LevelUIState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIStates/LevelUIState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
@@ -18,26 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FindRightPosition.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FindRightPosition.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <marker date="1533550566236" expanded="false" signature="6:67" ph="..." />
-                <marker date="1533550566236" expanded="true" signature="115:2198" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="418:628" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="654:838" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="865:1143" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="1179:1880" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="1214:1789" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="1802:1874" ph="{...}" />
-                <marker date="1533550566236" expanded="true" signature="1945:2196" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UIManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LevelUIState.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LevelUIState.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/LevelUIState.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="753">
@@ -89,13 +72,32 @@
       <file leaf-file-name="ShopUIState.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/ShopUIState.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="396">
+              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
               <folding>
-                <marker date="1533628215079" expanded="false" signature="6:97" ph="..." />
-                <marker date="1533628215079" expanded="true" signature="151:468" ph="{...}" />
-                <marker date="1533628215079" expanded="true" signature="249:365" ph="{...}" />
-                <marker date="1533628215079" expanded="true" signature="408:466" ph="{...}" />
+                <marker date="1533629938973" expanded="false" signature="6:97" ph="..." />
+                <marker date="1533629938973" expanded="true" signature="151:526" ph="{...}" />
+                <marker date="1533629938973" expanded="true" signature="249:365" ph="{...}" />
+                <marker date="1533629938973" expanded="true" signature="408:524" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerDeath.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+              <folding>
+                <marker date="1533635685010" expanded="false" signature="6:53" ph="..." />
+                <marker date="1533635685010" expanded="true" signature="95:1977" ph="{...}" />
+                <marker date="1533635685010" expanded="true" signature="612:1032" ph="{...}" />
+                <marker date="1533635685010" expanded="true" signature="1064:1194" ph="{...}" />
+                <marker date="1533635685010" expanded="true" signature="1246:1802" ph="{...}" />
+                <marker date="1533635685010" expanded="true" signature="1330:1434" ph="{...}" />
+                <marker date="1533635685010" expanded="true" signature="1835:1882" ph="{...}" />
+                <marker date="1533635685010" expanded="true" signature="1912:1975" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -234,7 +236,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FinishLineReached.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerCollisions.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerDeath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/IncreaseRotationSpeed.cs" />
         <option value="$PROJECT_DIR$/Assets/ScoreBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelData.cs" />
@@ -275,8 +276,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIStates/MenuUIState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIStates/ShopUIState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIStates/LevelUIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIStates/ShopUIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" />
       </list>
     </option>
   </component>
@@ -370,12 +372,12 @@
       <workItem from="1533203685676" duration="18230000" />
       <workItem from="1533297601170" duration="263000" />
       <workItem from="1533298570328" duration="19228000" />
-      <workItem from="1533586530595" duration="7823000" />
+      <workItem from="1533586530595" duration="9685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99479000" />
+    <option name="totallyTimeSpent" value="101341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,13 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -798,19 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/ShopUIState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <marker date="1533628215079" expanded="false" signature="6:97" ph="..." />
-            <marker date="1533628215079" expanded="true" signature="151:468" ph="{...}" />
-            <marker date="1533628215079" expanded="true" signature="249:365" ph="{...}" />
-            <marker date="1533628215079" expanded="true" signature="408:466" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/LevelUIState.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
@@ -820,6 +802,36 @@
             <marker date="1533628924373" expanded="true" signature="132:913" ph="{...}" />
             <marker date="1533628924373" expanded="true" signature="559:808" ph="{...}" />
             <marker date="1533628924373" expanded="true" signature="852:911" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/ShopUIState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+          <folding>
+            <marker date="1533629938973" expanded="false" signature="6:97" ph="..." />
+            <marker date="1533629938973" expanded="true" signature="151:526" ph="{...}" />
+            <marker date="1533629938973" expanded="true" signature="249:365" ph="{...}" />
+            <marker date="1533629938973" expanded="true" signature="408:524" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <marker date="1533635685010" expanded="false" signature="6:53" ph="..." />
+            <marker date="1533635685010" expanded="true" signature="95:1977" ph="{...}" />
+            <marker date="1533635685010" expanded="true" signature="612:1032" ph="{...}" />
+            <marker date="1533635685010" expanded="true" signature="1064:1194" ph="{...}" />
+            <marker date="1533635685010" expanded="true" signature="1246:1802" ph="{...}" />
+            <marker date="1533635685010" expanded="true" signature="1330:1434" ph="{...}" />
+            <marker date="1533635685010" expanded="true" signature="1835:1882" ph="{...}" />
+            <marker date="1533635685010" expanded="true" signature="1912:1975" ph="{...}" />
           </folding>
         </state>
       </provider>

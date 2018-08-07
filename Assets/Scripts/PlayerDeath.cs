@@ -10,14 +10,16 @@ public class PlayerDeath : MonoBehaviour
     private Rigidbody2D rb;
     private RotateScript rotateScript;
 
+    private Animator animator;
+
     private bool shouldAddForce;
 
     private GameObject spawner;
 
     private SpringJoint2D spring;
 
-    [SerializeField] [Range(0, 1)] private float torqueForce = 0.6f;
-
+    [SerializeField] [Range(0, 1)] 
+    private float torqueForce = 0.6f;
 
     private void Start()
     {
@@ -25,7 +27,9 @@ public class PlayerDeath : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rotateScript = GetComponent<RotateScript>();
         spring = GetComponent<SpringJoint2D>();
-
+        
+        animator = GetComponent<Animator>();
+        
         spawner = GameObject.FindGameObjectWithTag("spawner");
         PlayerCollisions.OnObstacleHit += OnDeath;
     }
@@ -38,15 +42,18 @@ public class PlayerDeath : MonoBehaviour
 
     private void OnDeath(PlayerCollisions sender)
     {
+        animator.SetBool("IsDead",true);
+        
         if (spring != null)
         {
             spring.breakForce = 0;
             spring.autoConfigureDistance = true;
         }
-
+        
         shouldAddForce = true;
         rb.freezeRotation = false;
-        rb.AddTorque(torqueForce, ForceMode2D.Impulse);
+      //  rb.AddTorque(torqueForce, ForceMode2D.Impulse);
+
         jumpScript.canJump = false;
         if (rotateScript != null) rotateScript.enabled = false;
 
