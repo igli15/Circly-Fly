@@ -36,10 +36,7 @@ public class MenuUIState : AbstractState<UIManager>
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.A))
-		{
-			target.fsm.ChangeState<LevelUIState>();
-		}
+		
 	}
 
 	public override void Exit(IAgent pAgent)

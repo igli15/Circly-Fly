@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Circle.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Circle.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotateScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotateScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetHighscoreText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SetHighscoreText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6a/6a74efa10d2ee40028fded31e6b55d52" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6a/6a74efa10d2ee40028fded31e6b55d52" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fb/fb46a7140c1984bf9982677750bd81c0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fb/fb46a7140c1984bf9982677750bd81c0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,15 +82,15 @@
       <file leaf-file-name="MenuUIState.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/MenuUIState.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="660">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding>
-                <marker date="1533592481626" expanded="false" signature="6:97" ph="..." />
-                <marker date="1533592481626" expanded="true" signature="150:1164" ph="{...}" />
-                <marker date="1533592481626" expanded="true" signature="521:786" ph="{...}" />
-                <marker date="1533592481626" expanded="true" signature="810:902" ph="{...}" />
-                <marker date="1533592481626" expanded="true" signature="848:899" ph="{...}" />
-                <marker date="1533592481626" expanded="true" signature="945:1162" ph="{...}" />
+                <marker date="1533592513281" expanded="false" signature="6:97" ph="..." />
+                <marker date="1533592513281" expanded="true" signature="150:1082" ph="{...}" />
+                <marker date="1533592513281" expanded="true" signature="521:704" ph="{...}" />
+                <marker date="1533592513281" expanded="true" signature="728:820" ph="{...}" />
+                <marker date="1533592513281" expanded="true" signature="766:817" ph="{...}" />
+                <marker date="1533592513281" expanded="true" signature="863:1080" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -391,12 +369,12 @@
       <workItem from="1533203685676" duration="18230000" />
       <workItem from="1533297601170" duration="263000" />
       <workItem from="1533298570328" duration="19228000" />
-      <workItem from="1533586530595" duration="5495000" />
+      <workItem from="1533586530595" duration="5862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97151000" />
+    <option name="totallyTimeSpent" value="97518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -821,15 +799,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIStates/MenuUIState.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="660">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
-            <marker date="1533592481626" expanded="false" signature="6:97" ph="..." />
-            <marker date="1533592481626" expanded="true" signature="150:1164" ph="{...}" />
-            <marker date="1533592481626" expanded="true" signature="521:786" ph="{...}" />
-            <marker date="1533592481626" expanded="true" signature="810:902" ph="{...}" />
-            <marker date="1533592481626" expanded="true" signature="848:899" ph="{...}" />
-            <marker date="1533592481626" expanded="true" signature="945:1162" ph="{...}" />
+            <marker date="1533592513281" expanded="false" signature="6:97" ph="..." />
+            <marker date="1533592513281" expanded="true" signature="150:1082" ph="{...}" />
+            <marker date="1533592513281" expanded="true" signature="521:704" ph="{...}" />
+            <marker date="1533592513281" expanded="true" signature="728:820" ph="{...}" />
+            <marker date="1533592513281" expanded="true" signature="766:817" ph="{...}" />
+            <marker date="1533592513281" expanded="true" signature="863:1080" ph="{...}" />
           </folding>
         </state>
       </provider>
