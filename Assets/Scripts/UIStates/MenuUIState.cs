@@ -41,13 +41,8 @@ public class MenuUIState : AbstractState<UIManager>
 
 	public override void Exit(IAgent pAgent)
 	{
-		finishLine.SetActive(true);
-		levelManagers.SetActive(true);
-		jumpScript.enabled = true;
-		rotateScript.enabled = true;
-		spawnObstacles.enabled = true;
+
 		menuCanvas.SetActive(false);
-		
 		base.Exit(pAgent);
 	}
 }

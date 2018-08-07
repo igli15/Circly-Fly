@@ -24,4 +24,9 @@ public class UIManager : MonoBehaviour,IAgent
 	{
 		fsm.ChangeState<MenuUIState>();
 	}
+
+	public void GoToShopState()
+	{
+		fsm.ChangeState<ShopUIState>();
+	}
 }

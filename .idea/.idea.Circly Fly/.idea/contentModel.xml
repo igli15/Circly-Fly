@@ -48,6 +48,7 @@
           <e p="UIStates" t="Include">
             <e p="LevelUIState.cs" t="Include" />
             <e p="MenuUIState.cs" t="Include" />
+            <e p="ShopUIState.cs" t="Include" />
           </e>
         </e>
       </e>
