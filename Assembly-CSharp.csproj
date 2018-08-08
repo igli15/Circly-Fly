@@ -87,6 +87,8 @@
     <Compile Include="Assets\Scripts\UIStates\LevelUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\MenuUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\ShopUIState.cs" />
+    <Compile Include="Assets\ShopItemScript.cs" />
+    <Compile Include="Assets\ShopManager.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

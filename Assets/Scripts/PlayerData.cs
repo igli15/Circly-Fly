@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Events;
@@ -22,17 +23,27 @@ public class PlayerData : MonoBehaviour
 
     [HideInInspector] public int tier3GemCount = 0;
 
+    [HideInInspector] public int defaultCharacter = 0;
+
+    [HideInInspector] public bool[] unlockedCharacter;   
+
     public static Action<PlayerData> OnHighScoreChanged;
     public static Action<PlayerData> OnGemCountChanged;
 
-    private bool callOnce = false;
+   // private bool callOnce = false;
 
     private void Awake()
     {
-      if(File.Exists(Application.persistentDataPath + "/PlayerData.json"))
+
+        unlockedCharacter = new bool[10];
+        unlockedCharacter[0] = true;
+        
+        
         Load();
         
     }
+    
+
 
     // Use this for initialization
     private void Start()
@@ -43,15 +54,36 @@ public class PlayerData : MonoBehaviour
         PlayerCollisions.OnObstaclePass += sender => levelScore += 1;
 
         PlayerCollisions.OnGemCollected += CheckGem;
-
-        
     }
 
     private void Update()
     {  
             if (OnHighScoreChanged != null) OnHighScoreChanged(this);
             if (OnGemCountChanged != null) OnGemCountChanged(this);
-            callOnce = true;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            tier1GemCount = 0;
+            tier2GemCount = 0;
+            tier3GemCount = 0;
+
+            unlockedCharacter[1] = false;
+            unlockedCharacter[2] = false;
+            defaultCharacter = 0;
+            
+            Save(null);
+        }
+        
+        Debug.Log(defaultCharacter);
+    }
+
+    public void SpendGems(int amount,GemScript.GemType gemType)
+    {
+        if (gemType == GemScript.GemType.tier1Gem) tier1GemCount -= amount;
+        if (gemType == GemScript.GemType.tier2Gem) tier2GemCount -= amount;
+        if (gemType == GemScript.GemType.tier3Gem) tier3GemCount -= amount;
+        
+        Save(null);
         
     }
 
@@ -73,17 +105,20 @@ public class PlayerData : MonoBehaviour
 
     }
 
-    public void Save(PlayerCollisions sender)
+    public void Save(PlayerCollisions sender = null)
     {
         var data = JsonUtility.ToJson(this, true);
-
+       // Debug.Log(data);
         File.WriteAllText(Application.persistentDataPath + "/PlayerData.json", Encryption.Encrypt(data));
     }
-
+    
     public void Load()
     {
-        var loadedData = Encryption.Decrypt(File.ReadAllText(Application.persistentDataPath + "/PlayerData.json"));
-        JsonUtility.FromJsonOverwrite(loadedData, this);
+        if (File.Exists(Application.persistentDataPath + "/PlayerData.json"))
+        {
+            var loadedData = Encryption.Decrypt(File.ReadAllText(Application.persistentDataPath + "/PlayerData.json"));
+            JsonUtility.FromJsonOverwrite(loadedData, this);
+        }
     }
 
     private void OnDestroy()

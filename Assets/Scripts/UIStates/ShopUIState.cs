@@ -8,6 +8,9 @@ public class ShopUIState : AbstractState<UIManager>
 {
 	[SerializeField] 
 	private GameObject shopCanvas;
+
+	[SerializeField]
+	private PlayerData playerData;
 	
 	public override void Enter(IAgent pAgent)
 	{

@@ -9,21 +9,12 @@ public class MenuUIState : AbstractState<UIManager>
 {
 	[SerializeField]
 	private GameObject menuCanvas;
-
-	[SerializeField] 
-	private SpawnObstacles spawnObstacles;
-
-	[SerializeField] 
-	private GameObject finishLine;
-
-	[SerializeField] 
-	private GameObject levelManagers;
 	
-	private RotateScript rotateScript;
+	/*private RotateScript rotateScript;
 
-	private JumpScript jumpScript;
+	private JumpScript jumpScript;*/
 
-	private GameObject player;
+	//private GameObject player;
 
 	private void Awake()
 	{
@@ -35,13 +26,13 @@ public class MenuUIState : AbstractState<UIManager>
 
 		base.Enter(pAgent);
 		
-		player = GameObject.FindGameObjectWithTag("Player");
+		//player = GameObject.FindGameObjectWithTag("Player");
 	
-		jumpScript = player.GetComponent<JumpScript>();
-		rotateScript = player.GetComponent<RotateScript>();
+		//jumpScript = player.GetComponent<JumpScript>();
+		//rotateScript = player.GetComponent<RotateScript>();
 
-		jumpScript.enabled = false;
-		rotateScript.enabled = false;
+		//jumpScript.enabled = false;
+		//rotateScript.enabled = false;
 
 		menuCanvas.SetActive(true);
 		

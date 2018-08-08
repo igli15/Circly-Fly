@@ -10,6 +10,7 @@ TagManager:
   - levelManager
   - gem
   - lootManager
+  - ShopItem
   layers:
   - Default
   - TransparentFX
