@@ -80,8 +80,9 @@ public class ShopItemScript : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.A))
 		{
-			playerData.tier2GemCount += 100;
-			playerData.tier3GemCount += 100;
+			playerData.tier2GemCount = 500;
+			playerData.tier3GemCount = 500;
+			playerData.tier1GemCount = 100;
 		}
 	}
 
