@@ -69,6 +69,10 @@ public class PlayerData : MonoBehaviour
 
             unlockedCharacter[1] = false;
             unlockedCharacter[2] = false;
+            unlockedCharacter[3] = false;
+            unlockedCharacter[4] = false;
+            unlockedCharacter[5] = false;
+            
             defaultCharacter = 0;
             
             Save(null);

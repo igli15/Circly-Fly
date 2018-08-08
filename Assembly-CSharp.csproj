@@ -82,13 +82,13 @@
     <Compile Include="Assets\Scripts\ScoreBehaviour.cs" />
     <Compile Include="Assets\Scripts\SetGemCountText.cs" />
     <Compile Include="Assets\Scripts\SetHighscoreText.cs" />
+    <Compile Include="Assets\Scripts\ShopItemScript.cs" />
+    <Compile Include="Assets\Scripts\ShopManager.cs" />
     <Compile Include="Assets\Scripts\SpawnObstacles.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\UIStates\LevelUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\MenuUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\ShopUIState.cs" />
-    <Compile Include="Assets\ShopItemScript.cs" />
-    <Compile Include="Assets\ShopManager.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

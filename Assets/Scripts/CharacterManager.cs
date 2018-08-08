@@ -12,10 +12,6 @@ public class CharacterManager : MonoBehaviour
 	void Awake () 
 	{
 		playerData.Load();
-		
-		//ChangeCharacter(playerData.defaultCharacter);
-		
-		//ShopItemScript.OnSetAsDefault += ChangeCharacter;
 	}
 
 	private void Start()
