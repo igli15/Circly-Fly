@@ -1805,7 +1805,12 @@ Prefab:
     - target: {fileID: 114193432243928066, guid: e929910022fb14d1d96cded689669ca7,
         type: 2}
       propertyPath: rotationSpeed
-      value: 19
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114193432243928066, guid: e929910022fb14d1d96cded689669ca7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -2653,6 +2658,7 @@ GameObject:
   - component: {fileID: 947134674}
   - component: {fileID: 947134678}
   - component: {fileID: 947134679}
+  - component: {fileID: 947134680}
   m_Layer: 0
   m_Name: Circle
   m_TagString: spawner
@@ -2780,12 +2786,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 514795566}
   m_GameObject: {fileID: 947134671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a74efa10d2ee40028fded31e6b55d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 19
+  rotationSpeed: -10
   target: {fileID: 947134671}
 --- !u!95 &947134678
 Animator:
@@ -2818,6 +2824,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyeball: {fileID: 1491413833}
   whiteEyeball: {fileID: 21300000, guid: f8cbc2cd15d0c4109a1996723ffbe574, type: 3}
+--- !u!114 &947134680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947134671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30aa64a01aa8c4ec1a3c3cb5f2462c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelData: {fileID: 560521941}
 --- !u!1 &950242654
 GameObject:
   m_ObjectHideFlags: 0

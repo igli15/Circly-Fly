@@ -25,5 +25,9 @@ public class RotateScript : MonoBehaviour
         rotationSpeed += increment;
     }
 
+    public void SetRotationSpeed(float newRotSpeed)
+    {
+        rotationSpeed = newRotSpeed;
+    }
 
 }

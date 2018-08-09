@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class LevelData : MonoBehaviour
 {
     private int levelIndex;
 
     [SerializeField] private LootScript lootScript;
-
 
     // Use this for initialization
     private void Start()
