@@ -42,7 +42,7 @@ public class ShopItemScript : MonoBehaviour
 	private void Awake()
 	{
 		currentButtonImage = GetComponent<Button>().image;
-		playerData.Load();
+		//playerData.Load();
 	}
 
 	private void Start()
@@ -113,19 +113,23 @@ public class ShopItemScript : MonoBehaviour
 		{
 			playerData.SpendGems(_price,priceGemType);
 			Unlock();
+			SetAsDefault();
 		}
 		else if (priceGemType == GemScript.GemType.tier2Gem && playerData.tier2GemCount >= _price)
 		{
 			playerData.SpendGems(_price,priceGemType);
 			Unlock();
+			SetAsDefault();
 		}
 		else if (priceGemType == GemScript.GemType.tier3Gem && playerData.tier3GemCount >= _price)
 		{
 			playerData.SpendGems(_price,priceGemType);
 			Unlock();
+			SetAsDefault();
 		}
 		
 	}
+	
 
 	private void Unlock()
 	{
@@ -136,7 +140,7 @@ public class ShopItemScript : MonoBehaviour
 			birdImage.DOColor(Color.white, 1f);
 			playerData.unlockedCharacter[index] = true;
 			isUnlocked = true;
-			SetAsDefault();
+			//SetAsDefault();
 		}
 	}
 

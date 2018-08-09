@@ -9,18 +9,14 @@ public class CharacterManager : MonoBehaviour
 	private PlayerData playerData;
 	
 	// Use this for initialization
-	void Awake () 
-	{
-		playerData.Load();
-	}
+
 
 	private void Start()
 	{
+		ShopItemScript.OnSetAsDefault += ChangeCharacter;
 		
 		ChangeCharacter(playerData.defaultCharacter);
 		
-		
-		ShopItemScript.OnSetAsDefault += ChangeCharacter;
 	}
 
 	public void ChangeCharacter(int index)

@@ -15,8 +15,6 @@ public class ShopManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
-		playerdata.Load();
 		
 		shoppingItems = GameObject.FindGameObjectsWithTag("ShopItem");
 		ShopItemScript.OnSetAsDefault += SetAsDefault;
@@ -25,7 +23,6 @@ public class ShopManager : MonoBehaviour
 		{
 			if (shopitem.index == playerdata.defaultCharacter)
 			{
-				Debug.Log(shopitem.index);
 				defaultCharacter = shopitem;
 			}
 		}

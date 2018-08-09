@@ -78,7 +78,7 @@ public class PlayerData : MonoBehaviour
             Save(null);
         }
         
-        Debug.Log(defaultCharacter);
+//        Debug.Log(defaultCharacter);
     }
 
     public void SpendGems(int amount,GemScript.GemType gemType)
