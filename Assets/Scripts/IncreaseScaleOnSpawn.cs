@@ -10,7 +10,7 @@ public class IncreaseScaleOnSpawn : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-        transform.localScale += new Vector3(Random.Range(0, 0.05f), Random.Range(0, 0.08f), Random.Range(0, 0.05f));
+        transform.localScale += new Vector3(Random.Range(0, 0.05f), Random.Range(0, 0.1f), Random.Range(0, 0.05f));
         initLocalScale = transform.localScale;
 
         FinishLineReached.OnFinishLineReached += IncreaseScale;

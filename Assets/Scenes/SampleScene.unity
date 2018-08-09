@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 220898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1473933820}
   m_RootOrder: 2
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!60 &220906
 PolygonCollider2D:
@@ -1058,7 +1058,7 @@ Transform:
   m_GameObject: {fileID: 314894136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1473933820}
   m_RootOrder: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!50 &314894140
 Rigidbody2D:
@@ -1949,7 +1949,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 6.7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3942,7 +3942,7 @@ Transform:
   m_GameObject: {fileID: 1326857185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1473933820}
   m_RootOrder: 4
@@ -4038,7 +4038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!231 &1326857194
 SpringJoint2D:
@@ -5555,7 +5555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!231 &1913451359
 SpringJoint2D:
@@ -6227,7 +6227,7 @@ Transform:
   m_GameObject: {fileID: 2008967469}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1473933820}
   m_RootOrder: 1
@@ -6323,7 +6323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!231 &2008967478
 SpringJoint2D:
@@ -6654,7 +6654,7 @@ Transform:
   m_GameObject: {fileID: 2057053604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1473933820}
   m_RootOrder: 3
@@ -6750,7 +6750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!231 &2057053613
 SpringJoint2D:
@@ -7016,7 +7016,7 @@ Transform:
   m_GameObject: {fileID: 2081586085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 1473933820}
   m_RootOrder: 5
@@ -7094,7 +7094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.55
+  jumpDistance: 1.86
   jumpForce: 5.5
 --- !u!231 &2081586093
 SpringJoint2D:
