@@ -133,7 +133,7 @@ public class ShopItemScript : MonoBehaviour
 		{
 			priceText.gameObject.SetActive(false);
 			image.SetActive(false);
-			birdImage.DOColor(Color.white, 0.2f);
+			birdImage.DOColor(Color.white, 1f);
 			playerData.unlockedCharacter[index] = true;
 			isUnlocked = true;
 			SetAsDefault();
