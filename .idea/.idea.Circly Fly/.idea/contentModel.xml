@@ -4,7 +4,6 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ActivateEyeball.cs" t="Include" />
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
             <e p="DOTween43.xml" t="Include" />
@@ -17,8 +16,8 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="LookAtPlayer.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
           <e p="CharacterManager.cs" t="Include" />
           <e p="CollectedGem.cs" t="Include" />
@@ -36,6 +35,7 @@
           <e p="IPooleableObject.cs" t="Include" />
           <e p="JumpScript.cs" t="Include" />
           <e p="LevelData.cs" t="Include" />
+          <e p="LookAtPlayer.cs" t="Include" />
           <e p="LootScript.cs" t="Include" />
           <e p="ObjectPooler.cs" t="Include" />
           <e p="ObstacleMovement.cs" t="Include" />

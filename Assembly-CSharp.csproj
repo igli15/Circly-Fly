@@ -55,10 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ActivateEyeball.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-    <Compile Include="Assets\LookAtPlayer.cs" />
+    <Compile Include="Assets\Scripts\ActivateEyeball.cs" />
     <Compile Include="Assets\Scripts\BackgroundColorChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\CollectedGem.cs" />
@@ -74,6 +73,7 @@
     <Compile Include="Assets\Scripts\IPooleableObject.cs" />
     <Compile Include="Assets\Scripts\JumpScript.cs" />
     <Compile Include="Assets\Scripts\LevelData.cs" />
+    <Compile Include="Assets\Scripts\LookAtPlayer.cs" />
     <Compile Include="Assets\Scripts\LootScript.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\ObstacleMovement.cs" />
