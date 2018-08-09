@@ -51,7 +51,7 @@ public class PlayerData : MonoBehaviour
         PlayerCollisions.OnObstacleHit += CheckHighscore;
         PlayerCollisions.OnObstacleHit += Save;
 
-        PlayerCollisions.OnObstaclePass += sender => levelScore += 1;
+        TriggerManager.OnObstaclePass += sender => levelScore += 1;
 
         PlayerCollisions.OnGemCollected += CheckGem;
     }
@@ -130,7 +130,7 @@ public class PlayerData : MonoBehaviour
         PlayerCollisions.OnObstacleHit -= CheckHighscore;
         PlayerCollisions.OnObstacleHit -= Save;
 
-        PlayerCollisions.OnObstaclePass -= sender => levelScore += 1;
+        TriggerManager.OnObstaclePass -= sender => levelScore += 1;
 
         PlayerCollisions.OnGemCollected -= CheckGem;
 

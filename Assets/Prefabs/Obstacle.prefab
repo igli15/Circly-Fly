@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114269756074608488}
   - component: {fileID: 60378000544918072}
   - component: {fileID: 61839220256434700}
+  - component: {fileID: 114477217739774224}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: obstacle
@@ -157,6 +158,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceBetweenObstacles: 0.69
   distanceFromStartLine: 1.43
+--- !u!114 &114477217739774224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1235341570770814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496592c6f4f9b4310ab17c5c8d6ec770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212422522674167858
 SpriteRenderer:
   m_ObjectHideFlags: 1

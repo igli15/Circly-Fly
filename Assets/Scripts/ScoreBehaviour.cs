@@ -14,10 +14,10 @@ public class ScoreBehaviour : MonoBehaviour
     {
         text = GetComponent<Text>();
         text.text = score.ToString();
-        PlayerCollisions.OnObstaclePass += IncreaseScore;
+        TriggerManager.OnObstaclePass += IncreaseScore;
     }
 
-    private void IncreaseScore(PlayerCollisions sender)
+    private void IncreaseScore(Collider2D sender)
     {
         score += scoreIncrement;
         if (text != null)
@@ -26,6 +26,6 @@ public class ScoreBehaviour : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerCollisions.OnObstaclePass -= IncreaseScore;
+        TriggerManager.OnObstaclePass -= IncreaseScore;
     }
 }

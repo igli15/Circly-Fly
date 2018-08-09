@@ -57,6 +57,7 @@
           </e>
         </e>
         <e p="StartRotatingSpawner.cs" t="Include" />
+        <e p="TriggerManager.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
