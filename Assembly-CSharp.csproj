@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
+    <Compile Include="Assets\Scripts\PlayerRotation.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\ScoreBehaviour.cs" />
     <Compile Include="Assets\Scripts\SetGemCountText.cs" />
@@ -87,12 +88,12 @@
     <Compile Include="Assets\Scripts\ShopItemScript.cs" />
     <Compile Include="Assets\Scripts\ShopManager.cs" />
     <Compile Include="Assets\Scripts\SpawnObstacles.cs" />
+    <Compile Include="Assets\Scripts\StartRotatingSpawner.cs" />
+    <Compile Include="Assets\Scripts\TriggerManager.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\UIStates\LevelUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\MenuUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\ShopUIState.cs" />
-    <Compile Include="Assets\StartRotatingSpawner.cs" />
-    <Compile Include="Assets\TriggerManager.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

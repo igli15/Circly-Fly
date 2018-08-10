@@ -14,12 +14,16 @@ public class ActivateEyeball : MonoBehaviour
 
 	[SerializeField] 
 	private Sprite whiteEyeball;
+
+	
 	
 	// Use this for initialization
 	void Awake ()
 	{
 		animator = GetComponent<Animator>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
+
+		LookAtPlayer.OnEyeReset += CloseEye;
 
 	}
 	
@@ -35,11 +39,20 @@ public class ActivateEyeball : MonoBehaviour
 		spriteRenderer.sprite = whiteEyeball;
 	}
 
-	
+	public void CloseEye(LookAtPlayer sender)
+	{
+		animator.enabled = true;
+		animator.SetBool("IsDead",true);
+		
+	}
 
 	public void AnimateEye()
 	{
 		animator.enabled = true;
 	}
 
+	private void OnDestroy()
+	{
+		LookAtPlayer.OnEyeReset -= CloseEye;
+	}
 }

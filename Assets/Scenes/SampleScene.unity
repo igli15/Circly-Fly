@@ -1208,8 +1208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
-  jumpForce: 5.5
+  jumpDistance: 1.84
+  jumpForce: 5.1
 --- !u!50 &314894140
 Rigidbody2D:
   serializedVersion: 4
@@ -4877,6 +4877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5089bebe2ad504da89f50aef1c0d3fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateEyeball: {fileID: 947134679}
 --- !u!114 &1491413838
 MonoBehaviour:
   m_ObjectHideFlags: 0
