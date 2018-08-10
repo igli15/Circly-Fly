@@ -53,6 +53,7 @@ public class JumpScript : MonoBehaviour
             ;
             jump = false;
         }
+
     }
 
     private void SetCanJumpTrue()
@@ -70,10 +71,12 @@ public class JumpScript : MonoBehaviour
     {
         if (jump)
         {
-           rb.AddForce(transform.up * jumpForce);
+            rb.AddForce(transform.up * jumpForce);
 
             if (joint != null)
                 joint.distance = initalJointDistance + jumpDistance;
+
+
         }
 
         if (!jump)

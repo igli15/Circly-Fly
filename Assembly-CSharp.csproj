@@ -57,13 +57,12 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-    <Compile Include="Assets\EnableAnimatorFiller.cs" />
-    <Compile Include="Assets\EnableNewHighScoreText.cs" />
-    <Compile Include="Assets\ScoreAnimation.cs" />
     <Compile Include="Assets\Scripts\ActivateEyeball.cs" />
     <Compile Include="Assets\Scripts\BackgroundColorChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\CollectedGem.cs" />
+    <Compile Include="Assets\Scripts\EnableAnimatorFiller.cs" />
+    <Compile Include="Assets\Scripts\EnableNewHighScoreText.cs" />
     <Compile Include="Assets\Scripts\Encryption.cs" />
     <Compile Include="Assets\Scripts\FindRightPosition.cs" />
     <Compile Include="Assets\Scripts\FinishLineReached.cs" />
@@ -85,6 +84,7 @@
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\PlayerRotation.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
+    <Compile Include="Assets\Scripts\ScoreAnimation.cs" />
     <Compile Include="Assets\Scripts\ScoreBehaviour.cs" />
     <Compile Include="Assets\Scripts\SetGemCountText.cs" />
     <Compile Include="Assets\Scripts\SetHighscoreText.cs" />
