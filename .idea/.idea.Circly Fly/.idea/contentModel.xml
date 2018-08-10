@@ -16,6 +16,8 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="EnableNewHighScoreText.cs" t="Include" />
+        <e p="ScoreAnimation.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
@@ -59,6 +61,7 @@
             <e p="ShopUIState.cs" t="Include" />
           </e>
         </e>
+        <e p="Test.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

@@ -29,6 +29,9 @@ public class PlayerData : MonoBehaviour
 
     public static Action<PlayerData> OnHighScoreChanged;
     public static Action<PlayerData> OnGemCountChanged;
+    
+    
+    public static Action<PlayerData> OnHighscoreBroken;
 
    // private bool callOnce = false;
 
@@ -40,7 +43,7 @@ public class PlayerData : MonoBehaviour
         
         
         Load();
-        
+
     }
     
 
@@ -51,7 +54,8 @@ public class PlayerData : MonoBehaviour
         PlayerCollisions.OnObstacleHit += CheckHighscore;
         PlayerCollisions.OnObstacleHit += Save;
 
-        TriggerManager.OnObstaclePass += sender => levelScore += 1;
+        TriggerManager.OnObstaclePass += IncreaseScore;
+        TriggerManager.OnObstaclePass += CheckHighscore;
 
         PlayerCollisions.OnGemCollected += CheckGem;
     }
@@ -74,6 +78,8 @@ public class PlayerData : MonoBehaviour
             unlockedCharacter[5] = false;
             
             defaultCharacter = 0;
+
+            highscore = 0;
             
             Save(null);
         }
@@ -94,10 +100,31 @@ public class PlayerData : MonoBehaviour
 
     private void CheckHighscore(PlayerCollisions sender)
     {
-        if (levelScore > highscore) highscore = levelScore;
-        if (OnHighScoreChanged != null) OnHighScoreChanged(this);
+        
+        if (levelScore > highscore)
+        {
+            highscore = levelScore;
+            if (OnHighScoreChanged != null) OnHighScoreChanged(this);
+        }
+
     }
-  
+    
+    private void CheckHighscore(Collider2D sender)
+    {
+        Debug.Log(highscore);
+        Debug.Log(levelScore);
+        if (levelScore > highscore)
+        {
+            if (OnHighscoreBroken != null) OnHighscoreBroken(this);
+        }
+    }
+    
+    private void IncreaseScore(Collider2D sender)
+    {
+        levelScore += 1;
+    }
+
+
 
     private void CheckGem(Collision2D collision)
     {
@@ -130,9 +157,12 @@ public class PlayerData : MonoBehaviour
         PlayerCollisions.OnObstacleHit -= CheckHighscore;
         PlayerCollisions.OnObstacleHit -= Save;
 
-        TriggerManager.OnObstaclePass -= sender => levelScore += 1;
+        TriggerManager.OnObstaclePass -= IncreaseScore;
 
         PlayerCollisions.OnGemCollected -= CheckGem;
+
+        levelScore = 0;
+        highscore = 0;
 
     }
 }

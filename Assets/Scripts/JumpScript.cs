@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 public class JumpScript : MonoBehaviour
 {
@@ -69,7 +70,7 @@ public class JumpScript : MonoBehaviour
     {
         if (jump)
         {
-            rb.AddForce(transform.up * jumpForce);
+           rb.AddForce(transform.up * jumpForce);
 
             if (joint != null)
                 joint.distance = initalJointDistance + jumpDistance;
