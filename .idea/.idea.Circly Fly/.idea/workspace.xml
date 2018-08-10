@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fb/fb46a7140c1984bf9982677750bd81c0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fb/fb46a7140c1984bf9982677750bd81c0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,24 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CharacterManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1533826549054" expanded="false" signature="6:78" ph="..." />
-                <marker date="1533826549054" expanded="true" signature="126:932" ph="{...}" />
-                <marker date="1533826549054" expanded="true" signature="237:349" ph="{...}" />
-                <marker date="1533826549054" expanded="true" signature="390:587" ph="{...}" />
-                <marker date="1533826549054" expanded="true" signature="453:525" ph="{...}" />
-                <marker date="1533826549054" expanded="true" signature="641:845" ph="{...}" />
-                <marker date="1533826549054" expanded="true" signature="704:776" ph="{...}" />
-                <marker date="1533826549054" expanded="true" signature="872:930" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PlayerCollisions.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCollisions.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerData.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerData.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerData.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="717">
@@ -159,17 +134,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Test.cs">
+      <file leaf-file-name="EnableAnimatorFiller.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/EnableAnimatorFiller.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+            <state relative-caret-position="44">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
               <folding>
-                <marker date="1533901202708" expanded="false" signature="6:78" ph="..." />
-                <marker date="1533901202708" expanded="true" signature="114:276" ph="{...}" />
-                <marker date="1533901202708" expanded="true" signature="164:171" ph="{...}" />
-                <marker date="1533901202708" expanded="true" signature="226:233" ph="{...}" />
-                <marker date="1533901202708" expanded="true" signature="265:274" ph="{...}" />
+                <marker date="1533902557472" expanded="false" signature="6:78" ph="..." />
+                <marker date="1533902557472" expanded="true" signature="130:292" ph="{...}" />
+                <marker date="1533902557472" expanded="true" signature="180:187" ph="{...}" />
+                <marker date="1533902557472" expanded="true" signature="242:249" ph="{...}" />
+                <marker date="1533902557472" expanded="true" signature="281:290" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -225,6 +200,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IncreaseRotationSpeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EnableAnimatorFiller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Project VirtualGame/Assets/_Own/Scripts/Enemy/AI/States/EnemyMoveRandomlyAroundPointState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Encryption.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -241,7 +217,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GemScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectedGem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IncreaseScaleOnSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LootScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/AbstractState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -257,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/BackgroundColorChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Encryption.cs" />
         <option value="$PROJECT_DIR$/Assets/SetGemCountText.cs" />
         <option value="$PROJECT_DIR$/Assets/SetHighscoreText.cs" />
@@ -308,6 +282,7 @@
         <option value="$PROJECT_DIR$/Assets/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/EnableNewHighScoreText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnableAnimatorFiller.cs" />
       </list>
     </option>
   </component>
@@ -404,12 +379,12 @@
       <workItem from="1533586530595" duration="28368000" />
       <workItem from="1533808111181" duration="3119000" />
       <workItem from="1533826333735" duration="3024000" />
-      <workItem from="1533888948560" duration="4971000" />
+      <workItem from="1533888948560" duration="5080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131454000" />
+    <option name="totallyTimeSpent" value="131563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,9 +462,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Project VirtualGame/Assets/_Own/Scripts/Enemy/AI/States/EnemyMoveRandomlyAroundPointState.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MenuUIState.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/IAgent.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Fsm.cs" />
@@ -801,13 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <marker date="1533901202708" expanded="false" signature="6:78" ph="..." />
-            <marker date="1533901202708" expanded="true" signature="114:276" ph="{...}" />
-            <marker date="1533901202708" expanded="true" signature="164:171" ph="{...}" />
-            <marker date="1533901202708" expanded="true" signature="226:233" ph="{...}" />
-            <marker date="1533901202708" expanded="true" signature="265:274" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,6 +812,20 @@
             <marker date="1533902122901" expanded="true" signature="3755:4046" ph="{...}" />
             <marker date="1533902122901" expanded="true" signature="3839:4040" ph="{...}" />
             <marker date="1533902122901" expanded="true" signature="4076:4354" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/EnableAnimatorFiller.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding>
+            <marker date="1533902557472" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533902557472" expanded="true" signature="130:292" ph="{...}" />
+            <marker date="1533902557472" expanded="true" signature="180:187" ph="{...}" />
+            <marker date="1533902557472" expanded="true" signature="242:249" ph="{...}" />
+            <marker date="1533902557472" expanded="true" signature="281:290" ph="{...}" />
           </folding>
         </state>
       </provider>
