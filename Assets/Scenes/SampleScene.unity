@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
+  jumpDistance: 2
   jumpForce: 5.5
 --- !u!60 &220906
 PolygonCollider2D:
@@ -1328,8 +1328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.84
-  jumpForce: 5.1
+  jumpDistance: 2
+  jumpForce: 5.5
 --- !u!50 &314894140
 Rigidbody2D:
   serializedVersion: 4
@@ -4258,7 +4258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
+  jumpDistance: 2
   jumpForce: 5.5
 --- !u!231 &1326857194
 SpringJoint2D:
@@ -5937,7 +5937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
+  jumpDistance: 2
   jumpForce: 5.5
 --- !u!231 &1913451359
 SpringJoint2D:
@@ -6864,7 +6864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
+  jumpDistance: 2
   jumpForce: 5.5
 --- !u!231 &2008967478
 SpringJoint2D:
@@ -7203,7 +7203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
+  jumpDistance: 2
   jumpForce: 5.5
 --- !u!231 &2057053613
 SpringJoint2D:
@@ -7578,7 +7578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  jumpDistance: 1.86
+  jumpDistance: 2
   jumpForce: 5.5
 --- !u!231 &2081586093
 SpringJoint2D:
