@@ -71,7 +71,7 @@ public class SpawnObstacles : MonoBehaviour
         }
         else if (levelData.GetLevelIndex() > 6)
         {
-            amountOfObstacles = Random.Range(10, 12);
+            amountOfObstacles = Random.Range(8, 10);
             SpawnObstacle(amountOfObstacles);
         }
     }

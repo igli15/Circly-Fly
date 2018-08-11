@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bird.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/bird.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4d/4dfd3f5da88944ec6ac5977d676c30c6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4d/4dfd3f5da88944ec6ac5977d676c30c6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f8eca3a711f4842eba0c52ea9885ef7f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f8/f8eca3a711f4842eba0c52ea9885ef7f" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,27 +90,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RainDrop.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RainDrop.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/RainDrop.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <state relative-caret-position="638">
+              <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
               <folding>
-                <marker date="1533985135277" expanded="true" signature="6:100" ph="..." />
-                <marker date="1533985135277" expanded="true" signature="156:776" ph="{...}" />
-                <marker date="1533985135277" expanded="true" signature="244:313" ph="{...}" />
-                <marker date="1533985135277" expanded="true" signature="363:494" ph="{...}" />
-                <marker date="1533985135277" expanded="true" signature="418:491" ph="{...}" />
-                <marker date="1533985135277" expanded="true" signature="524:774" ph="{...}" />
+                <marker date="1533985271711" expanded="true" signature="6:100" ph="..." />
+                <marker date="1533985271711" expanded="true" signature="156:778" ph="{...}" />
+                <marker date="1533985271711" expanded="true" signature="244:313" ph="{...}" />
+                <marker date="1533985271711" expanded="true" signature="363:494" ph="{...}" />
+                <marker date="1533985271711" expanded="true" signature="418:491" ph="{...}" />
+                <marker date="1533985271711" expanded="true" signature="524:776" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpawnObstacles.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpawnObstacles.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
+            <state relative-caret-position="1571">
               <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
               <folding>
                 <marker date="1533932042769" expanded="false" signature="6:52" ph="..." />
@@ -393,12 +386,12 @@
       <workItem from="1533826333735" duration="3024000" />
       <workItem from="1533888948560" duration="5080000" />
       <workItem from="1533906064307" duration="1289000" />
-      <workItem from="1533979982307" duration="1759000" />
+      <workItem from="1533979982307" duration="1993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134611000" />
+    <option name="totallyTimeSpent" value="134845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -729,26 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-          <folding>
-            <marker date="1533932042769" expanded="false" signature="6:52" ph="..." />
-            <marker date="1533932042769" expanded="true" signature="97:2384" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="498:671" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="727:1439" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="1034:1295" ph="/* if (gems.Count &gt; 0) ... */" />
-            <marker date="1533932042769" expanded="true" signature="1519:2262" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="1569:1687" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="1769:1887" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="1969:2088" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="2136:2256" ph="{...}" />
-            <marker date="1533932042769" expanded="true" signature="2292:2382" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/RainSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -767,15 +740,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/RainDrop.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="638">
+          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
           <folding>
-            <marker date="1533985135277" expanded="true" signature="6:100" ph="..." />
-            <marker date="1533985135277" expanded="true" signature="156:776" ph="{...}" />
-            <marker date="1533985135277" expanded="true" signature="244:313" ph="{...}" />
-            <marker date="1533985135277" expanded="true" signature="363:494" ph="{...}" />
-            <marker date="1533985135277" expanded="true" signature="418:491" ph="{...}" />
-            <marker date="1533985135277" expanded="true" signature="524:774" ph="{...}" />
+            <marker date="1533985271711" expanded="true" signature="6:100" ph="..." />
+            <marker date="1533985271711" expanded="true" signature="156:778" ph="{...}" />
+            <marker date="1533985271711" expanded="true" signature="244:313" ph="{...}" />
+            <marker date="1533985271711" expanded="true" signature="363:494" ph="{...}" />
+            <marker date="1533985271711" expanded="true" signature="418:491" ph="{...}" />
+            <marker date="1533985271711" expanded="true" signature="524:776" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpawnObstacles.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1571">
+          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+          <folding>
+            <marker date="1533932042769" expanded="false" signature="6:52" ph="..." />
+            <marker date="1533932042769" expanded="true" signature="97:2384" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="498:671" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="727:1439" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="1034:1295" ph="/* if (gems.Count &gt; 0) ... */" />
+            <marker date="1533932042769" expanded="true" signature="1519:2262" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="1569:1687" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="1769:1887" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="1969:2088" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="2136:2256" ph="{...}" />
+            <marker date="1533932042769" expanded="true" signature="2292:2382" ph="{...}" />
           </folding>
         </state>
       </provider>
