@@ -11,6 +11,7 @@ TagManager:
   - gem
   - lootManager
   - ShopItem
+  - BottomBoundary
   layers:
   - Default
   - TransparentFX

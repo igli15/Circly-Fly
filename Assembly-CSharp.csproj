@@ -57,6 +57,8 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\RainDrop.cs" />
+    <Compile Include="Assets\RainSpawner.cs" />
     <Compile Include="Assets\Scripts\ActivateEyeball.cs" />
     <Compile Include="Assets\Scripts\BackgroundColorChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterManager.cs" />

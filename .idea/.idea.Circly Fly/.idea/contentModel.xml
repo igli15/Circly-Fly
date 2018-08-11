@@ -16,6 +16,8 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="RainDrop.cs" t="Include" />
+        <e p="RainSpawner.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
