@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &220901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!60 &220906
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
     size: 5
   - tag: RainDrop
     prefab: {fileID: 1506530580543898, guid: 7921139229e6a43b281deb3653b504a3, type: 2}
-    size: 100
+    size: 150
 --- !u!4 &191728639
 Transform:
   m_ObjectHideFlags: 0
@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!50 &314894140
 Rigidbody2D:
   serializedVersion: 4
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &314894144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4196,7 +4196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &1326857189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4259,7 +4259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!231 &1326857194
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -5875,7 +5875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &1913451354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5938,7 +5938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!231 &1913451359
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -6802,7 +6802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &2008967473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6865,7 +6865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!231 &2008967478
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -7141,7 +7141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &2057053608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7204,7 +7204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!231 &2057053613
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -7516,7 +7516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a4e79676b924986af004b1e18078b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speedincrement: 1
+  Speedincrement: 0.8
 --- !u!114 &2081586088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7579,7 +7579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canJump: 0
   jumpDistance: 2
-  jumpForce: 5.5
+  jumpForce: 6.7
 --- !u!231 &2081586093
 SpringJoint2D:
   m_ObjectHideFlags: 0

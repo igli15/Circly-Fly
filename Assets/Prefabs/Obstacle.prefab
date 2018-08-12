@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b168d06fdf71d4a2e912d11ebf5092b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceBetweenObstacles: 0.69
+  distanceBetweenObstacles: 1.2
   distanceFromStartLine: 1.43
 --- !u!114 &114477217739774224
 MonoBehaviour:

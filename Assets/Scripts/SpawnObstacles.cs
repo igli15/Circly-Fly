@@ -54,26 +54,22 @@ public class SpawnObstacles : MonoBehaviour
 
     private void SpawnRightAmountOfObstacles(FinishLineReached sender = null)
     {
-        if (levelData.GetLevelIndex() <= 2)
+        if (levelData.GetLevelIndex() <= 4)
         {
-            amountOfObstacles = Random.Range(4, 6);
+            amountOfObstacles = Random.Range(3, 5);
             SpawnObstacle(amountOfObstacles);
         }
-        else if (levelData.GetLevelIndex() <= 4 && levelData.GetLevelIndex() > 2)
+        else if (levelData.GetLevelIndex() <= 7 && levelData.GetLevelIndex() > 4)
         {
-            amountOfObstacles = Random.Range(6, 8);
+            amountOfObstacles = Random.Range(5, 7);
             SpawnObstacle(amountOfObstacles);
         }
-        else if (levelData.GetLevelIndex() <= 6 && levelData.GetLevelIndex() > 4)
+        else if (levelData.GetLevelIndex() <= 10 && levelData.GetLevelIndex() > 7)
         {
-            amountOfObstacles = Random.Range(8, 10);
+            amountOfObstacles = Random.Range(7, 9);
             SpawnObstacle(amountOfObstacles);
         }
-        else if (levelData.GetLevelIndex() > 6)
-        {
-            amountOfObstacles = Random.Range(8, 10);
-            SpawnObstacle(amountOfObstacles);
-        }
+
     }
 
     private void OnDestroy()
