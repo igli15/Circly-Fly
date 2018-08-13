@@ -3,8 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public class PlayAds : MonoBehaviour {
+public class PlayAds : MonoBehaviour
+{
 
+	private float deathCount = 0;
+	
+	private void Start()
+	{
+		PlayerCollisions.OnObstacleHit += IncreaseDeathCount;
+		PlayerCollisions.OnObstacleHit += CheckIfShouldPlayAdd;
+
+	}
+
+	private void IncreaseDeathCount(PlayerCollisions sender)
+	{
+		deathCount += 1;
+	}
+
+	private void CheckIfShouldPlayAdd(PlayerCollisions sender)
+	{
+		if (deathCount > 3)
+		{
+			ShowNormalAdd();
+			deathCount = 0;
+		}
+	}
 
 	public void ShowRewardedVideoAdd()
 	{

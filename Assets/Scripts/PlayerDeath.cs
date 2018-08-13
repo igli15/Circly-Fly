@@ -18,6 +18,8 @@ public class PlayerDeath : MonoBehaviour
 
     private SpringJoint2D spring;
 
+    private Collider collider;
+
     [SerializeField] [Range(0, 1)] 
     private float torqueForce = 0.6f;
 
@@ -52,7 +54,8 @@ public class PlayerDeath : MonoBehaviour
         
         shouldAddForce = true;
         rb.freezeRotation = false;
-         rb.AddTorque(torqueForce, ForceMode2D.Impulse);
+        rb.AddTorque(torqueForce, ForceMode2D.Impulse);
+        
 
         jumpScript.canJump = false;
         if (rotateScript != null) rotateScript.enabled = false;
