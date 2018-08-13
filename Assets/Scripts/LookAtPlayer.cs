@@ -48,10 +48,8 @@ public class LookAtPlayer : MonoBehaviour
 		transform.DOMove(Vector3.zero, 0.5f);
 		transform.DORotate(Quaternion.identity.eulerAngles, 0.5f);
 		Invoke("PlayCloseAnim", 0.45f);
-		/*Destroy(gameObject, 0.5f);*/
-		gameObject.SetActive(false);
-
 	}
+
 
 	private void OnEnable()
 	{
@@ -62,6 +60,7 @@ public class LookAtPlayer : MonoBehaviour
 	private void PlayCloseAnim()
 	{
 		OnEyeReset(this);
+		gameObject.SetActive(false);
 	}
 
 	private void EnableRotateScript(FinishLineReached sender)
