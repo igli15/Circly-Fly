@@ -15,6 +15,8 @@ public class PlayerData : MonoBehaviour
     
     [HideInInspector] public int highscore = 0;
 
+    [HideInInspector] public int deathCount = 0;
+
     private int levelScore;
 
     [HideInInspector] public int tier1GemCount = 0;

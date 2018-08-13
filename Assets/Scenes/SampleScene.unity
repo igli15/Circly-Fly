@@ -1143,7 +1143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &266152534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1608,6 +1608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiManager: {fileID: 217482719}
   highscore: 0
+  deathCount: 0
   tier1GemCount: 0
   tier2GemCount: 0
   tier3GemCount: 0
@@ -2881,7 +2882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &872836694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7959,6 +7960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc7e0f807c0844e29dc2c9c9df2593e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 395693285}
 --- !u!4 &2136415719
 Transform:
   m_ObjectHideFlags: 0

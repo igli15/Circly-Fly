@@ -5,27 +5,37 @@ using UnityEngine.Advertisements;
 
 public class PlayAds : MonoBehaviour
 {
+	[SerializeField] 
+	private PlayerData playerData;
 
-	private float deathCount = 0;
 	
 	private void Start()
 	{
-		PlayerCollisions.OnObstacleHit += IncreaseDeathCount;
 		PlayerCollisions.OnObstacleHit += CheckIfShouldPlayAdd;
+		//PlayerCollisions.OnObstacleHit += IncreaseDeathCount;
 
 	}
 
-	private void IncreaseDeathCount(PlayerCollisions sender)
+	/*private void IncreaseDeathCount(PlayerCollisions sender)
 	{
-		deathCount += 1;
-	}
+		playerData.deathCount += 1;
+		Debug.Log(playerData.deathCount);
+	}*/
 
 	private void CheckIfShouldPlayAdd(PlayerCollisions sender)
 	{
-		if (deathCount > 3)
+		if (playerData.deathCount >= 3)
 		{
 			ShowNormalAdd();
-			deathCount = 0;
+			playerData.deathCount = 0;
+			Debug.Log("More than 3");
+			playerData.Save();
+		}
+		else
+		{
+			Debug.Log(playerData.deathCount);
+			playerData.deathCount += 1;
+			playerData.Save();
 		}
 	}
 
@@ -43,6 +53,12 @@ public class PlayAds : MonoBehaviour
 		{
 			Advertisement.Show("video",new ShowOptions(){resultCallback = HandleResult});
 		}
+	}
+
+	private void OnDestroy()
+	{
+		//PlayerCollisions.OnObstacleHit -= IncreaseDeathCount;
+		PlayerCollisions.OnObstacleHit -= CheckIfShouldPlayAdd;
 	}
 
 	private void HandleResult(ShowResult showResult)
