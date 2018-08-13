@@ -30,4 +30,9 @@ public class RotateScript : MonoBehaviour
         rotationSpeed = newRotSpeed;
     }
 
+    public float GetRotationSpeed()
+    {
+        return rotationSpeed;
+    }
+
 }

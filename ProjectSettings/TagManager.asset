@@ -12,6 +12,7 @@ TagManager:
   - lootManager
   - ShopItem
   - BottomBoundary
+  - AddManager
   layers:
   - Default
   - TransparentFX

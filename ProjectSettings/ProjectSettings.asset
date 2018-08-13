@@ -678,12 +678,16 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 06450f2e-f6c2-436c-a52b-87ea8986e6df
+  cloudProjectId: 941aa501-6511-4bfb-b3c8-3d8e9254b547
   projectName: Circly Fly
-  organizationId: igli-4075132
+  organizationId: neurdigits
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

@@ -14,9 +14,15 @@ public class LookAtPlayer : MonoBehaviour
 	
 	public static Action<LookAtPlayer> OnEyeReset;
 
+	private bool shouldLookAtPlayer;
+
+	private GameObject player;
+	
 	// Use this for initialization
 	void Start ()
 	{
+		player = GameObject.FindGameObjectWithTag("Player");
+		
 		rotateScript = GetComponent<RotateScript>();
 
 		FinishLineReached.OnFinishLineReached += EnableRotateScript;
@@ -54,6 +60,7 @@ public class LookAtPlayer : MonoBehaviour
 	private void EnableRotateScript(FinishLineReached sender)
 	{
 		rotateScript.enabled = true;
+		rotateScript.SetRotationSpeed(player.GetComponent<RotateScript>().GetRotationSpeed());
 	}
 	
 }
