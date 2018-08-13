@@ -44,6 +44,7 @@ public class ActivateEyeball : MonoBehaviour
 	public void CloseEye(LookAtPlayer sender)
 	{
 		animator.enabled = true;
+		animator.SetBool("Revived",false);
 		animator.SetBool("IsDead",true);
 		
 	}

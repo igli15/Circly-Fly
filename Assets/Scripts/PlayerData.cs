@@ -99,6 +99,11 @@ public class PlayerData : MonoBehaviour
         
     }
 
+    public void IncreaseDeathCount()
+    {
+        deathCount += 1;
+        Save();
+    }
 
     private void CheckHighscore(PlayerCollisions sender)
     {
@@ -113,8 +118,6 @@ public class PlayerData : MonoBehaviour
     
     private void CheckHighscore(Collider2D sender)
     {
-        Debug.Log(highscore);
-        Debug.Log(levelScore);
         if (levelScore > highscore)
         {
             if (OnHighscoreBroken != null) OnHighscoreBroken(this);

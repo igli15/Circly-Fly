@@ -53,6 +53,7 @@ public class PlayerDeath : MonoBehaviour
     private void OnDeath(PlayerCollisions sender)
     {
         animator.SetBool("IsDead",true);
+        animator.SetBool("Revive",false);
         
         if (spring != null)
         {
@@ -69,7 +70,7 @@ public class PlayerDeath : MonoBehaviour
 
         if (reviveCount >= 1)
         {
-            Invoke("RestartScene",0);
+            Invoke("RestartScene",2);
         }
         else
         {

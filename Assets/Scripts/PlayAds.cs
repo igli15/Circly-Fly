@@ -16,23 +16,19 @@ public class PlayAds : MonoBehaviour
 	
 	private void Start()
 	{
-		PlayerCollisions.OnObstacleHit += CheckIfShouldPlayAdd;
+		
 	}
 
-	private void CheckIfShouldPlayAdd(PlayerCollisions sender)
+	public void CheckIfShouldPlayAdd()
 	{
+		Debug.Log(playerData.deathCount);
 		if (playerData.deathCount >= 3)
 		{
 			ShowNormalAdd();
 			playerData.deathCount = 0;
 			playerData.Save();
 		}
-		else
-		{
-			Debug.Log(playerData.deathCount);
-			playerData.deathCount += 1;
-			playerData.Save();
-		}
+		
 	}
 
 	public void ShowRewardedVideoAdd()
@@ -56,10 +52,6 @@ public class PlayAds : MonoBehaviour
 		}
 	}
 
-	private void OnDestroy()
-	{
-		PlayerCollisions.OnObstacleHit -= CheckIfShouldPlayAdd;
-	}
 
 	private void HandleResult(ShowResult showResult)
 	{
