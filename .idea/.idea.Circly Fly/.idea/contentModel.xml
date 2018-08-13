@@ -16,7 +16,7 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="PlayAds.cs" t="Include" />
+        <e p="PopUp.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
@@ -42,6 +42,7 @@
           <e p="LootScript.cs" t="Include" />
           <e p="ObjectPooler.cs" t="Include" />
           <e p="ObstacleMovement.cs" t="Include" />
+          <e p="PlayAds.cs" t="Include" />
           <e p="PlayerCollisions.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />

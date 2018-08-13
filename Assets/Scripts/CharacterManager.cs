@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-	[SerializeField] 
+	
 	private PlayerData playerData;
 	
 	// Use this for initialization
@@ -13,10 +13,14 @@ public class CharacterManager : MonoBehaviour
 
 	private void Start()
 	{
+		playerData = GameObject.FindGameObjectWithTag("SaveLoadManager").GetComponent<PlayerData>();
+		
 		ShopItemScript.OnSetAsDefault += ChangeCharacter;
 		
 		ChangeCharacter(playerData.defaultCharacter);
-		
+
+		PlayAds.OnReviveAdFinished += ReviveRightCharacter;
+
 	}
 
 	public void ChangeCharacter(int index)
@@ -42,5 +46,13 @@ public class CharacterManager : MonoBehaviour
 	private void OnDestroy()
 	{
 		ShopItemScript.OnSetAsDefault -= ChangeCharacter;
+		PlayAds.OnReviveAdFinished -= ReviveRightCharacter;
 	}
+
+	public void ReviveRightCharacter(PlayAds sender = null)
+	{
+		transform.GetChild(playerData.defaultCharacter).GetComponent<PlayerDeath>().Revive();
+	}
+	
+
 }

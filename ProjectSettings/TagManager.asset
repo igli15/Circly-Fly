@@ -13,6 +13,7 @@ TagManager:
   - ShopItem
   - BottomBoundary
   - AddManager
+  - SaveLoadManager
   layers:
   - Default
   - TransparentFX

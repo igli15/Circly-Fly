@@ -5,6 +5,8 @@ public class PlayerDeath : MonoBehaviour
 {
     [SerializeField] [Range(5, 20)] private float fallingSpeed = 10;
 
+    [SerializeField] private PopUp revivePopup;
+
     private JumpScript jumpScript;
 
     private Rigidbody2D rb;
@@ -23,6 +25,10 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] [Range(0, 1)] 
     private float torqueForce = 0.6f;
 
+    private float reviveCount = 0;
+
+    private Vector3 initialPos;
+
     private void Start()
     {
         jumpScript = GetComponent<JumpScript>();
@@ -34,6 +40,8 @@ public class PlayerDeath : MonoBehaviour
         
         spawner = GameObject.FindGameObjectWithTag("spawner");
         PlayerCollisions.OnObstacleHit += OnDeath;
+
+        initialPos = transform.position;
     }
 
     private void FixedUpdate()
@@ -48,8 +56,7 @@ public class PlayerDeath : MonoBehaviour
         
         if (spring != null)
         {
-            spring.breakForce = 0;
-            spring.autoConfigureDistance = true;
+            spring.enabled = false;
         }
         
         shouldAddForce = true;
@@ -60,11 +67,42 @@ public class PlayerDeath : MonoBehaviour
         jumpScript.canJump = false;
         if (rotateScript != null) rotateScript.enabled = false;
 
-
-        Invoke("RestartScene", 2);
+        if (reviveCount >= 1)
+        {
+            Invoke("RestartScene",0);
+        }
+        else
+        {
+            revivePopup.Show();
+            reviveCount += 1;
+        }
     }
+    
+    public void Revive()
+    {
+        animator.SetBool("IsDead",false);
+        animator.SetBool("Revive",true);
 
-    private void RestartScene()
+        GetComponent<PlayerCollisions>().isDead = false;
+        GetComponent<RotateScript>().SetRotationSpeed(40);
+
+        transform.position = initialPos;
+        transform.rotation = Quaternion.identity;
+        
+        if (spring != null)
+        {
+            spring.enabled = true;
+        }
+
+        shouldAddForce = false;
+        rb.freezeRotation = true;
+
+        jumpScript.canJump = true;
+        if (rotateScript != null) rotateScript.enabled = true;
+    }
+    
+
+    public void RestartScene()
     {
         SceneManager.LoadScene(0);
     }

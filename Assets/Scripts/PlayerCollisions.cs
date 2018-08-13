@@ -6,7 +6,8 @@ public class PlayerCollisions : MonoBehaviour
     public static Action<PlayerCollisions> OnObstacleHit;
     public static Action<Collision2D> OnGemCollected;
 
-    private bool isDead = false;
+    [HideInInspector]
+    public bool isDead = false;
         
     /*private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,7 +16,7 @@ public class PlayerCollisions : MonoBehaviour
                 OnObstaclePass(this);
     }*/
 
-
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.CompareTag("obstacle"))

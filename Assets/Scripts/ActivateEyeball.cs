@@ -24,11 +24,13 @@ public class ActivateEyeball : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 
 		LookAtPlayer.OnEyeReset += CloseEye;
+		PlayAds.OnReviveAdFinished += RevviveEye;
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		
 	}
 	
@@ -51,8 +53,16 @@ public class ActivateEyeball : MonoBehaviour
 		animator.enabled = true;
 	}
 
+	public void RevviveEye(PlayAds sender = null)
+	{
+		animator.enabled = true;
+		animator.SetBool("IsDead",false);
+		animator.SetBool("Revived",true);
+	}
+
 	private void OnDestroy()
 	{
 		LookAtPlayer.OnEyeReset -= CloseEye;
+		PlayAds.OnReviveAdFinished -= RevviveEye;
 	}
 }
