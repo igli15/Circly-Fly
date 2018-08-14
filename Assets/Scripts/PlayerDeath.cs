@@ -99,6 +99,7 @@ public class PlayerDeath : MonoBehaviour
         rb.freezeRotation = true;
 
         jumpScript.canJump = true;
+        jumpScript.playJumpSound = true;
         if (rotateScript != null) rotateScript.enabled = true;
     }
     

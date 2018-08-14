@@ -18,6 +18,9 @@ public class JumpScript : MonoBehaviour
     private Rigidbody2D rb;
 
     private GameObject spawner;
+    
+    [HideInInspector]
+    public bool playJumpSound = true;
 
 
     // Use this for initialization
@@ -30,18 +33,28 @@ public class JumpScript : MonoBehaviour
 
         spawner = GameObject.FindGameObjectWithTag("spawner");
 
+        PlayerCollisions.OnObstacleHit += StopJumpSound;
+
         rb.freezeRotation = true;
 
         canJump = true;
     }
 
+    private void StopJumpSound(PlayerCollisions sender)
+    {
+        playJumpSound = false;
+    }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canJump)
+        if (Input.GetMouseButtonDown(0) && canJump && playJumpSound == true)
         {
+       
             jump = true;
             canJump = false;
+            
+            AudioManagerScript.instance.PlaySound("jump");
+            
             Invoke("SetJumpToFalse", 0.1f);
         }
 
@@ -70,7 +83,7 @@ public class JumpScript : MonoBehaviour
     private void FixedUpdate()
     {
         if (jump)
-        {
+        {    
             rb.AddForce(transform.up * jumpForce);
 
             if (joint != null)
@@ -85,5 +98,10 @@ public class JumpScript : MonoBehaviour
             if (joint != null)
                 joint.distance = initalJointDistance;
         }
+    }
+
+    private void OnDestroy()
+    {
+        PlayerCollisions.OnObstacleHit -= StopJumpSound;
     }
 }
