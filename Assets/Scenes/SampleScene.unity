@@ -237,6 +237,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!60 &220906
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1642,6 +1643,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!50 &314894140
 Rigidbody2D:
   serializedVersion: 4
@@ -3033,7 +3035,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9d8d6239ab9794e2facc0891c410eeb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1829e6b87f75941fbad9cd0ca74226af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3603,7 +3605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5921569}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5374,6 +5376,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!231 &1326857194
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -7446,6 +7449,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!231 &1913451359
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -8411,6 +8415,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!231 &2008967478
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -8765,6 +8770,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!231 &2057053613
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -9154,6 +9160,7 @@ MonoBehaviour:
   canJump: 0
   jumpDistance: 2
   jumpForce: 6.7
+  playJumpSound: 1
 --- !u!231 &2081586093
 SpringJoint2D:
   m_ObjectHideFlags: 0
