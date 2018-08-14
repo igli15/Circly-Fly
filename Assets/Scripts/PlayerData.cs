@@ -43,6 +43,7 @@ public class PlayerData : MonoBehaviour
         unlockedCharacter = new bool[10];
         unlockedCharacter[0] = true;
         
+        if(!File.Exists(Application.persistentDataPath + "/PlayerData.json")) Save();
         
         Load();
 
@@ -98,11 +99,21 @@ public class PlayerData : MonoBehaviour
         Save(null);
         
     }
+    
+    public void IncreaseGemAmount(int amount,GemScript.GemType gemType)
+    {
+        if (gemType == GemScript.GemType.tier1Gem) tier1GemCount += amount;
+        if (gemType == GemScript.GemType.tier2Gem) tier2GemCount += amount;
+        if (gemType == GemScript.GemType.tier3Gem) tier3GemCount += amount;
+        
+        Save(null);
+        
+    }
 
     public void IncreaseDeathCount()
+
     {
         deathCount += 1;
-        Save();
     }
 
     private void CheckHighscore(PlayerCollisions sender)
@@ -118,6 +129,8 @@ public class PlayerData : MonoBehaviour
     
     private void CheckHighscore(Collider2D sender)
     {
+        Debug.Log(highscore);
+        Debug.Log(levelScore);
         if (levelScore > highscore)
         {
             if (OnHighscoreBroken != null) OnHighscoreBroken(this);

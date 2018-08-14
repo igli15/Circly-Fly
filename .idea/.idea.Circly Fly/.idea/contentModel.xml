@@ -16,7 +16,7 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="PopUp.cs" t="Include" />
+        <e p="GemReward.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
@@ -47,6 +47,7 @@
           <e p="PlayerData.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
           <e p="PlayerRotation.cs" t="Include" />
+          <e p="PopUp.cs" t="Include" />
           <e p="RainDrop.cs" t="Include" />
           <e p="RainSpawner.cs" t="Include" />
           <e p="RotateScript.cs" t="Include" />
@@ -67,6 +68,7 @@
           </e>
           <e p="Utils.cs" t="Include" />
         </e>
+        <e p="ShakeEffect.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

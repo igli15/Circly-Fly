@@ -11,6 +11,7 @@ public class LevelData : MonoBehaviour
     private void Start()
     {
         FinishLineReached.OnFinishLineReached += IncreaseLevelIndex;
+        PlayerCollisions.OnObstacleHit += Vibrate;
         //lootScript.GenerateLootItem();
     }
 
@@ -20,6 +21,10 @@ public class LevelData : MonoBehaviour
         
     }
 
+    private void Vibrate(PlayerCollisions sender)
+    {
+        Handheld.Vibrate();
+    }
 
     public int GetLevelIndex()
     {
@@ -35,5 +40,6 @@ public class LevelData : MonoBehaviour
     private void OnDestroy()
     {
         FinishLineReached.OnFinishLineReached -= IncreaseLevelIndex;
+        PlayerCollisions.OnObstacleHit -= Vibrate;
     }
 }

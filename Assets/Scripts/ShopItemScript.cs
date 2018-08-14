@@ -55,7 +55,6 @@ public class ShopItemScript : MonoBehaviour
 			image = transform.GetChild(2).gameObject;
 		}
 		
-		
 		if (playerData.unlockedCharacter[index])
 		{
 			Unlock();

@@ -42,6 +42,37 @@ public class LootScript : MonoBehaviour
             }
         }
     }
+    
+    public LootItem GetRandomItem()
+    {
+        var _dropChance = Random.Range(0, 101);
+
+        if (_dropChance > dropLootChance)
+        {
+            Debug.Log("No loot");
+            return null;
+        }
+
+        if (_dropChance <= dropLootChance)
+        {
+            var _itemWeight = 0;
+
+            for (var i = 0; i < lootItems.Count; i++) _itemWeight += lootItems[i].rarity;
+            var _randomValue = Random.Range(0, _itemWeight);
+
+            for (var j = 0; j < lootItems.Count; j++)
+            {
+                if (_randomValue <= lootItems[j].rarity)
+                {
+                    return lootItems[j];
+                }
+
+                _randomValue -= lootItems[j].rarity;
+            }
+        }
+
+        return null;
+    }
 
     [Serializable]
     public class LootItem

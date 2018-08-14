@@ -11,7 +11,9 @@ public class PlayAds : MonoBehaviour
 	private PlayerData playerData;
 
 	public static Action<PlayAds> OnReviveAdFinished;
-	
+
+	[SerializeField] 
+	private GameObject rewardGemPanel;
 
 	
 	private void Start()
@@ -59,7 +61,7 @@ public class PlayAds : MonoBehaviour
 		{
 			case ShowResult.Finished:
 			{
-				Debug.Log("addFinshied");
+				rewardGemPanel.SetActive(true);
 				break;
 			}
 			case ShowResult.Skipped:

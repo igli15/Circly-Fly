@@ -57,7 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-    <Compile Include="Assets\PopUp.cs" />
+    <Compile Include="Assets\GemReward.cs" />
     <Compile Include="Assets\Scripts\ActivateEyeball.cs" />
     <Compile Include="Assets\Scripts\BackgroundColorChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterManager.cs" />
@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\PlayerRotation.cs" />
+    <Compile Include="Assets\Scripts\PopUp.cs" />
     <Compile Include="Assets\Scripts\RainDrop.cs" />
     <Compile Include="Assets\Scripts\RainSpawner.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Scripts\UIStates\MenuUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\ShopUIState.cs" />
     <Compile Include="Assets\Scripts\Utils.cs" />
+    <Compile Include="Assets\ShakeEffect.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
