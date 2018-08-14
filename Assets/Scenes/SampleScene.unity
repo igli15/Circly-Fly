@@ -921,13 +921,13 @@ MonoBehaviour:
   pools:
   - tag: tier3Gem
     prefab: {fileID: 1137677948381430, guid: 9c68bd2c61d214d37916229b1e9861c4, type: 2}
-    size: 5
+    size: 40
   - tag: tier2Gem
     prefab: {fileID: 1521751674767796, guid: 5c76b17374f70404083e7c2bc860a70e, type: 2}
-    size: 5
+    size: 20
   - tag: tier1Gem
     prefab: {fileID: 1638475647811294, guid: d5448836f955a495f9f336a187a0df93, type: 2}
-    size: 5
+    size: 10
   - tag: RainDrop
     prefab: {fileID: 1506530580543898, guid: 7921139229e6a43b281deb3653b504a3, type: 2}
     size: 150
