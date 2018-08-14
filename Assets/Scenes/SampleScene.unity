@@ -1950,10 +1950,19 @@ MonoBehaviour:
     loop: 0
     RollOffMode: 0
     audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: reward
+    clip: {fileID: 8300000, guid: 39bef0e4cb7404bf4a5920534c37c37f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: pickup
+    clip: {fileID: 8300000, guid: 3327c05e95c9e4aa09a42074409a8912, type: 3}
+    volume: 0.7
+    pitch: 1
     spatialBlend: 0
     doplerEffect: 0
     loop: 0

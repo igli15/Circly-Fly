@@ -23,6 +23,7 @@ public class GemReward : MonoBehaviour
 	void OnEnable () 
 	{
 		GenerateLoot();
+		AudioManagerScript.instance.PlaySound("reward");
 	}
 
 	public void GenerateLoot()

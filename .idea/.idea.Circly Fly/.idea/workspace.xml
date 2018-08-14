@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="" />
+    <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GemReward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GemReward.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +19,7 @@
       <file leaf-file-name="PlayAds.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayAds.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="-530">
               <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <marker date="1534248654939" expanded="true" signature="6:126" ph="..." />
@@ -60,25 +65,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GemReward.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GemReward.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GemReward.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="484">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
               <folding>
-                <marker date="1534238336938" expanded="false" signature="6:100" ph="..." />
-                <marker date="1534238336938" expanded="true" signature="140:1280" ph="{...}" />
-                <marker date="1534238336938" expanded="true" signature="388:412" ph="{...}" />
-                <marker date="1534238336938" expanded="true" signature="441:1278" ph="{...}" />
-                <marker date="1534238336938" expanded="true" signature="627:737" ph="{...}" />
-                <marker date="1534238336938" expanded="true" signature="833:944" ph="{...}" />
-                <marker date="1534238336938" expanded="true" signature="1040:1151" ph="{...}" />
+                <marker date="1534250353450" expanded="false" signature="6:100" ph="..." />
+                <marker date="1534250353450" expanded="true" signature="140:1331" ph="{...}" />
+                <marker date="1534250353450" expanded="true" signature="388:463" ph="{...}" />
+                <marker date="1534250353450" expanded="true" signature="492:1329" ph="{...}" />
+                <marker date="1534250353450" expanded="true" signature="678:788" ph="{...}" />
+                <marker date="1534250353450" expanded="true" signature="884:995" ph="{...}" />
+                <marker date="1534250353450" expanded="true" signature="1091:1202" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerDeath.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerDeath.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2112">
@@ -302,7 +307,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/FSM/Fsm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM/AbstractState.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundColorChanger.cs" />
@@ -353,6 +357,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GemReward.cs" />
       </list>
     </option>
   </component>
@@ -457,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150398000" />
+    <option name="totallyTimeSpent" value="150690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,29 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayAds.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <marker date="1534248654939" expanded="true" signature="6:126" ph="..." />
-            <marker date="1534248654939" expanded="true" signature="199:1764" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="385:394" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="431:590" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="504:584" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="627:761" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="661:758" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="793:893" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="923:1000" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="957:997" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="1052:1334" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="1077:1331" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="1392:1762" ph="{...}" />
-            <marker date="1534248654939" expanded="true" signature="1417:1759" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/GemRewardPaneEffects.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShopItemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,22 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GemReward.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <marker date="1534238336938" expanded="false" signature="6:100" ph="..." />
-            <marker date="1534238336938" expanded="true" signature="140:1280" ph="{...}" />
-            <marker date="1534238336938" expanded="true" signature="388:412" ph="{...}" />
-            <marker date="1534238336938" expanded="true" signature="441:1278" ph="{...}" />
-            <marker date="1534238336938" expanded="true" signature="627:737" ph="{...}" />
-            <marker date="1534238336938" expanded="true" signature="833:944" ph="{...}" />
-            <marker date="1534238336938" expanded="true" signature="1040:1151" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Sound Scripts/AudioManagerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1058,6 +1024,45 @@
             <marker date="1534249533006" expanded="true" signature="2270:2325" ph="{...}" />
             <marker date="1534249533006" expanded="true" signature="2575:2622" ph="{...}" />
             <marker date="1534249533006" expanded="true" signature="2652:2715" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayAds.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-530">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <marker date="1534248654939" expanded="true" signature="6:126" ph="..." />
+            <marker date="1534248654939" expanded="true" signature="199:1764" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="385:394" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="431:590" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="504:584" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="627:761" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="661:758" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="793:893" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="923:1000" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="957:997" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="1052:1334" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="1077:1331" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="1392:1762" ph="{...}" />
+            <marker date="1534248654939" expanded="true" signature="1417:1759" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GemReward.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <marker date="1534250353450" expanded="false" signature="6:100" ph="..." />
+            <marker date="1534250353450" expanded="true" signature="140:1331" ph="{...}" />
+            <marker date="1534250353450" expanded="true" signature="388:463" ph="{...}" />
+            <marker date="1534250353450" expanded="true" signature="492:1329" ph="{...}" />
+            <marker date="1534250353450" expanded="true" signature="678:788" ph="{...}" />
+            <marker date="1534250353450" expanded="true" signature="884:995" ph="{...}" />
+            <marker date="1534250353450" expanded="true" signature="1091:1202" ph="{...}" />
           </folding>
         </state>
       </provider>
