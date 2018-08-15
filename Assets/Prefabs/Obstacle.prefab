@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceBetweenObstacles: 0.8
-  distanceFromStartLine: 1.43
+  distanceFromStartLine: 1.5
 --- !u!114 &114477217739774224
 MonoBehaviour:
   m_ObjectHideFlags: 1

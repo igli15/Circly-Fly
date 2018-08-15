@@ -16,8 +16,7 @@ public class CollectedGem : MonoBehaviour
         if (this != null)
         {
             var gemTag = collision.gameObject.GetComponent<GemScript>().gemType.ToString();
-            Debug.Log("Gem Collected : " + gemTag);
-
+            
             ObjectPooler.instance.DestroyFromPool(gemTag, collision.gameObject);
             if (SpawnObstacles.gems.Contains(gemScript)) SpawnObstacles.gems.Remove(gemScript);
         }
