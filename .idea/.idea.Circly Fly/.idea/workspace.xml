@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cc87d136-ca84-44a6-9a21-c42ce3d0680c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circly Fly/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JumpScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/fb/fb46a7140c1984bf9982677750bd81c0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fb/fb46a7140c1984bf9982677750bd81c0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,22 +32,24 @@
       <file leaf-file-name="JumpScript.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/JumpScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+            <state relative-caret-position="674">
+              <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
               <folding>
-                <marker date="1534336875032" expanded="false" signature="6:37" ph="..." />
-                <marker date="1534336875032" expanded="true" signature="78:2282" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="552:882" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="939:982" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1009:1575" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1092:1313" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1508:1568" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1610:1646" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1681:1715" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1786:2181" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="1810:2010" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="2030:2175" ph="{...}" />
-                <marker date="1534336875032" expanded="true" signature="2211:2280" ph="{...}" />
+                <marker date="1534338996105" expanded="false" signature="6:37" ph="..." />
+                <marker date="1534338996105" expanded="true" signature="78:2941" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="552:882" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="939:982" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1009:1575" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1092:1313" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1508:1568" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1610:1646" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1681:1715" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1786:2197" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1810:2026" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="1889:1980" ph="/* if (joint != null) ... */" />
+                <marker date="1534338996105" expanded="true" signature="2046:2191" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="2232:2840" ph="{...}" />
+                <marker date="1534338996105" expanded="true" signature="2870:2939" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -332,7 +331,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154336000" />
+    <option name="totallyTimeSpent" value="154831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -897,22 +896,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/JumpScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+        <state relative-caret-position="674">
+          <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
           <folding>
-            <marker date="1534336875032" expanded="false" signature="6:37" ph="..." />
-            <marker date="1534336875032" expanded="true" signature="78:2282" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="552:882" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="939:982" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1009:1575" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1092:1313" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1508:1568" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1610:1646" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1681:1715" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1786:2181" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="1810:2010" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="2030:2175" ph="{...}" />
-            <marker date="1534336875032" expanded="true" signature="2211:2280" ph="{...}" />
+            <marker date="1534338996105" expanded="false" signature="6:37" ph="..." />
+            <marker date="1534338996105" expanded="true" signature="78:2941" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="552:882" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="939:982" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1009:1575" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1092:1313" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1508:1568" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1610:1646" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1681:1715" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1786:2197" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1810:2026" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="1889:1980" ph="/* if (joint != null) ... */" />
+            <marker date="1534338996105" expanded="true" signature="2046:2191" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="2232:2840" ph="{...}" />
+            <marker date="1534338996105" expanded="true" signature="2870:2939" ph="{...}" />
           </folding>
         </state>
       </provider>
