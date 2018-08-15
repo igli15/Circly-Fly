@@ -16,7 +16,6 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="GemReward.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
@@ -32,6 +31,7 @@
             <e p="FSM.cs" t="Include" />
             <e p="IAgent.cs" t="Include" />
           </e>
+          <e p="GemReward.cs" t="Include" />
           <e p="GemScript.cs" t="Include" />
           <e p="IncreaseRotationSpeed.cs" t="Include" />
           <e p="IncreaseScaleOnSpawn.cs" t="Include" />
@@ -55,8 +55,13 @@
           <e p="ScoreBehaviour.cs" t="Include" />
           <e p="SetGemCountText.cs" t="Include" />
           <e p="SetHighscoreText.cs" t="Include" />
+          <e p="ShakeEffect.cs" t="Include" />
           <e p="ShopItemScript.cs" t="Include" />
           <e p="ShopManager.cs" t="Include" />
+          <e p="Sound Scripts" t="Include">
+            <e p="AudioManagerScript.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+          </e>
           <e p="SpawnObstacles.cs" t="Include" />
           <e p="StartRotatingSpawner.cs" t="Include" />
           <e p="TriggerManager.cs" t="Include" />
@@ -68,7 +73,7 @@
           </e>
           <e p="Utils.cs" t="Include" />
         </e>
-        <e p="ShakeEffect.cs" t="Include" />
+        <e p="SpawnerEffects.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

@@ -3675,6 +3675,7 @@ GameObject:
   - component: {fileID: 947134678}
   - component: {fileID: 947134679}
   - component: {fileID: 947134680}
+  - component: {fileID: 947134681}
   m_Layer: 0
   m_Name: Circle
   m_TagString: spawner
@@ -3852,6 +3853,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelData: {fileID: 560521941}
+--- !u!114 &947134681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947134671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c39dc6da2d9c43ff8760cf7ecec93eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980523114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6118,7 +6130,7 @@ Transform:
   m_GameObject: {fileID: 1491413833}
   m_LocalRotation: {x: -0, y: -0, z: 0.091843605, w: 0.99577343}
   m_LocalPosition: {x: -0.019499999, y: 0.3302002, z: 0}
-  m_LocalScale: {x: 0.9894819, y: 0.9894819, z: 0.76114}
+  m_LocalScale: {x: 0.98948187, y: 0.98948187, z: 0.76114}
   m_Children:
   - {fileID: 1810457155}
   m_Father: {fileID: 0}

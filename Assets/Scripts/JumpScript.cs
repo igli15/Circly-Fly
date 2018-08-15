@@ -52,6 +52,7 @@ public class JumpScript : MonoBehaviour
        
             jump = true;
             canJump = false;
+         
             
             AudioManagerScript.instance.PlaySound("jump");
             
