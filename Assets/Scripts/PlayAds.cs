@@ -84,7 +84,7 @@ public class PlayAds : MonoBehaviour
 		{
 			case ShowResult.Finished:
 			{
-				if (OnReviveAdFinished != null) OnReviveAdFinished(this);
+				Invoke("CallOnRevive",0.7f);
 				break;
 			}
 			case ShowResult.Skipped:
@@ -101,5 +101,10 @@ public class PlayAds : MonoBehaviour
 			}
 				
 		}
+	}
+
+	private void CallOnRevive()
+	{
+		if (OnReviveAdFinished != null) OnReviveAdFinished(this);
 	}
 }
