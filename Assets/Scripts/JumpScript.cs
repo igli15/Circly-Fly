@@ -89,8 +89,6 @@ public class JumpScript : MonoBehaviour
 
             if (joint != null)
                 joint.distance = initalJointDistance + jumpDistance;
-
-
         }
 
         if (!jump)
