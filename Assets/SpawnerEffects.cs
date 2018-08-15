@@ -15,5 +15,9 @@ public class SpawnerEffects : MonoBehaviour {
 	{
 		transform.DOPunchRotation(new Vector3(5, 5f,5f), 1f, 8, 1);
 	}
-	
+
+	private void OnDestroy()
+	{
+		FinishLineReached.OnFinishLineReached -= FinishLineEffects;
+	}
 }
