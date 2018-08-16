@@ -62,6 +62,7 @@
             <e p="AudioManagerScript.cs" t="Include" />
             <e p="Sound.cs" t="Include" />
           </e>
+          <e p="SpawnerEffects.cs" t="Include" />
           <e p="SpawnObstacles.cs" t="Include" />
           <e p="StartRotatingSpawner.cs" t="Include" />
           <e p="TriggerManager.cs" t="Include" />
@@ -73,7 +74,6 @@
           </e>
           <e p="Utils.cs" t="Include" />
         </e>
-        <e p="SpawnerEffects.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

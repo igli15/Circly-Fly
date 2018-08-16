@@ -23,7 +23,6 @@ public class PlayAds : MonoBehaviour
 
 	public void CheckIfShouldPlayAdd()
 	{
-		Debug.Log(playerData.deathCount);
 		if (playerData.deathCount >= 3)
 		{
 			ShowNormalAdd();
