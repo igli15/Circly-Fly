@@ -9,9 +9,6 @@ using UnityEngine.UI;
 [Serializable]
 public class PlayerData : MonoBehaviour
 {
-
-    [SerializeField] 
-    private UIManager uiManager;
     
     [HideInInspector] public int highscore = 0;
 
@@ -27,7 +24,9 @@ public class PlayerData : MonoBehaviour
 
     [HideInInspector] public int defaultCharacter = 0;
 
-    [HideInInspector] public bool[] unlockedCharacter;   
+    [HideInInspector] public bool[] unlockedCharacter;
+
+    [HideInInspector] public bool firstPlay = true;
 
     public static Action<PlayerData> OnHighScoreChanged;
     public static Action<PlayerData> OnGemCountChanged;
@@ -81,6 +80,8 @@ public class PlayerData : MonoBehaviour
             unlockedCharacter[5] = false;
             
             defaultCharacter = 0;
+
+            firstPlay = true;
 
             highscore = 0;
             

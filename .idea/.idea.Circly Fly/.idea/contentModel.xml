@@ -74,6 +74,9 @@
           </e>
           <e p="Utils.cs" t="Include" />
         </e>
+        <e p="TutorialManager.cs" t="Include" />
+        <e p="TutorialPopUp.cs" t="Include" />
+        <e p="TutorialTriggerCollisions.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

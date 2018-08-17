@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class PlayerCollisions : MonoBehaviour
 {
@@ -8,14 +9,7 @@ public class PlayerCollisions : MonoBehaviour
 
     [HideInInspector]
     public bool isDead = false;
-        
-    /*private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.transform.CompareTag("obstacle"))
-            if (null != OnObstaclePass)
-                OnObstaclePass(this);
-    }*/
-
+    
     
     private void OnCollisionEnter2D(Collision2D other)
     {

@@ -14,6 +14,11 @@ TagManager:
   - BottomBoundary
   - AddManager
   - SaveLoadManager
+  - 1stTutorialTrigger
+  - 2ndTutorialTrigger
+  - 3rdTutorialTrigger
+  - 4thTutorialTrigger
+  - 5thTutorialTrigger
   layers:
   - Default
   - TransparentFX

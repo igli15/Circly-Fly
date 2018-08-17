@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class CollectedGem : MonoBehaviour
 {
@@ -16,9 +17,18 @@ public class CollectedGem : MonoBehaviour
         if (this != null)
         {
             var gemTag = collision.gameObject.GetComponent<GemScript>().gemType.ToString();
-            
-            ObjectPooler.instance.DestroyFromPool(gemTag, collision.gameObject);
-            if (SpawnObstacles.gems.Contains(gemScript)) SpawnObstacles.gems.Remove(gemScript);
+
+
+            try
+            {
+                ObjectPooler.instance.DestroyFromPool(gemTag, collision.gameObject);
+                if (SpawnObstacles.gems.Contains(gemScript)) SpawnObstacles.gems.Remove(gemScript);
+            }
+            catch 
+            {
+                Debug.Log("No object pooler found (maybe you are in tutorial scene)");
+                Destroy(gameObject);
+            }
         }
     }
 

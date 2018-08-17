@@ -107,6 +107,9 @@
     <Compile Include="Assets\Scripts\UIStates\MenuUIState.cs" />
     <Compile Include="Assets\Scripts\UIStates\ShopUIState.cs" />
     <Compile Include="Assets\Scripts\Utils.cs" />
+    <Compile Include="Assets\TutorialManager.cs" />
+    <Compile Include="Assets\TutorialPopUp.cs" />
+    <Compile Include="Assets\TutorialTriggerCollisions.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

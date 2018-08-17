@@ -13,10 +13,14 @@ public class PopUp :MonoBehaviour
 
     [SerializeField] 
     private bool showOnStart = false;
-    
-    private void OnEnable()
+
+    private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
+    }
+
+    private void OnEnable()
+    {
         canvasGroup.alpha = 0;
         
         if (showOnStart)
