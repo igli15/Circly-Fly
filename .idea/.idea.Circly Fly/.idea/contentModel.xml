@@ -16,6 +16,7 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="PauseScript.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />

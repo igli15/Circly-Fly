@@ -1,5 +1,6 @@
 ﻿using DG.Tweening;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class JumpScript : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class JumpScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canJump && playJumpSound == true)
+        if (Input.GetMouseButtonDown(0) && canJump && playJumpSound && !EventSystem.current.IsPointerOverGameObject() )
         {
        
             jump = true;
@@ -97,6 +98,21 @@ public class JumpScript : MonoBehaviour
             if (joint != null)
                 joint.distance = initalJointDistance;
         }
+    }
+
+    public bool CheckPressingPauseButton()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, Mathf.Infinity);
+
+        if (hit.collider !=  null)
+        {
+            if (hit.collider.gameObject.CompareTag("PauseButton")) return true;
+        }
+
+
+
+        return false;
     }
 
     private void OnDestroy()

@@ -36,6 +36,9 @@ public class PopUp :MonoBehaviour
 
     public void Show()
     {
+        
+        PauseScript.canPause = false;
+        
         canvasGroup.blocksRaycasts = true;
         canvasGroup.interactable = true;
 
@@ -44,6 +47,8 @@ public class PopUp :MonoBehaviour
 
     public void Close()
     {
+        PauseScript.canPause = true;
+        
         canvasGroup.blocksRaycasts = false;
         canvasGroup.interactable = false;
 

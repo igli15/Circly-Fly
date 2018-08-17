@@ -19,6 +19,7 @@ TagManager:
   - 3rdTutorialTrigger
   - 4thTutorialTrigger
   - 5thTutorialTrigger
+  - PauseButton
   layers:
   - Default
   - TransparentFX

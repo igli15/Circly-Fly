@@ -23,7 +23,7 @@ public class PlayAds : MonoBehaviour
 
 	public void CheckIfShouldPlayAdd()
 	{
-		if (playerData.deathCount >= 3)
+		if (playerData.deathCount >= 6)
 		{
 			ShowNormalAdd();
 			playerData.deathCount = 0;
@@ -83,7 +83,7 @@ public class PlayAds : MonoBehaviour
 		{
 			case ShowResult.Finished:
 			{
-				Invoke("CallOnRevive",0.7f);
+				Invoke("CallOnRevive",1.2f);
 				break;
 			}
 			case ShowResult.Skipped:
