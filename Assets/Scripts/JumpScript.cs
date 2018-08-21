@@ -48,7 +48,22 @@ public class JumpScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canJump && playJumpSound && !EventSystem.current.IsPointerOverGameObject() )
+
+            if ((Application.platform == RuntimePlatform.Android ||
+                 Application.platform == RuntimePlatform.IPhonePlayer) && Input.touchCount > 0 && Input.GetMouseButtonDown(0) && canJump &&
+                playJumpSound && !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+            {
+
+                jump = true;
+                canJump = false;
+
+
+                AudioManagerScript.instance.PlaySound("jump");
+
+                Invoke("SetJumpToFalse", 0.1f);
+            }
+
+        if ((Application.platform == RuntimePlatform.OSXEditor) && Input.GetMouseButtonDown(0) && canJump && playJumpSound && !EventSystem.current.IsPointerOverGameObject())
         {
        
             jump = true;
@@ -59,6 +74,9 @@ public class JumpScript : MonoBehaviour
             
             Invoke("SetJumpToFalse", 0.1f);
         }
+
+        
+        
 
         if (joint != null && Vector2.Distance(spawner.transform.position, transform.position) <=
             initalJointDistance + 0.35f) canJump = true;

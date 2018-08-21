@@ -28,6 +28,7 @@ public class LookAtPlayer : MonoBehaviour
 		FinishLineReached.OnFinishLineReached += EnableRotateScript;
 		PlayerCollisions.OnObstacleHit += DisableRotateScript;
 
+
 		transform.position = Vector3.zero;
 
 		//transform.DOMoveY(0.2f, 0.5f);
@@ -55,11 +56,13 @@ public class LookAtPlayer : MonoBehaviour
 	{
 		transform.DOMoveY(0.2f, 0.5f);
 		GetComponent<RotateScript>().SetRotationSpeed(40);
+		
 	}
 
 	private void PlayCloseAnim()
 	{
 		OnEyeReset(this);
+		
 		gameObject.SetActive(false);
 	}
 
