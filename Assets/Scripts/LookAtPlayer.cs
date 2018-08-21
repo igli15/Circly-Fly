@@ -19,9 +19,14 @@ public class LookAtPlayer : MonoBehaviour
 	private GameObject player;
 	
 	// Use this for initialization
-	void Start ()
+	private void Awake()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
+	}
+
+	void Start ()
+	{
+		
 		
 		rotateScript = GetComponent<RotateScript>();
 
@@ -55,7 +60,8 @@ public class LookAtPlayer : MonoBehaviour
 	private void OnEnable()
 	{
 		transform.DOMoveY(0.2f, 0.5f);
-		GetComponent<RotateScript>().SetRotationSpeed(40);
+		
+		GetComponent<RotateScript>().SetRotationSpeed(player.GetComponent<RotateScript>().GetRotationSpeed());
 		
 	}
 

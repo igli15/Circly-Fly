@@ -18,6 +18,7 @@ public class RotateScript : MonoBehaviour
     private void Update()
     {
         transform.RotateAround(target.transform.position, new Vector3(0, 0, 1), -rotationSpeed * Time.deltaTime);
+        Debug.Log(transform.tag + ": " + rotationSpeed);
     }
 
     public void IncreaseRotationSpeed(float increment)
