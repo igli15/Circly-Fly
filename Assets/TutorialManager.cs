@@ -10,6 +10,8 @@ public class TutorialManager : MonoBehaviour
 	private RotateScript rotateScript;
 
 	private JumpScript jumpScript;
+
+	private bool init = false;
 	
 	// Use this for initialization
 
@@ -29,15 +31,19 @@ public class TutorialManager : MonoBehaviour
 		if (player == null)
 		{
 			player = GameObject.FindGameObjectWithTag("Player");
+		}
+		
+		
+		if (player != null && !init)
+		{
+			
+			rotateScript = player.GetComponent<RotateScript>();
+			jumpScript = player.GetComponent<JumpScript>();
 
-			if (player != null)
-			{
-				rotateScript = player.GetComponent<RotateScript>();
-				jumpScript = player.GetComponent<JumpScript>();
+			rotateScript.enabled = true;
+			jumpScript.enabled = true;
 
-				rotateScript.enabled = true;
-				jumpScript.enabled = true;
-			}
+			init = true;
 		}
 	}
 }
