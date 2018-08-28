@@ -28,6 +28,7 @@ public class PlayerData : MonoBehaviour
 
     [HideInInspector] public bool firstPlay = true;
 
+
     public static Action<PlayerData> OnHighScoreChanged;
     public static Action<PlayerData> OnGemCountChanged;
     

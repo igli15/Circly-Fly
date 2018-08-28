@@ -39,8 +39,10 @@ public class AudioManagerScript : MonoBehaviour
 			sound.audioSource.spatialBlend = sound.spatialBlend;
 			sound.audioSource.loop = sound.loop;
 			sound.audioSource.rolloffMode = sound.RollOffMode;
+			sound.audioSource.playOnAwake = false;
 		}
 		
+		DontDestroyOnLoad(gameObject);
 	}
 
 
@@ -101,4 +103,5 @@ public class AudioManagerScript : MonoBehaviour
 			return null;
 		}
 	}
+
 }

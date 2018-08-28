@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-16"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
@@ -55,10 +55,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonClickSound.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\ActivateEyeball.cs" />
     <Compile Include="Assets\Scripts\BackgroundColorChanger.cs" />
+    <Compile Include="Assets\Scripts\ButtonImageToggle.cs" />
     <Compile Include="Assets\Scripts\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\CollectedGem.cs" />
     <Compile Include="Assets\Scripts\EnableAnimatorFiller.cs" />

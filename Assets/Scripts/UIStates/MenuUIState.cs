@@ -9,6 +9,9 @@ public class MenuUIState : AbstractState<UIManager>
 {
 	[SerializeField]
 	private GameObject menuCanvas;
+
+	
+	private CanvasGroup optionButtons;
 	
 	/*private RotateScript rotateScript;
 
@@ -18,7 +21,7 @@ public class MenuUIState : AbstractState<UIManager>
 
 	private void Awake()
 	{
-		
+		optionButtons = GameObject.FindGameObjectWithTag("OptionCanvas").GetComponent<CanvasGroup>();
 	}
 
 	public override void Enter(IAgent pAgent)
@@ -35,6 +38,9 @@ public class MenuUIState : AbstractState<UIManager>
 		//rotateScript.enabled = false;
 
 		menuCanvas.SetActive(true);
+
+		optionButtons.alpha = 1;
+		optionButtons.interactable = true;
 		
 		menuCanvas.GetComponent<CanvasGroup>().DOFade(1,1.5f);
 		
@@ -47,7 +53,8 @@ public class MenuUIState : AbstractState<UIManager>
 
 	public override void Exit(IAgent pAgent)
 	{
-
+		optionButtons.alpha = 0;
+		optionButtons.interactable = false;
 		menuCanvas.SetActive(false);
 		base.Exit(pAgent);
 	}

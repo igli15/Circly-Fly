@@ -20,6 +20,7 @@ TagManager:
   - 4thTutorialTrigger
   - 5thTutorialTrigger
   - PauseButton
+  - OptionCanvas
   layers:
   - Default
   - TransparentFX
