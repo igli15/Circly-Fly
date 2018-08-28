@@ -6,7 +6,6 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ButtonClickSound.cs" t="Include" />
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
             <e p="DOTween43.xml" t="Include" />
@@ -19,13 +18,14 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="DontDestroyOnLoad.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActivateEyeball.cs" t="Include" />
           <e p="BackgroundColorChanger.cs" t="Include" />
+          <e p="ButtonClickSound.cs" t="Include" />
           <e p="ButtonImageToggle.cs" t="Include" />
           <e p="CharacterManager.cs" t="Include" />
           <e p="CollectedGem.cs" t="Include" />
+          <e p="DontDestroyOnLoad.cs" t="Include" />
           <e p="EnableAnimatorFiller.cs" t="Include" />
           <e p="EnableNewHighScoreText.cs" t="Include" />
           <e p="Encryption.cs" t="Include" />
@@ -82,8 +82,8 @@
             <e p="ShopUIState.cs" t="Include" />
           </e>
           <e p="Utils.cs" t="Include" />
+          <e p="VibrateButton.cs" t="Include" />
         </e>
-        <e p="VibrateButton.cs" t="Include" />
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
