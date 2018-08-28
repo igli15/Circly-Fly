@@ -23,13 +23,13 @@ public class StartRotatingSpawner : MonoBehaviour
 		rotateLaps += 1;
 		Debug.Log(rotateLaps);
 		
-		if (rotateLaps == 4)
+		if (rotateLaps == 3)
 		{
 			rotateScript.enabled = true;
 			rotateScript.SetRotationSpeed(Random.Range(-7,5));
 			
 		}
-		else if (rotateLaps > 4)
+		else if (rotateLaps > 3)
 		{
 			rotateScript.enabled = false;
 			rotateLaps = 0;
