@@ -14,22 +14,18 @@ public class TutorialPopUp : PopUp
 		Time.timeScale = 0;
 	}
 	
-	// Update is called once per frame
-	void Update () 
+
+	public void EndTutorialTrigger()
 	{
-		if (Input.anyKeyDown)
+		Time.timeScale = 1;
+		if (isLastTrigger)
 		{
-			Time.timeScale = 1;
-			if (isLastTrigger)
-			{
-				SceneManager.LoadScene(0);
-				return;
-			}
-			
-			Close();
-			gameObject.SetActive(false);
+			SceneManager.LoadScene(0);
+			return;
 		}
+			
+		Close();
+		gameObject.SetActive(false);
 	}
-	
 	
 }

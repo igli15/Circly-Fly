@@ -24,6 +24,7 @@ public class PlayerCollisions : MonoBehaviour
             if (null != OnGemCollected)
             {
                 OnGemCollected(other);
+                if(AudioManagerScript.instance!= null)
                 AudioManagerScript.instance.PlaySound("pickup");
             }
     }

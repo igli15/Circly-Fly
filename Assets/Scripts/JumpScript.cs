@@ -57,7 +57,7 @@ public class JumpScript : MonoBehaviour
                 jump = true;
                 canJump = false;
 
-
+                if(AudioManagerScript.instance!= null)
                 AudioManagerScript.instance.PlaySound("jump");
 
                 Invoke("SetJumpToFalse", 0.1f);
@@ -69,7 +69,7 @@ public class JumpScript : MonoBehaviour
             jump = true;
             canJump = false;
          
-            
+            if(AudioManagerScript.instance!= null)
             AudioManagerScript.instance.PlaySound("jump");
             
             Invoke("SetJumpToFalse", 0.1f);
