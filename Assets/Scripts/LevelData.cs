@@ -7,11 +7,17 @@ public class LevelData : MonoBehaviour
 
     [SerializeField] private LootScript lootScript;
 
+    private VibrateButton vibrateButton;
+
     // Use this for initialization
     private void Start()
     {
+        vibrateButton = GameObject.FindGameObjectWithTag("OptionCanvas").GetComponentInChildren<VibrateButton>();
+        
         FinishLineReached.OnFinishLineReached += IncreaseLevelIndex;
         PlayerCollisions.OnObstacleHit += Vibrate;
+        
+        
         //lootScript.GenerateLootItem();
     }
 
@@ -23,7 +29,9 @@ public class LevelData : MonoBehaviour
 
     private void Vibrate(PlayerCollisions sender)
     {
-        Handheld.Vibrate();
+        if(vibrateButton.canVibrate)
+       Handheld.Vibrate();
+        
     }
 
     public int GetLevelIndex()

@@ -8,7 +8,6 @@ public class DontDestroyOnLoad : MonoBehaviour {
 
 	public static DontDestroyOnLoad Instance { get { return instance; } }
 
-
 	private void Awake()
 	{
 
