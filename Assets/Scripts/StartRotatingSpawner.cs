@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class StartRotatingSpawner : MonoBehaviour
 {
-	[SerializeField] 
-	private LevelData levelData;
+	private int rotateLaps = 0;
 	
 	private RotateScript rotateScript;
 	
@@ -21,10 +20,19 @@ public class StartRotatingSpawner : MonoBehaviour
 
 	private void RotateBackwards(FinishLineReached sender)
 	{
-		if (levelData.GetLevelIndex() > 10)
+		rotateLaps += 1;
+		Debug.Log(rotateLaps);
+		
+		if (rotateLaps == 4)
 		{
 			rotateScript.enabled = true;
-			rotateScript.SetRotationSpeed(Random.Range(-10,5));
+			rotateScript.SetRotationSpeed(Random.Range(-7,5));
+			
+		}
+		else if (rotateLaps > 4)
+		{
+			rotateScript.enabled = false;
+			rotateLaps = 0;
 		}
 	}
 
