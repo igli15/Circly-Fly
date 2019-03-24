@@ -1,10 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="/56d7c1a8" t="IncludeRecursive" />
+    <e p="/app" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="RotateScript.cs" t="Include" />
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="DOTween43.xml" t="Include" />
+            <e p="DOTween46.xml" t="Include" />
+            <e p="DOTween50.xml" t="Include" />
+            <e p="Examples" t="Include">
+              <e p="Basics.cs" t="Include" />
+              <e p="Sequences.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="ActivateEyeball.cs" t="Include" />
+          <e p="BackgroundColorChanger.cs" t="Include" />
+          <e p="ButtonClickSound.cs" t="Include" />
+          <e p="ButtonImageToggle.cs" t="Include" />
+          <e p="CharacterManager.cs" t="Include" />
+          <e p="CollectedGem.cs" t="Include" />
+          <e p="DontDestroyOnLoad.cs" t="Include" />
+          <e p="EnableAnimatorFiller.cs" t="Include" />
+          <e p="EnableNewHighScoreText.cs" t="Include" />
+          <e p="Encryption.cs" t="Include" />
+          <e p="FindRightPosition.cs" t="Include" />
+          <e p="FinishLineReached.cs" t="Include" />
+          <e p="FSM" t="Include">
+            <e p="AbstractState.cs" t="Include" />
+            <e p="FSM.cs" t="Include" />
+            <e p="IAgent.cs" t="Include" />
+          </e>
+          <e p="GemReward.cs" t="Include" />
+          <e p="GemScript.cs" t="Include" />
+          <e p="IncreaseRotationSpeed.cs" t="Include" />
+          <e p="IncreaseScaleOnSpawn.cs" t="Include" />
+          <e p="IPooleableObject.cs" t="Include" />
+          <e p="JumpScript.cs" t="Include" />
+          <e p="LevelData.cs" t="Include" />
+          <e p="LookAtPlayer.cs" t="Include" />
+          <e p="LootScript.cs" t="Include" />
+          <e p="ObjectPooler.cs" t="Include" />
+          <e p="ObstacleMovement.cs" t="Include" />
+          <e p="PauseScript.cs" t="Include" />
+          <e p="PlayAds.cs" t="Include" />
+          <e p="PlayerCollisions.cs" t="Include" />
+          <e p="PlayerData.cs" t="Include" />
+          <e p="PlayerDeath.cs" t="Include" />
+          <e p="PlayerRotation.cs" t="Include" />
+          <e p="PopUp.cs" t="Include" />
+          <e p="RainDrop.cs" t="Include" />
+          <e p="RainSpawner.cs" t="Include" />
+          <e p="RotateScript.cs" t="Include" />
+          <e p="ScoreAnimation.cs" t="Include" />
+          <e p="ScoreBehaviour.cs" t="Include" />
+          <e p="SetGemCountText.cs" t="Include" />
+          <e p="SetHighscoreText.cs" t="Include" />
+          <e p="ShakeEffect.cs" t="Include" />
+          <e p="ShopItemScript.cs" t="Include" />
+          <e p="ShopManager.cs" t="Include" />
+          <e p="Sound Scripts" t="Include">
+            <e p="AudioManagerScript.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+          </e>
+          <e p="SpawnerEffects.cs" t="Include" />
+          <e p="SpawnObstacles.cs" t="Include" />
+          <e p="StartRotatingSpawner.cs" t="Include" />
+          <e p="TriggerManager.cs" t="Include" />
+          <e p="TutorialManager.cs" t="Include" />
+          <e p="TutorialPopUp.cs" t="Include" />
+          <e p="TutorialTriggerCollisions.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
+          <e p="UIStates" t="Include">
+            <e p="LevelUIState.cs" t="Include" />
+            <e p="MenuUIState.cs" t="Include" />
+            <e p="ShopUIState.cs" t="Include" />
+          </e>
+          <e p="Utils.cs" t="Include" />
+          <e p="VibrateButton.cs" t="Include" />
+        </e>
       </e>
       <e p="Circly Fly.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
@@ -14,6 +93,8 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Circly Fly.-729136110.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Circly Fly.-729136110.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
 </project>

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1574856001592970}
+  m_IsPrefabAsset: 1
+--- !u!1 &1574856001592970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4779962220187950}
+  - component: {fileID: 114053232096602626}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4779962220187950
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574856001592970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.98511726, y: 0.16490676, z: -0.0980766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114053232096602626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574856001592970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6400ae4e322c4b60b7a394b96a0284b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: jump
+    clip: {fileID: 8300000, guid: 9d1c644f838c741a6a397432073bf20a, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: click
+    clip: {fileID: 8300000, guid: 044af6d7f4b40418fb163227fba257df, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: reward
+    clip: {fileID: 8300000, guid: 39bef0e4cb7404bf4a5920534c37c37f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: pickup
+    clip: {fileID: 8300000, guid: 3327c05e95c9e4aa09a42074409a8912, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}

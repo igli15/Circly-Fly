@@ -3,7 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - spawner
+  - obstacle
+  - finishLine
+  - levelManager
+  - gem
+  - lootManager
+  - ShopItem
+  - BottomBoundary
+  - AddManager
+  - SaveLoadManager
+  - 1stTutorialTrigger
+  - 2ndTutorialTrigger
+  - 3rdTutorialTrigger
+  - 4thTutorialTrigger
+  - 5thTutorialTrigger
+  - PauseButton
+  - OptionCanvas
   layers:
   - Default
   - TransparentFX
